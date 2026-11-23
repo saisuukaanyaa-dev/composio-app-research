@@ -1,0 +1,67 @@
+{
+ "id": "33",
+ "name": "LinkedIn Ads",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "amekala/ads-mcp",
+   "stars": 108,
+   "url": "https://github.com/amekala/ads-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "markifact/markifact-mcp",
+   "stars": 58,
+   "url": "https://github.com/markifact/markifact-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "danielpopamd/linkedin-ads-mcp",
+   "stars": 42,
+   "url": "https://github.com/danielpopamd/linkedin-ads-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Dataslayer-AI/Marketing-skills",
+   "stars": 28,
+   "url": "https://github.com/Dataslayer-AI/Marketing-skills",
+   "vendor_owned": false
+  },
+  {
+   "repo": "adwarp-dev/adwarp",
+   "stars": 25,
+   "url": "https://github.com/adwarp-dev/adwarp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "jepto/mcp",
+   "stars": 8,
+   "url": "https://github.com/jepto/mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "amekala/adspirer-mcp-plugin",
+   "stars": 8,
+   "url": "https://github.com/amekala/adspirer-mcp-plugin",
+   "vendor_owned": false
+  },
+  {
+   "repo": "meshpilot-hq/linkedin-ads-mcp",
+   "stars": 5,
+   "url": "https://github.com/meshpilot-hq/linkedin-ads-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "proxy-intell/linkedin-ads-library-mcp",
+   "stars": 3,
+   "url": "https://github.com/proxy-intell/linkedin-ads-library-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "twominutereports/twominutereports-mcp",
+   "stars": 3,
+   "url": "https://github.com/twominutereports/twominutereports-mcp",
+   "vendor_owned": false
+  }
+ ]
+}

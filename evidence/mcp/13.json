@@ -1,0 +1,67 @@
+{
+ "id": "13",
+ "name": "Freshdesk",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "effytech/freshdesk_mcp",
+   "stars": 70,
+   "url": "https://github.com/effytech/freshdesk_mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Enreign/freshdeck-mcp",
+   "stars": 12,
+   "url": "https://github.com/Enreign/freshdeck-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "hashcott/freshdesk-mcp",
+   "stars": 3,
+   "url": "https://github.com/hashcott/freshdesk-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "BrightSec/freshdesk_mcp",
+   "stars": 2,
+   "url": "https://github.com/BrightSec/freshdesk_mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "petrolivka/freshdesk-mcp",
+   "stars": 1,
+   "url": "https://github.com/petrolivka/freshdesk-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "macwilling/mcp-freshdesk",
+   "stars": 1,
+   "url": "https://github.com/macwilling/mcp-freshdesk",
+   "vendor_owned": false
+  },
+  {
+   "repo": "nikhilchintawar/freshdesk-mcp",
+   "stars": 1,
+   "url": "https://github.com/nikhilchintawar/freshdesk-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Para-FR/satelia-mcp-freshdesk",
+   "stars": 1,
+   "url": "https://github.com/Para-FR/satelia-mcp-freshdesk",
+   "vendor_owned": false
+  },
+  {
+   "repo": "KushKK29/FreshDesk_MCP",
+   "stars": 1,
+   "url": "https://github.com/KushKK29/FreshDesk_MCP",
+   "vendor_owned": false
+  },
+  {
+   "repo": "CDataSoftware/freshdesk-mcp-server-by-cdata",
+   "stars": 1,
+   "url": "https://github.com/CDataSoftware/freshdesk-mcp-server-by-cdata",
+   "vendor_owned": false
+  }
+ ]
+}

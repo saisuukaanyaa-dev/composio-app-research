@@ -1,0 +1,67 @@
+{
+ "id": "15",
+ "name": "Pylon",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "JustinBeckwith/pylon-mcp",
+   "stars": 8,
+   "url": "https://github.com/JustinBeckwith/pylon-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "toalba/Pylon",
+   "stars": 3,
+   "url": "https://github.com/toalba/Pylon",
+   "vendor_owned": false
+  },
+  {
+   "repo": "OpenAgentsInc/pylon-previous",
+   "stars": 2,
+   "url": "https://github.com/OpenAgentsInc/pylon-previous",
+   "vendor_owned": false
+  },
+  {
+   "repo": "pylonapi/pylon-mcp",
+   "stars": 1,
+   "url": "https://github.com/pylonapi/pylon-mcp",
+   "vendor_owned": true
+  },
+  {
+   "repo": "lwsinclair/pylon-mcp",
+   "stars": 0,
+   "url": "https://github.com/lwsinclair/pylon-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Carter-S/pylon-mcp",
+   "stars": 0,
+   "url": "https://github.com/Carter-S/pylon-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "bgrgndzz/pylon-replies-mcp",
+   "stars": 0,
+   "url": "https://github.com/bgrgndzz/pylon-replies-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "inheinsight/pylon-kb-mcp",
+   "stars": 0,
+   "url": "https://github.com/inheinsight/pylon-kb-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "gasconc/pylon-mcp-server",
+   "stars": 0,
+   "url": "https://github.com/gasconc/pylon-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "bgrgndzz/pylon-ticket-comments-mcp",
+   "stars": 0,
+   "url": "https://github.com/bgrgndzz/pylon-ticket-comments-mcp",
+   "vendor_owned": false
+  }
+ ]
+}

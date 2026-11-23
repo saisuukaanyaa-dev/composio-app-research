@@ -1,0 +1,67 @@
+{
+ "id": "73",
+ "name": "Linear",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "sandbox-quantum/switch",
+   "stars": 4696,
+   "url": "https://github.com/sandbox-quantum/switch",
+   "vendor_owned": false
+  },
+  {
+   "repo": "jerhadf/linear-mcp-server",
+   "stars": 348,
+   "url": "https://github.com/jerhadf/linear-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "khoj-ai/pipali",
+   "stars": 339,
+   "url": "https://github.com/khoj-ai/pipali",
+   "vendor_owned": false
+  },
+  {
+   "repo": "tacticlaunch/mcp-linear",
+   "stars": 151,
+   "url": "https://github.com/tacticlaunch/mcp-linear",
+   "vendor_owned": false
+  },
+  {
+   "repo": "wrsmith108/linear-claude-skill",
+   "stars": 142,
+   "url": "https://github.com/wrsmith108/linear-claude-skill",
+   "vendor_owned": false
+  },
+  {
+   "repo": "cline/linear-mcp",
+   "stars": 134,
+   "url": "https://github.com/cline/linear-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "prime-radiant-inc/streamlinear",
+   "stars": 90,
+   "url": "https://github.com/prime-radiant-inc/streamlinear",
+   "vendor_owned": false
+  },
+  {
+   "repo": "iceener/linear-streamable-mcp-server",
+   "stars": 71,
+   "url": "https://github.com/iceener/linear-streamable-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "cheriftj/c4-model-skill",
+   "stars": 45,
+   "url": "https://github.com/cheriftj/c4-model-skill",
+   "vendor_owned": false
+  },
+  {
+   "repo": "timescale/tiger-linear-mcp-server",
+   "stars": 33,
+   "url": "https://github.com/timescale/tiger-linear-mcp-server",
+   "vendor_owned": false
+  }
+ ]
+}

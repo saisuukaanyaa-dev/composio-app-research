@@ -1,0 +1,67 @@
+{
+ "id": "14",
+ "name": "Front",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "IBM/mcp-context-forge",
+   "stars": 4876,
+   "url": "https://github.com/IBM/mcp-context-forge",
+   "vendor_owned": false
+  },
+  {
+   "repo": "wilwaldon/Claude-Code-Frontend-Design-Toolkit",
+   "stars": 1385,
+   "url": "https://github.com/wilwaldon/Claude-Code-Frontend-Design-Toolkit",
+   "vendor_owned": false
+  },
+  {
+   "repo": "mrwyndham/pocketbase-mcp",
+   "stars": 156,
+   "url": "https://github.com/mrwyndham/pocketbase-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "agentfront/frontmcp",
+   "stars": 153,
+   "url": "https://github.com/agentfront/frontmcp",
+   "vendor_owned": true
+  },
+  {
+   "repo": "ceilf6/FrontAgent",
+   "stars": 125,
+   "url": "https://github.com/ceilf6/FrontAgent",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Kamra-PMS/kamra-pms",
+   "stars": 113,
+   "url": "https://github.com/Kamra-PMS/kamra-pms",
+   "vendor_owned": false
+  },
+  {
+   "repo": "HarryMtv/create-frontstack",
+   "stars": 94,
+   "url": "https://github.com/HarryMtv/create-frontstack",
+   "vendor_owned": false
+  },
+  {
+   "repo": "donggua-zen/guada",
+   "stars": 65,
+   "url": "https://github.com/donggua-zen/guada",
+   "vendor_owned": false
+  },
+  {
+   "repo": "stainless-api/mcp-front",
+   "stars": 58,
+   "url": "https://github.com/stainless-api/mcp-front",
+   "vendor_owned": false
+  },
+  {
+   "repo": "guillermoscript/lms-front",
+   "stars": 49,
+   "url": "https://github.com/guillermoscript/lms-front",
+   "vendor_owned": false
+  }
+ ]
+}

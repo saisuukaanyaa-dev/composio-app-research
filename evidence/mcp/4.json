@@ -1,0 +1,67 @@
+{
+ "id": "4",
+ "name": "Attio",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "kesslerio/attio-mcp-server",
+   "stars": 69,
+   "url": "https://github.com/kesslerio/attio-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "hmk/attio-mcp-server",
+   "stars": 16,
+   "url": "https://github.com/hmk/attio-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "redriverwest/attio-mcp",
+   "stars": 8,
+   "url": "https://github.com/redriverwest/attio-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "itsbrex/attio-mcp-server",
+   "stars": 7,
+   "url": "https://github.com/itsbrex/attio-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Arkel-ai/attio-mcp-server",
+   "stars": 5,
+   "url": "https://github.com/Arkel-ai/attio-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "TrialAndErrorAI/attio-mcp",
+   "stars": 2,
+   "url": "https://github.com/TrialAndErrorAI/attio-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "ArcadeAI/attio-mcp-benchmark",
+   "stars": 2,
+   "url": "https://github.com/ArcadeAI/attio-mcp-benchmark",
+   "vendor_owned": false
+  },
+  {
+   "repo": "kesslerio/attio-mcp",
+   "stars": 1,
+   "url": "https://github.com/kesslerio/attio-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "mlemos/attio-simple-mcp-server",
+   "stars": 1,
+   "url": "https://github.com/mlemos/attio-simple-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "joenobody25/sales-agent",
+   "stars": 1,
+   "url": "https://github.com/joenobody25/sales-agent",
+   "vendor_owned": false
+  }
+ ]
+}

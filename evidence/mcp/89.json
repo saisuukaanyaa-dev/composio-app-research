@@ -1,0 +1,67 @@
+{
+ "id": "89",
+ "name": "Ramp",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "highflame-ai/ramparts",
+   "stars": 99,
+   "url": "https://github.com/highflame-ai/ramparts",
+   "vendor_owned": false
+  },
+  {
+   "repo": "ramp-public/ramp_mcp",
+   "stars": 35,
+   "url": "https://github.com/ramp-public/ramp_mcp",
+   "vendor_owned": true
+  },
+  {
+   "repo": "KevinRabun/FedRAMP20xMCP",
+   "stars": 6,
+   "url": "https://github.com/KevinRabun/FedRAMP20xMCP",
+   "vendor_owned": false
+  },
+  {
+   "repo": "PrynAI/AgenticAI-OnRamp-with-Langgraph",
+   "stars": 5,
+   "url": "https://github.com/PrynAI/AgenticAI-OnRamp-with-Langgraph",
+   "vendor_owned": false
+  },
+  {
+   "repo": "rampify-dev/rampify-mcp",
+   "stars": 3,
+   "url": "https://github.com/rampify-dev/rampify-mcp",
+   "vendor_owned": true
+  },
+  {
+   "repo": "NickyHeC/ramp-mcp",
+   "stars": 3,
+   "url": "https://github.com/NickyHeC/ramp-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "dsmithnautel/Repo-Ramp",
+   "stars": 2,
+   "url": "https://github.com/dsmithnautel/Repo-Ramp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "miloudbelarebia/mcp-rampart",
+   "stars": 1,
+   "url": "https://github.com/miloudbelarebia/mcp-rampart",
+   "vendor_owned": false
+  },
+  {
+   "repo": "miracleoyl/dota2-mcp-server-all-features-including-rampage",
+   "stars": 1,
+   "url": "https://github.com/miracleoyl/dota2-mcp-server-all-features-including-rampage",
+   "vendor_owned": false
+  },
+  {
+   "repo": "spritz-finance/spritz-mcp-server",
+   "stars": 1,
+   "url": "https://github.com/spritz-finance/spritz-mcp-server",
+   "vendor_owned": false
+  }
+ ]
+}

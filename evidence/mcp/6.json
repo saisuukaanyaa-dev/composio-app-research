@@ -1,0 +1,37 @@
+{
+ "id": "6",
+ "name": "Podio",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "Podiom/Podiom",
+   "stars": 25,
+   "url": "https://github.com/Podiom/Podiom",
+   "vendor_owned": true
+  },
+  {
+   "repo": "stoskov/podio-mcp",
+   "stars": 1,
+   "url": "https://github.com/stoskov/podio-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "jscord30/MCPServer-Podio",
+   "stars": 0,
+   "url": "https://github.com/jscord30/MCPServer-Podio",
+   "vendor_owned": false
+  },
+  {
+   "repo": "phases/mcp-server-for-podio",
+   "stars": 0,
+   "url": "https://github.com/phases/mcp-server-for-podio",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Vuxified/podio-mcp-server",
+   "stars": 0,
+   "url": "https://github.com/Vuxified/podio-mcp-server",
+   "vendor_owned": false
+  }
+ ]
+}

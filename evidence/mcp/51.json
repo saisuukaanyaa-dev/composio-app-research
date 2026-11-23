@@ -1,0 +1,67 @@
+{
+ "id": "51",
+ "name": "DataForSEO",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "dataforseo/mcp-server-typescript",
+   "stars": 262,
+   "url": "https://github.com/dataforseo/mcp-server-typescript",
+   "vendor_owned": true
+  },
+  {
+   "repo": "houtini-ai/seo-audit",
+   "stars": 106,
+   "url": "https://github.com/houtini-ai/seo-audit",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Skobyn/dataforseo-mcp-server",
+   "stars": 83,
+   "url": "https://github.com/Skobyn/dataforseo-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Skobyn/mcp-dataforseo",
+   "stars": 7,
+   "url": "https://github.com/Skobyn/mcp-dataforseo",
+   "vendor_owned": false
+  },
+  {
+   "repo": "aimonk2025/dataforseo-ai-mcp-server",
+   "stars": 4,
+   "url": "https://github.com/aimonk2025/dataforseo-ai-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "SimplerSoftwareIO/seo-ai-agent",
+   "stars": 3,
+   "url": "https://github.com/SimplerSoftwareIO/seo-ai-agent",
+   "vendor_owned": false
+  },
+  {
+   "repo": "amirjahfar1/automate-seo-with-claude",
+   "stars": 3,
+   "url": "https://github.com/amirjahfar1/automate-seo-with-claude",
+   "vendor_owned": false
+  },
+  {
+   "repo": "plori-ai/seo-mcp",
+   "stars": 2,
+   "url": "https://github.com/plori-ai/seo-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "edunavajas/seo-agent-kit",
+   "stars": 2,
+   "url": "https://github.com/edunavajas/seo-agent-kit",
+   "vendor_owned": false
+  },
+  {
+   "repo": "chrisgscott/dataforseo-mcp",
+   "stars": 1,
+   "url": "https://github.com/chrisgscott/dataforseo-mcp",
+   "vendor_owned": false
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "id": "8",
+ "name": "Close",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "runekaagaard/mcp-redmine",
+   "stars": 257,
+   "url": "https://github.com/runekaagaard/mcp-redmine",
+   "vendor_owned": false
+  },
+  {
+   "repo": "HazAT/pi-solo",
+   "stars": 45,
+   "url": "https://github.com/HazAT/pi-solo",
+   "vendor_owned": false
+  },
+  {
+   "repo": "jordigilh/kubernaut",
+   "stars": 37,
+   "url": "https://github.com/jordigilh/kubernaut",
+   "vendor_owned": false
+  },
+  {
+   "repo": "puran-water/mathcad-mcp",
+   "stars": 24,
+   "url": "https://github.com/puran-water/mathcad-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "gzchenhao/openhire",
+   "stars": 16,
+   "url": "https://github.com/gzchenhao/openhire",
+   "vendor_owned": false
+  },
+  {
+   "repo": "tykisgod/quick-question",
+   "stars": 13,
+   "url": "https://github.com/tykisgod/quick-question",
+   "vendor_owned": false
+  },
+  {
+   "repo": "wgaostudio/closetscan",
+   "stars": 10,
+   "url": "https://github.com/wgaostudio/closetscan",
+   "vendor_owned": false
+  },
+  {
+   "repo": "nirholas/ai-tutor-mcp",
+   "stars": 9,
+   "url": "https://github.com/nirholas/ai-tutor-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "JakeB-5/vela-union",
+   "stars": 9,
+   "url": "https://github.com/JakeB-5/vela-union",
+   "vendor_owned": false
+  },
+  {
+   "repo": "SuperRogerio/css",
+   "stars": 9,
+   "url": "https://github.com/SuperRogerio/css",
+   "vendor_owned": false
+  }
+ ]
+}

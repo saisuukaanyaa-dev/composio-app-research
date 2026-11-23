@@ -1,0 +1,61 @@
+{
+ "id": "35",
+ "name": "Mailchimp",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "damientilman/mailchimp-mcp-server",
+   "stars": 25,
+   "url": "https://github.com/damientilman/mailchimp-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "AgentX-ai/mailchimp-mcp",
+   "stars": 13,
+   "url": "https://github.com/AgentX-ai/mailchimp-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "CosmoBlk/email-design",
+   "stars": 8,
+   "url": "https://github.com/CosmoBlk/email-design",
+   "vendor_owned": false
+  },
+  {
+   "repo": "LokiMCPUniverse/mailchimp-mcp-server",
+   "stars": 2,
+   "url": "https://github.com/LokiMCPUniverse/mailchimp-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "cyanheads/mailchimp-mcp-server",
+   "stars": 2,
+   "url": "https://github.com/cyanheads/mailchimp-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "bryangsmith/MailchimpMCP",
+   "stars": 1,
+   "url": "https://github.com/bryangsmith/MailchimpMCP",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Eyalm321/mailchimp-mcp",
+   "stars": 1,
+   "url": "https://github.com/Eyalm321/mailchimp-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "AlexlaGuardia/mcp-mailchimp",
+   "stars": 1,
+   "url": "https://github.com/AlexlaGuardia/mcp-mailchimp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "AStheTECH/mewcp-mailchimp",
+   "stars": 1,
+   "url": "https://github.com/AStheTECH/mewcp-mailchimp",
+   "vendor_owned": false
+  }
+ ]
+}

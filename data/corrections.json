@@ -1,0 +1,758 @@
+[
+ {
+  "id": 10,
+  "field": "mcp",
+  "before": "none",
+  "after": "official",
+  "reason": "Vendor docs list an official MCP server",
+  "evidence": "https://api.docs.dealcloud.com/mcp",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 15,
+  "field": "mcp",
+  "before": "none",
+  "after": "official",
+  "reason": "Vendor docs list an official MCP server",
+  "evidence": "https://docs.usepylon.com/pylon-docs/developer/api",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 16,
+  "field": "mcp",
+  "before": "none",
+  "after": "official",
+  "reason": "Vendor docs list an official MCP server",
+  "evidence": "https://www.liveagent.com/pricing/",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 17,
+  "field": "mcp",
+  "before": "none",
+  "after": "official",
+  "reason": "Vendor docs list an official MCP server",
+  "evidence": "https://www.plain.com/docs/graphql/introduction",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 43,
+  "field": "mcp",
+  "before": "none",
+  "after": "official",
+  "reason": "Vendor docs list an official MCP server",
+  "evidence": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 44,
+  "field": "mcp",
+  "before": "none",
+  "after": "official",
+  "reason": "Vendor docs list an official MCP server",
+  "evidence": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 46,
+  "field": "mcp",
+  "before": "none",
+  "after": "official",
+  "reason": "Vendor docs list an official MCP server",
+  "evidence": "https://developers.squarespace.com/commerce-apis/overview",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 54,
+  "field": "mcp",
+  "before": "none",
+  "after": "official",
+  "reason": "Vendor docs list an official MCP server",
+  "evidence": "https://docs.mrscraper.com/docs/getting-started/overview",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 60,
+  "field": "mcp",
+  "before": "none",
+  "after": "official",
+  "reason": "Vendor docs list an official MCP server",
+  "evidence": "https://university.clay.com/docs/webhook-integration-guide",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 84,
+  "field": "mcp",
+  "before": "none",
+  "after": "official",
+  "reason": "Vendor docs list an official MCP server",
+  "evidence": "https://docs.nmi.com/reference/getting-started",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 88,
+  "field": "mcp",
+  "before": "none",
+  "after": "official",
+  "reason": "Vendor docs list an official MCP server",
+  "evidence": "https://developer.brex.com/",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 95,
+  "field": "mcp",
+  "before": "none",
+  "after": "official",
+  "reason": "Vendor docs list an official MCP server",
+  "evidence": "https://docs.reducto.ai/",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 97,
+  "field": "mcp",
+  "before": "none",
+  "after": "official",
+  "reason": "Vendor docs list an official MCP server",
+  "evidence": "https://higgsfield.ai/mcp",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 100,
+  "field": "mcp",
+  "before": "none",
+  "after": "official",
+  "reason": "Vendor docs list an official MCP server",
+  "evidence": "https://developers.grain.com/mcp/",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 37,
+  "field": "mcp",
+  "before": "none",
+  "after": "official",
+  "reason": "Vendor docs list an official MCP server",
+  "evidence": "https://developer.systeme.io/docs/api-recipes-and-how-to-use-them",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 5,
+  "field": "mcp",
+  "before": "community",
+  "after": "official",
+  "reason": "Every Twenty Cloud workspace ships a native MCP server",
+  "evidence": "https://twenty.com/",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 99,
+  "field": "mcp",
+  "before": "community",
+  "after": "official",
+  "reason": "TranscriptAPI documents its own MCP server",
+  "evidence": "https://transcriptapi.com/docs/mcp/",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 5,
+  "field": "auth",
+  "before": "api_key",
+  "after": "api_key+oauth2",
+  "reason": "Docs document an OAuth 2.0 flow the first pass missed",
+  "evidence": "https://docs.twenty.com/developers/introduction",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 9,
+  "field": "auth",
+  "before": "api_key",
+  "after": "api_key+oauth2",
+  "reason": "Docs document an OAuth 2.0 flow the first pass missed",
+  "evidence": "https://developer.copper.com/introduction/authentication.html",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 13,
+  "field": "auth",
+  "before": "api_key+basic",
+  "after": "api_key+basic+oauth2",
+  "reason": "Docs document an OAuth 2.0 flow the first pass missed",
+  "evidence": "https://developers.freshdesk.com/api/",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 17,
+  "field": "auth",
+  "before": "api_key",
+  "after": "api_key+oauth2",
+  "reason": "Docs document an OAuth 2.0 flow the first pass missed",
+  "evidence": "https://www.plain.com/docs/graphql/oauth",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 22,
+  "field": "auth",
+  "before": "api_key+basic",
+  "after": "api_key+basic+oauth2",
+  "reason": "Docs document an OAuth 2.0 flow the first pass missed",
+  "evidence": "https://www.twilio.com/docs/iam/api-keys",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 53,
+  "field": "auth",
+  "before": "api_key+bearer_token",
+  "after": "api_key+bearer_token+oauth2",
+  "reason": "Docs document an OAuth 2.0 flow the first pass missed",
+  "evidence": "https://docs.ahrefs.com",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 56,
+  "field": "auth",
+  "before": "api_key+bearer_token",
+  "after": "api_key+bearer_token+oauth2",
+  "reason": "Docs document an OAuth 2.0 flow the first pass missed",
+  "evidence": "https://docs.firecrawl.dev/authentication",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 64,
+  "field": "auth",
+  "before": "bearer_token+api_key",
+  "after": "bearer_token+api_key+oauth2",
+  "reason": "Docs document an OAuth 2.0 flow the first pass missed",
+  "evidence": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 99,
+  "field": "auth",
+  "before": "api_key+bearer_token",
+  "after": "api_key+bearer_token+oauth2",
+  "reason": "Docs document an OAuth 2.0 flow the first pass missed",
+  "evidence": "https://transcriptapi.com/docs/mcp/",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 100,
+  "field": "auth",
+  "before": "bearer_token",
+  "after": "bearer_token+oauth2",
+  "reason": "Docs document an OAuth 2.0 flow the first pass missed",
+  "evidence": "https://developers.grain.com/authentication.html",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 16,
+  "field": "docs_url",
+  "before": "https://support.liveagent.com/805161-API-v3",
+  "after": "https://support.liveagent.com/802463-REST-API",
+  "reason": "Cited URL 404s; API docs moved",
+  "evidence": "https://support.liveagent.com/802463-REST-API",
+  "found_by": "verifier broken_link -> web search -> re-fetch"
+ },
+ {
+  "id": 16,
+  "field": "auth_url",
+  "before": "https://support.liveagent.com/805161-API-v3",
+  "after": "https://support.liveagent.com/741982-API-key",
+  "reason": "Cited URL 404s",
+  "evidence": "https://support.liveagent.com/741982-API-key",
+  "found_by": "verifier broken_link -> web search -> re-fetch"
+ },
+ {
+  "id": 10,
+  "field": "auth_url",
+  "before": "https://api.docs.dealcloud.com/docs/auth",
+  "after": "https://api.docs.dealcloud.com/sdk/python/authentication",
+  "reason": "Cited URL 404s",
+  "evidence": "https://api.docs.dealcloud.com/sdk/python/authentication",
+  "found_by": "verifier broken_link -> web search -> re-fetch"
+ },
+ {
+  "id": 90,
+  "field": "docs_url",
+  "before": "https://pitchbook.com/data/api",
+  "after": "https://pitchbook.com/help/PitchBook-api",
+  "reason": "Cited URL 404s",
+  "evidence": "https://pitchbook.com/help/PitchBook-api",
+  "found_by": "verifier broken_link -> web search -> re-fetch"
+ },
+ {
+  "id": 90,
+  "field": "auth_url",
+  "before": "https://pitchbook.com/data/api",
+  "after": "https://pitchbook.com/help/PitchBook-api",
+  "reason": "Cited URL 404s",
+  "evidence": "https://pitchbook.com/help/PitchBook-api",
+  "found_by": "verifier broken_link -> web search -> re-fetch"
+ },
+ {
+  "id": 47,
+  "field": "docs_url",
+  "before": "https://api-docs.ecwid.com/reference/overview",
+  "after": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+  "reason": "api-docs.ecwid.com redirects to a JS shell; docs moved",
+  "evidence": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+  "found_by": "verifier broken_link -> web search -> re-fetch"
+ },
+ {
+  "id": 47,
+  "field": "auth_url",
+  "before": "https://api-docs.ecwid.com/docs/get-access-token",
+  "after": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+  "reason": "Same page documents OAuth 2.0 and Bearer secret token",
+  "evidence": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+  "found_by": "verifier broken_link -> web search -> re-fetch"
+ },
+ {
+  "id": 92,
+  "field": "docs_url",
+  "before": "https://help.otter.ai/",
+  "after": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+  "reason": "Root help page carried no API facts",
+  "evidence": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+  "found_by": "verifier broken_link -> web search -> re-fetch"
+ },
+ {
+  "id": 92,
+  "field": "auth_url",
+  "before": "https://help.otter.ai/",
+  "after": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+  "reason": "MCP article documents OAuth",
+  "evidence": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+  "found_by": "verifier broken_link -> web search -> re-fetch"
+ },
+ {
+  "id": 92,
+  "field": "auth",
+  "before": "oauth2",
+  "after": "oauth2+bearer_token",
+  "reason": "Public API uses Bearer keys; MCP uses OAuth",
+  "evidence": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+  "found_by": "verifier broken_link -> web search -> re-fetch"
+ },
+ {
+  "id": 92,
+  "field": "api",
+  "before": "MCP",
+  "after": "REST+MCP",
+  "reason": "A Public REST API exists (Enterprise only)",
+  "evidence": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+  "found_by": "verifier broken_link -> web search -> re-fetch"
+ },
+ {
+  "id": 92,
+  "field": "access_note",
+  "before": "MCP server for paid users; public REST API limited",
+  "after": "REST API only for Enterprise workspaces; read-only MCP server for all plans (OAuth)",
+  "reason": "Access differs by interface",
+  "evidence": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+  "found_by": "verifier broken_link -> web search -> re-fetch"
+ },
+ {
+  "id": 92,
+  "field": "blocker",
+  "before": "No broad public REST API",
+  "after": "REST API is Enterprise-only; MCP is read-only",
+  "reason": "More precise blocker",
+  "evidence": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+  "found_by": "verifier broken_link -> web search -> re-fetch"
+ },
+ {
+  "id": 59,
+  "field": "docs_url",
+  "before": "https://waterfall.io/",
+  "after": "https://docs.waterfall.io/v1/api-keys-overview",
+  "reason": "Public API docs exist on docs.waterfall.io",
+  "evidence": "https://docs.waterfall.io/v1/api-keys-overview",
+  "found_by": "verifier broken_link -> web search -> re-fetch"
+ },
+ {
+  "id": 59,
+  "field": "auth_url",
+  "before": "https://waterfall.io/",
+  "after": "https://docs.waterfall.io/v1/api-keys-overview",
+  "reason": "API key management documented",
+  "evidence": "https://docs.waterfall.io/v1/api-keys-overview",
+  "found_by": "verifier broken_link -> web search -> re-fetch"
+ },
+ {
+  "id": 59,
+  "field": "verdict",
+  "before": "blocked",
+  "after": "ready_with_review",
+  "reason": "API is documented with self-managed keys; only onboarding is sales-led",
+  "evidence": "https://docs.waterfall.io/v1/api-keys-overview",
+  "found_by": "verifier broken_link -> web search -> re-fetch"
+ },
+ {
+  "id": 59,
+  "field": "blocker",
+  "before": "No self-serve access",
+  "after": "Account onboarding is demo-led (Book a Call)",
+  "reason": "More precise blocker",
+  "evidence": "https://www.waterfall.io/",
+  "found_by": "verifier broken_link -> web search -> re-fetch"
+ },
+ {
+  "id": 60,
+  "field": "api",
+  "before": "none",
+  "after": "MCP",
+  "reason": "Clay ships an official MCP (ChatGPT/Claude connector)",
+  "evidence": "https://university.clay.com/docs/webhook-integration-guide",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 60,
+  "field": "verdict",
+  "before": "blocked",
+  "after": "ready_with_review",
+  "reason": "MCP gives an agent-callable surface",
+  "evidence": "https://university.clay.com/docs/webhook-integration-guide",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 60,
+  "field": "blocker",
+  "before": "No public read/write API",
+  "after": "No general REST API; MCP and webhooks only",
+  "reason": "More precise blocker",
+  "evidence": "https://university.clay.com/docs/webhook-integration-guide",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 10,
+  "field": "access_note",
+  "before": "Only enterprise customers receive a tenant and client credentials",
+  "after": "Enterprise customers only; MCP server and SDKs documented publicly",
+  "reason": "MCP exists",
+  "evidence": "https://api.docs.dealcloud.com/mcp",
+  "found_by": "verifier flag -> reviewer read snippet"
+ },
+ {
+  "id": 50,
+  "field": "one_liner",
+  "before": "Creator monetization and payments platform",
+  "after": "Creator checkout, subscriptions and payouts platform (rebranded as Commas)",
+  "reason": "fanbasis.com now redirects to commas.com; Commas API reference has API keys, sandbox, SDK, MCP and CLI",
+  "evidence": "https://fbnewapi.netlify.app/",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 50,
+  "field": "auth",
+  "before": "unknown",
+  "after": "api_key",
+  "reason": "fanbasis.com now redirects to commas.com; Commas API reference has API keys, sandbox, SDK, MCP and CLI",
+  "evidence": "https://fbnewapi.netlify.app/",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 50,
+  "field": "access",
+  "before": "unknown",
+  "after": "self_serve",
+  "reason": "fanbasis.com now redirects to commas.com; Commas API reference has API keys, sandbox, SDK, MCP and CLI",
+  "evidence": "https://fbnewapi.netlify.app/",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 50,
+  "field": "access_note",
+  "before": "No public developer docs found",
+  "after": "Sandbox and production API keys from the dashboard",
+  "reason": "fanbasis.com now redirects to commas.com; Commas API reference has API keys, sandbox, SDK, MCP and CLI",
+  "evidence": "https://fbnewapi.netlify.app/",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 50,
+  "field": "api",
+  "before": "none",
+  "after": "REST",
+  "reason": "fanbasis.com now redirects to commas.com; Commas API reference has API keys, sandbox, SDK, MCP and CLI",
+  "evidence": "https://fbnewapi.netlify.app/",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 50,
+  "field": "breadth",
+  "before": "narrow",
+  "after": "medium",
+  "reason": "fanbasis.com now redirects to commas.com; Commas API reference has API keys, sandbox, SDK, MCP and CLI",
+  "evidence": "https://fbnewapi.netlify.app/",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 50,
+  "field": "mcp",
+  "before": "none",
+  "after": "official",
+  "reason": "fanbasis.com now redirects to commas.com; Commas API reference has API keys, sandbox, SDK, MCP and CLI",
+  "evidence": "https://fbnewapi.netlify.app/",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 50,
+  "field": "verdict",
+  "before": "blocked",
+  "after": "ready_with_review",
+  "reason": "fanbasis.com now redirects to commas.com; Commas API reference has API keys, sandbox, SDK, MCP and CLI",
+  "evidence": "https://fbnewapi.netlify.app/",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 50,
+  "field": "blocker",
+  "before": "No public API documentation",
+  "after": "Rebrand in progress; docs hosted on a netlify subdomain, so confirm the canonical URL",
+  "reason": "fanbasis.com now redirects to commas.com; Commas API reference has API keys, sandbox, SDK, MCP and CLI",
+  "evidence": "https://fbnewapi.netlify.app/",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 50,
+  "field": "docs_url",
+  "before": "https://www.fanbasis.com/",
+  "after": "https://fbnewapi.netlify.app/",
+  "reason": "fanbasis.com now redirects to commas.com; Commas API reference has API keys, sandbox, SDK, MCP and CLI",
+  "evidence": "https://fbnewapi.netlify.app/",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 50,
+  "field": "auth_url",
+  "before": "https://www.fanbasis.com/",
+  "after": "https://fbnewapi.netlify.app/",
+  "reason": "fanbasis.com now redirects to commas.com; Commas API reference has API keys, sandbox, SDK, MCP and CLI",
+  "evidence": "https://fbnewapi.netlify.app/",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 85,
+  "field": "one_liner",
+  "before": "Cross-border payment routing API",
+  "after": "FX audit engine comparing bank-applied FX rates with the mid-market rate",
+  "reason": "ipayx.ai/docs is a SPA 404; developers page documents Bearer API keys and a hosted MCP server",
+  "evidence": "https://ipayx.ai/developers",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 85,
+  "field": "auth",
+  "before": "api_key",
+  "after": "bearer_token",
+  "reason": "ipayx.ai/docs is a SPA 404; developers page documents Bearer API keys and a hosted MCP server",
+  "evidence": "https://ipayx.ai/developers",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 85,
+  "field": "access",
+  "before": "unknown",
+  "after": "self_serve",
+  "reason": "ipayx.ai/docs is a SPA 404; developers page documents Bearer API keys and a hosted MCP server",
+  "evidence": "https://ipayx.ai/developers",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 85,
+  "field": "access_note",
+  "before": "Unclear from docs",
+  "after": "Free account with 3 free audits; credit packs and $299/mo plan",
+  "reason": "ipayx.ai/docs is a SPA 404; developers page documents Bearer API keys and a hosted MCP server",
+  "evidence": "https://ipayx.ai/developers",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 85,
+  "field": "api",
+  "before": "REST",
+  "after": "REST+MCP",
+  "reason": "ipayx.ai/docs is a SPA 404; developers page documents Bearer API keys and a hosted MCP server",
+  "evidence": "https://ipayx.ai/developers",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 85,
+  "field": "mcp",
+  "before": "none",
+  "after": "official",
+  "reason": "ipayx.ai/docs is a SPA 404; developers page documents Bearer API keys and a hosted MCP server",
+  "evidence": "https://ipayx.ai/developers",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 85,
+  "field": "verdict",
+  "before": "ready_with_review",
+  "after": "ready",
+  "reason": "ipayx.ai/docs is a SPA 404; developers page documents Bearer API keys and a hosted MCP server",
+  "evidence": "https://ipayx.ai/developers",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 85,
+  "field": "blocker",
+  "before": "Access model unclear",
+  "after": "",
+  "reason": "ipayx.ai/docs is a SPA 404; developers page documents Bearer API keys and a hosted MCP server",
+  "evidence": "https://ipayx.ai/developers",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 85,
+  "field": "docs_url",
+  "before": "https://ipayx.ai/docs",
+  "after": "https://ipayx.ai/developers",
+  "reason": "ipayx.ai/docs is a SPA 404; developers page documents Bearer API keys and a hosted MCP server",
+  "evidence": "https://ipayx.ai/developers",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 85,
+  "field": "auth_url",
+  "before": "https://ipayx.ai/docs",
+  "after": "https://ipayx.ai/developers",
+  "reason": "ipayx.ai/docs is a SPA 404; developers page documents Bearer API keys and a hosted MCP server",
+  "evidence": "https://ipayx.ai/developers",
+  "found_by": "headless-browser render -> reviewer"
+ },
+ {
+  "id": 3,
+  "field": "mcp",
+  "before": "community",
+  "after": "official",
+  "reason": "Pipedrive markets its own 'Pipedrive MCP'",
+  "evidence": "https://www.pipedrive.com/de",
+  "found_by": "hand-checked sample"
+ },
+ {
+  "id": 32,
+  "field": "mcp",
+  "before": "community",
+  "after": "official",
+  "reason": "Meta docs: official Ads MCP Server (opened to all developers 2026)",
+  "evidence": "https://developers.facebook.com/blog/",
+  "found_by": "hand-checked sample"
+ },
+ {
+  "id": 80,
+  "field": "access",
+  "before": "self_serve",
+  "after": "trial",
+  "reason": "Harvest offers a 30-day free trial, not a free plan",
+  "evidence": "https://www.getharvest.com",
+  "found_by": "hand-checked sample"
+ },
+ {
+  "id": 80,
+  "field": "access_note",
+  "before": "Free plan; personal access tokens",
+  "after": "30-day free trial; personal access tokens",
+  "reason": "Matches access fix",
+  "evidence": "https://www.getharvest.com",
+  "found_by": "hand-checked sample"
+ },
+ {
+  "id": 11,
+  "field": "auth",
+  "before": "oauth2+api_key+basic",
+  "after": "oauth2",
+  "reason": "API tokens/Basic auth are deprecated; existing customers must migrate to OAuth access tokens",
+  "evidence": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+  "found_by": "hand-checked sample"
+ },
+ {
+  "id": 11,
+  "field": "blocker",
+  "before": "",
+  "after": "Legacy API tokens / Basic auth deprecated; build on OAuth",
+  "reason": "Same",
+  "evidence": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+  "found_by": "hand-checked sample"
+ },
+ {
+  "id": 92,
+  "field": "access",
+  "before": "paid",
+  "after": "self_serve",
+  "reason": "Read-only MCP server works on all plans incl. free (REST API remains Enterprise-only)",
+  "evidence": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+  "found_by": "hand-checked sample"
+ },
+ {
+  "id": 14,
+  "field": "mcp",
+  "before": "community",
+  "after": "official",
+  "reason": "Front docs list 'Front AI MCP Server' and 'Admin MCP Server'",
+  "evidence": "https://dev.frontapp.com/docs/authentication",
+  "found_by": "loop-3 rule (generalized from sample) -> reviewer"
+ },
+ {
+  "id": 30,
+  "field": "mcp",
+  "before": "community",
+  "after": "official",
+  "reason": "Vonage docs list an MCP Server under AI Tools",
+  "evidence": "https://developer.vonage.com/en/documentation",
+  "found_by": "loop-3 rule (generalized from sample) -> reviewer"
+ },
+ {
+  "id": 35,
+  "field": "mcp",
+  "before": "community",
+  "after": "official",
+  "reason": "Mailchimp developer docs list an MCP server",
+  "evidence": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app",
+  "found_by": "loop-3 rule (generalized from sample) -> reviewer"
+ },
+ {
+  "id": 72,
+  "field": "mcp",
+  "before": "community",
+  "after": "official",
+  "reason": "Airtable developers site has an MCP server section",
+  "evidence": "https://airtable.com/developers/agents",
+  "found_by": "loop-3 rule (generalized from sample) -> reviewer"
+ },
+ {
+  "id": 78,
+  "field": "mcp",
+  "before": "community",
+  "after": "official",
+  "reason": "Coda (now Superhuman Docs) recommends its own MCP server",
+  "evidence": "https://docs.superhuman.com/developers/apis/v1",
+  "found_by": "loop-3 rule (generalized from sample) -> reviewer"
+ },
+ {
+  "id": 83,
+  "field": "mcp",
+  "before": "community",
+  "after": "official",
+  "reason": "Binance 'Agent Native' docs ship a Binance MCP Server",
+  "evidence": "https://developers.binance.com/en/docs/agent-native/overview",
+  "found_by": "loop-3 rule (generalized from sample) -> reviewer"
+ },
+ {
+  "id": 93,
+  "field": "mcp",
+  "before": "community",
+  "after": "official",
+  "reason": "Fathom developer docs: 'How to Connect the Fathom MCP Server'",
+  "evidence": "https://developers.fathom.ai/mcp-docs",
+  "found_by": "loop-3 rule (generalized from sample) -> reviewer"
+ },
+ {
+  "id": 78,
+  "field": "one_liner",
+  "before": "Docs that work like apps",
+  "after": "Docs that work like apps (Coda, now rebranded as Superhuman Docs)",
+  "reason": "coda.io/developers redirects to docs.superhuman.com",
+  "evidence": "https://docs.superhuman.com/developers/apis/v1",
+  "found_by": "loop-3 rule (generalized from sample) -> reviewer"
+ }
+]

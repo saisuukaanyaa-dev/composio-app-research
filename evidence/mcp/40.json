@@ -1,0 +1,61 @@
+{
+ "id": "40",
+ "name": "SendGrid",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "Garoth/sendgrid-mcp",
+   "stars": 32,
+   "url": "https://github.com/Garoth/sendgrid-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "KiKi-Builds/AI-Briefing-Skill",
+   "stars": 5,
+   "url": "https://github.com/KiKi-Builds/AI-Briefing-Skill",
+   "vendor_owned": false
+  },
+  {
+   "repo": "deyikong/sendgrid-mcp",
+   "stars": 4,
+   "url": "https://github.com/deyikong/sendgrid-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "garethcull/sendgrid-mcp",
+   "stars": 2,
+   "url": "https://github.com/garethcull/sendgrid-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "reshashi/opensend",
+   "stars": 2,
+   "url": "https://github.com/reshashi/opensend",
+   "vendor_owned": false
+  },
+  {
+   "repo": "defy-works/sendsprite",
+   "stars": 2,
+   "url": "https://github.com/defy-works/sendsprite",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Neschadin/sendgrid-mcp",
+   "stars": 1,
+   "url": "https://github.com/Neschadin/sendgrid-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "alexcong/sendgrid-mcp",
+   "stars": 1,
+   "url": "https://github.com/alexcong/sendgrid-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "iiinigence/sendgrid-mcp",
+   "stars": 1,
+   "url": "https://github.com/iiinigence/sendgrid-mcp",
+   "vendor_owned": false
+  }
+ ]
+}

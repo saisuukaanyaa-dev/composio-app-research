@@ -1,0 +1,67 @@
+{
+ "id": "70",
+ "name": "Sentry",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "buggregator/server",
+   "stars": 1083,
+   "url": "https://github.com/buggregator/server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "TheHoltz/errex",
+   "stars": 32,
+   "url": "https://github.com/TheHoltz/errex",
+   "vendor_owned": false
+  },
+  {
+   "repo": "theRubberDuckiee/mcp-server-configs",
+   "stars": 24,
+   "url": "https://github.com/theRubberDuckiee/mcp-server-configs",
+   "vendor_owned": false
+  },
+  {
+   "repo": "MCP-100/mcp-sentry",
+   "stars": 23,
+   "url": "https://github.com/MCP-100/mcp-sentry",
+   "vendor_owned": false
+  },
+  {
+   "repo": "daltoniam/switchboard",
+   "stars": 22,
+   "url": "https://github.com/daltoniam/switchboard",
+   "vendor_owned": false
+  },
+  {
+   "repo": "codyde/mcp-sentry-ts",
+   "stars": 21,
+   "url": "https://github.com/codyde/mcp-sentry-ts",
+   "vendor_owned": false
+  },
+  {
+   "repo": "ddfourtwo/sentry-selfhosted-mcp",
+   "stars": 19,
+   "url": "https://github.com/ddfourtwo/sentry-selfhosted-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "B1MAS/agent-sentry",
+   "stars": 18,
+   "url": "https://github.com/B1MAS/agent-sentry",
+   "vendor_owned": false
+  },
+  {
+   "repo": "olucurious/watchtower",
+   "stars": 18,
+   "url": "https://github.com/olucurious/watchtower",
+   "vendor_owned": false
+  },
+  {
+   "repo": "danielsmithdevelopment/ClawQL",
+   "stars": 14,
+   "url": "https://github.com/danielsmithdevelopment/ClawQL",
+   "vendor_owned": false
+  }
+ ]
+}

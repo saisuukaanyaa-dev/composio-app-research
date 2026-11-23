@@ -1,0 +1,25 @@
+{
+ "id": "85",
+ "name": "iPayX",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "Ipayx-stellar/mcp-submit",
+   "stars": 0,
+   "url": "https://github.com/Ipayx-stellar/mcp-submit",
+   "vendor_owned": true
+  },
+  {
+   "repo": "Ipayx-stellar/mcp-fx-audit",
+   "stars": 0,
+   "url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+   "vendor_owned": true
+  },
+  {
+   "repo": "iPAYX-Technologies/mcp-fx-audit",
+   "stars": 0,
+   "url": "https://github.com/iPAYX-Technologies/mcp-fx-audit",
+   "vendor_owned": true
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "id": "86",
+ "name": "QuickBooks",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "intuit/quickbooks-online-mcp-server",
+   "stars": 460,
+   "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+   "vendor_owned": true
+  },
+  {
+   "repo": "Scottcjn/qb-auto",
+   "stars": 48,
+   "url": "https://github.com/Scottcjn/qb-auto",
+   "vendor_owned": false
+  },
+  {
+   "repo": "CDataSoftware/quickbooks-mcp-server-by-cdata",
+   "stars": 18,
+   "url": "https://github.com/CDataSoftware/quickbooks-mcp-server-by-cdata",
+   "vendor_owned": false
+  },
+  {
+   "repo": "laf-rge/quickbooks-mcp",
+   "stars": 13,
+   "url": "https://github.com/laf-rge/quickbooks-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "LibreChat-AI/quickbooks-online-mcp",
+   "stars": 11,
+   "url": "https://github.com/LibreChat-AI/quickbooks-online-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "aallsbury/qb-time-mcp-server",
+   "stars": 11,
+   "url": "https://github.com/aallsbury/qb-time-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "rajurayhan/laravel-quickbooks-mcp-server",
+   "stars": 11,
+   "url": "https://github.com/rajurayhan/laravel-quickbooks-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "nikhilgy/quickbooks-mcp-server",
+   "stars": 10,
+   "url": "https://github.com/nikhilgy/quickbooks-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "IsaacCP9/better-quickbooks-Claude-connector",
+   "stars": 7,
+   "url": "https://github.com/IsaacCP9/better-quickbooks-Claude-connector",
+   "vendor_owned": false
+  },
+  {
+   "repo": "nichewizard/quickbooks-mcp",
+   "stars": 5,
+   "url": "https://github.com/nichewizard/quickbooks-mcp",
+   "vendor_owned": false
+  }
+ ]
+}

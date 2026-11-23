@@ -1,0 +1,67 @@
+{
+ "id": "39",
+ "name": "Threads (Meta)",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "Dicklesworthstone/mcp_agent_mail",
+   "stars": 2242,
+   "url": "https://github.com/Dicklesworthstone/mcp_agent_mail",
+   "vendor_owned": false
+  },
+  {
+   "repo": "risa-labs-inc/BossConsole",
+   "stars": 818,
+   "url": "https://github.com/risa-labs-inc/BossConsole",
+   "vendor_owned": false
+  },
+  {
+   "repo": "irockel/tda",
+   "stars": 553,
+   "url": "https://github.com/irockel/tda",
+   "vendor_owned": false
+  },
+  {
+   "repo": "jordanburke/reddit-mcp-server",
+   "stars": 346,
+   "url": "https://github.com/jordanburke/reddit-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "douglasmonsky/codex-usage-tracker",
+   "stars": 196,
+   "url": "https://github.com/douglasmonsky/codex-usage-tracker",
+   "vendor_owned": false
+  },
+  {
+   "repo": "TedHaley/pensieve",
+   "stars": 77,
+   "url": "https://github.com/TedHaley/pensieve",
+   "vendor_owned": false
+  },
+  {
+   "repo": "oliverames/meta-mcp-server",
+   "stars": 71,
+   "url": "https://github.com/oliverames/meta-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "publora/skills",
+   "stars": 71,
+   "url": "https://github.com/publora/skills",
+   "vendor_owned": false
+  },
+  {
+   "repo": "peless/claude-thread-continuity",
+   "stars": 65,
+   "url": "https://github.com/peless/claude-thread-continuity",
+   "vendor_owned": false
+  },
+  {
+   "repo": "masterofthechaos/ProxyPilot-public",
+   "stars": 59,
+   "url": "https://github.com/masterofthechaos/ProxyPilot-public",
+   "vendor_owned": false
+  }
+ ]
+}

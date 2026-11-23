@@ -1,0 +1,67 @@
+{
+ "id": "1",
+ "name": "Salesforce",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "salesforcecli/mcp",
+   "stars": 493,
+   "url": "https://github.com/salesforcecli/mcp",
+   "vendor_owned": true
+  },
+  {
+   "repo": "smn2gnt/MCP-Salesforce",
+   "stars": 180,
+   "url": "https://github.com/smn2gnt/MCP-Salesforce",
+   "vendor_owned": false
+  },
+  {
+   "repo": "tsmztech/mcp-server-salesforce",
+   "stars": 165,
+   "url": "https://github.com/tsmztech/mcp-server-salesforce",
+   "vendor_owned": false
+  },
+  {
+   "repo": "forcedotcom/mcp-hosted",
+   "stars": 136,
+   "url": "https://github.com/forcedotcom/mcp-hosted",
+   "vendor_owned": false
+  },
+  {
+   "repo": "SalesforceCommerceCloud/b2c-developer-tooling",
+   "stars": 58,
+   "url": "https://github.com/SalesforceCommerceCloud/b2c-developer-tooling",
+   "vendor_owned": true
+  },
+  {
+   "repo": "kablewy/salesforce-mcp-server",
+   "stars": 45,
+   "url": "https://github.com/kablewy/salesforce-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "jaworjar95/salesforce-mcp-server",
+   "stars": 42,
+   "url": "https://github.com/jaworjar95/salesforce-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "advancedcommunities/salesforce-mcp-server",
+   "stars": 38,
+   "url": "https://github.com/advancedcommunities/salesforce-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "christopher-longSFDC/mcp",
+   "stars": 37,
+   "url": "https://github.com/christopher-longSFDC/mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "certinia/debug-log-analyzer-mcp",
+   "stars": 37,
+   "url": "https://github.com/certinia/debug-log-analyzer-mcp",
+   "vendor_owned": false
+  }
+ ]
+}

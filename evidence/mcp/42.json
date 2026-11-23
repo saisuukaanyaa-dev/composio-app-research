@@ -1,0 +1,67 @@
+{
+ "id": "42",
+ "name": "WooCommerce",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "techspawn/woocommerce-mcp-server",
+   "stars": 106,
+   "url": "https://github.com/techspawn/woocommerce-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "gobuildwp/wordpress-mcp-ai-gobuildwp",
+   "stars": 66,
+   "url": "https://github.com/gobuildwp/wordpress-mcp-ai-gobuildwp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "tropk-ai/mcp-for-wordpress",
+   "stars": 33,
+   "url": "https://github.com/tropk-ai/mcp-for-wordpress",
+   "vendor_owned": false
+  },
+  {
+   "repo": "cosmincraciun97/stonewright-wp-mcp",
+   "stars": 31,
+   "url": "https://github.com/cosmincraciun97/stonewright-wp-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "davidofug/Manual-Currency-Pricing-for-WooCommerce-Products-mcpwp",
+   "stars": 17,
+   "url": "https://github.com/davidofug/Manual-Currency-Pricing-for-WooCommerce-Products-mcpwp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "iOSDevSK/mcp-for-woocommerce",
+   "stars": 15,
+   "url": "https://github.com/iOSDevSK/mcp-for-woocommerce",
+   "vendor_owned": false
+  },
+  {
+   "repo": "easymcpai/Easy-MCP-AI-Wordpress-MCP-Server",
+   "stars": 14,
+   "url": "https://github.com/easymcpai/Easy-MCP-AI-Wordpress-MCP-Server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "respira-press/respira-wordpress-mcp",
+   "stars": 11,
+   "url": "https://github.com/respira-press/respira-wordpress-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "mordenhost/more-mcp",
+   "stars": 10,
+   "url": "https://github.com/mordenhost/more-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "woocommerce/wc-mcp-ability",
+   "stars": 6,
+   "url": "https://github.com/woocommerce/wc-mcp-ability",
+   "vendor_owned": true
+  }
+ ]
+}

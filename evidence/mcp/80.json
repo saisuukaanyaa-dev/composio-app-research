@@ -1,0 +1,67 @@
+{
+ "id": "80",
+ "name": "Harvest",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "taiste/harvest-mcp-server",
+   "stars": 37,
+   "url": "https://github.com/taiste/harvest-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Dominic-DK/mac-shortcuts-mcp",
+   "stars": 15,
+   "url": "https://github.com/Dominic-DK/mac-shortcuts-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "nospicyplease/amazon-ppc-advanced-skills",
+   "stars": 15,
+   "url": "https://github.com/nospicyplease/amazon-ppc-advanced-skills",
+   "vendor_owned": false
+  },
+  {
+   "repo": "abcubed3/okf",
+   "stars": 9,
+   "url": "https://github.com/abcubed3/okf",
+   "vendor_owned": false
+  },
+  {
+   "repo": "HurriKane/skyfactory-2.4-faults",
+   "stars": 9,
+   "url": "https://github.com/HurriKane/skyfactory-2.4-faults",
+   "vendor_owned": false
+  },
+  {
+   "repo": "ianaleck/harvest-mcp-server",
+   "stars": 8,
+   "url": "https://github.com/ianaleck/harvest-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "dazeb/mcp-react-component-harvester",
+   "stars": 8,
+   "url": "https://github.com/dazeb/mcp-react-component-harvester",
+   "vendor_owned": false
+  },
+  {
+   "repo": "rrrishi123/http-mcp",
+   "stars": 8,
+   "url": "https://github.com/rrrishi123/http-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "southleft/harvest-mcp",
+   "stars": 7,
+   "url": "https://github.com/southleft/harvest-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "adrian-dotco/harvest-mcp-server",
+   "stars": 5,
+   "url": "https://github.com/adrian-dotco/harvest-mcp-server",
+   "vendor_owned": false
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "id": "16",
+ "name": "LiveAgent",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "QualityUnit/liveagent-mcp-server",
+   "stars": 1,
+   "url": "https://github.com/QualityUnit/liveagent-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "shinnjr/liveagentdata-mcp",
+   "stars": 0,
+   "url": "https://github.com/shinnjr/liveagentdata-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "wiselingsnet-ops/liveagent-mcp",
+   "stars": 0,
+   "url": "https://github.com/wiselingsnet-ops/liveagent-mcp",
+   "vendor_owned": false
+  }
+ ]
+}

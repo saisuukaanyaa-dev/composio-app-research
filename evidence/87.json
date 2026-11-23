@@ -1,0 +1,107 @@
+{
+ "id": "87",
+ "name": "Xero",
+ "fetched_at": "2026-11-23T18:18:25",
+ "pages": [
+  {
+   "url": "https://developer.xero.com/documentation/api/accounting/overview",
+   "final_url": "https://developer.xero.com/documentation/api/accounting/overview",
+   "status": 200,
+   "via": "http",
+   "title": "Accounting API Overview \u00e2\u0080\u0094 Xero Developer",
+   "text": "Accounting API Overview \u00e2\u0080\u0094 Xero Developer",
+   "chars": 42,
+   "signals": {}
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+   "final_url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+   "status": 200,
+   "via": "http",
+   "title": "OAuth 2.0 \u00e2\u0080\u0094 Xero Developer",
+   "text": "OAuth 2.0 \u00e2\u0080\u0094 Xero Developer",
+   "chars": 28,
+   "signals": {
+    "auth:oauth2": 1
+   }
+  },
+  {
+   "url": "https://developer.xero.com",
+   "final_url": "https://developer.xero.com/",
+   "status": 200,
+   "via": "http",
+   "title": "Xero Developer Platform",
+   "text": "Xero Developer Platform Skip to main content Getting Started Grow with Xero Documentation Tools Support Sign up Log in Main content start Xero Developer: Powering Your Innovation and Growth Developer Tools Tools and resources to help you build and test your Xero integration faster. Xero's AI Toolkit Get Started with Xero's AI Toolkit including OpenAI Agents SDK, MCP Server, LangChain and prompt examples. Check out the AI Toolkit Developer Tools and Resources This includes Xero APIs, SDKs, code samples, documentation and more. Getting started guide Developer Programs That Accelerate Your Growth Turn your integration into a profitable business by leveraging the benefits of Xero Developer programs. Xero Developer Growth Program Participation in the Growth Program includes increased promotion, marketing and collaborative opportunities. Xero Developer Growth Program Xero Referral Program Earn commissions for every single new paying subscriber you refer to Xero. Xero Referral Program Global Xero App Awards 2026 The Xero App Awards celebrate the most innovative, impactful apps for Xero users. Xero Global App Awards Become an App Partner Start Building Sign up for a free account to build on the Xero platform. Take a look at our getting started guide, SDKs and the other steps you need to complete for certification. Steps to becoming an app partner Get Certified Find customers who love your app, you'll need ten to get certified. See our certification checkpoints and best practices for more details. Review the certification checkpoints Publish your App on the Xero App Store Publish your app on the Xero App Store for access to over 4 million small business customers and 200,000+ accountants and bookkeepers. Create an Xero App Store listing Resources for Accountant and Bookkeepers Whether you're automating workflows or building a bespoke integration for your practice, our platform remains free for internal innovation. Our toolkit of resources helps you build your own, or hire a developer to build an integration for you. Find all the resources you need here. Find a Custom Integrator Whether you\u2019re connecting applications to Xero or building your own, these developers are here to help. Check out Xero's custom integrators Automation Resources for your Business or Practice Not a developer, no problem! Explore tools and resources for Accountants and Bookkeepers. Resources for Accountants and Bookkeepers Understanding how new pricing affects Accountants and Bookkeepers On 4-December we announced new pricing. Accountants and Bookkepers are exempt from this new pricing model. Check out details around the new pricing Building Custom Integrations? Seamlessly connect to Xero with custom integrations tailored to your needs. Sign up as a development partner If you\u2019ve got proven experience building custom integrations with the Xero API, then register to become a developer partner. Custom connections A streamlined integration option for anyone building bespoke solutions for Xero businesses. It utilises the client credentials grant type to provide a simplified, efficient developer experience. Create a custom connection Add a collaborator Building and maintaining an app or integration with Xero often involves a team of people. Xero\u2019s app collaboration function ensures that multiple people can have access to an app. Add a collaborator Talk to us! We know you have a lot to say and we're here to listen. Here are some ways you can connect with the team, share your feedback or ask questions! Developer Day Discord Server Join the Xero Developer Day Discord Server and follow the Dev Day virtually. Check out the Dev Day Discord Provide product feedback Share, upvote, and discuss ideas that could improve Xero\u2019s APIs, developer tools, and programs. Share your feedback with Xero Developer Ready to build with Xero? Get started with our APIs and developer tools to create powerful integrations for small business. Get started Check out the AI Toolkit AI toolkit RMCP Server Agents Toolkit Prompt Library Documentation OAuth 2 API reference Webhooks Community GitHub Product Feedback Connect to the Community Dev Day Discord Server Find a developer Events News DevBlog API status Changelog Support Contact us FAQ \u00a9 2026 Xero Limited. All rights reserved. \"Xero\", \"Beautiful business\" and \"Your business supercharged\" are trademarks of Xero Limited. About Xero Developer Platform Terms and Conditions The Xero Developer Platform Commercial Terms Xero ecosystem principles Dev Council Terms and Conditions",
+   "chars": 4531,
+   "signals": {
+    "auth:oauth2": 2,
+    "api:MCP": 1,
+    "mcp": 1,
+    "access:self_serve": 1,
+    "access:paid": 4,
+    "access:approval": 1,
+    "access:partner": 1
+   }
+  },
+  {
+   "url": "https://developer.xero.com/app/manage",
+   "final_url": "https://developer.xero.com/app/manage",
+   "status": 200,
+   "via": "browser",
+   "title": "Login | Xero Accounting Software",
+   "text": "Login | Xero Accounting Software Log in to your account Turn on cookies to log in Before you log in, turn on cookies in your browser settings. Once they're on, reload this page and log in. Your account has been locked due to repeated failed login attempts. Please wait for 15 minutes before trying again. Your email or password is incorrect Email ! Password ! Log in Forgot your password? Use password instead Can't log in? Learn about logging in with passkeys Don't have an account? Sign up Learn more about Single Sign On (SSO) Status page Security noticeboard Terms of use Privacy Support",
+   "chars": 591,
+   "http_status": 200,
+   "signals": {}
+  },
+  {
+   "url": "https://developer.xero.com/ai",
+   "final_url": "https://developer.xero.com/ai",
+   "status": 200,
+   "via": "http",
+   "title": "Xero's AI Toolkit \u2014 Xero Developer",
+   "text": "Xero's AI Toolkit \u2014 Xero Developer Skip to main content Getting Started Grow with Xero Documentation Tools Support Sign up Log in Main content start The Rise of the Builder: Build Next-Gen Xero Integrations with Xero\u2019s AI toolkit Build innovative accounting integrations and intelligent automation powered by Xero's MCP Server, Command Line Interface, OpenAI Agents SDK and LangChain. Xero's AI Toolkit The most successful developers right now are \"Vibe Architects.\" They use vibe coding to quickly generate the \"bones\" of an app or agent but then use a CLI and professional frameworks (like LangChain , AutoGen , or MCP ) to lock down the logic and ensure it doesn't hallucinate in production. And we've got it all here for you! Give your AI apps and agents the power of Xero's platform. Agentic SDK Comprehensive collection of examples demonstrating how to build AI agents that integrate with the Xero API using various agentic frameworks and the Xero MCP Server. Review the Xero Agentic SDK Remote MCP Server Securely and seamlessly connect Agents to Xero data through a Xero-hosted MCP server. Try Xero's MCP Server Xero Command Line Interface (CLI) This tool wraps the Xero API to provide a high-performance bridge for autonomous systems. Check out Xero's CLI Prompt Library and Code Samples Xero's collection of pre-written text prompts, and code samples to help you get started. Check out Xero's prompt library Xero's AI Learning Series: Automation Unleashed and The Rise of the Builder Join Xero Developer as we dive deep into the world of AI development tools to show practical ways to streamline Xero workflow. These videos on vibecoding and low-code / no-code tools will give you the edge you need to build solutions that solve real problems specific to your needs. These are just a few we've recorded, but more are available on the Xero Developer YouTube channel. Xero Automation Unleashed: AI-Powered Workflows for Your Business series Start the series from the beginning Set up the Xero MCP Server with Claude and OpenAI Agents Watch the video Build a Booking System Using Replit and Xero Watch the video Automate Tasks With Lutra and Xero Watch the video Request a Quote System Built with Lovable and Xero Watch the video Build an Ecommerce Website with Cursor and Xero Watch the video Get started building your AI powered Xero integration Check out the Agentic Toolkit Watch the AI video series AI toolkit RMCP Server Agents Toolkit Prompt Library Documentation OAuth 2 API reference Webhooks Community GitHub Product Feedback Connect to the Community Dev Day Discord Server Find a developer Events News DevBlog API status Changelog Support Contact us FAQ \u00a9 2026 Xero Limited. All rights reserved. \"Xero\", \"Beautiful business\" and \"Your business supercharged\" are trademarks of Xero Limited. About Xero Developer Platform Terms and Conditions The Xero Developer Platform Commercial Terms Xero ecosystem principles Dev Council Terms and Conditions",
+   "chars": 2962,
+   "signals": {
+    "auth:oauth2": 1,
+    "api:CLI": 5,
+    "api:MCP": 7,
+    "mcp": 7,
+    "access:partner": 1
+   }
+  },
+  {
+   "url": "https://developer.xero.com/documentation/getting-started-guide/",
+   "final_url": "https://developer.xero.com/documentation/getting-started-guide/",
+   "status": 200,
+   "via": "http",
+   "title": "Getting started guide \u00e2\u0080\u0094 Xero Developer",
+   "text": "Getting started guide \u00e2\u0080\u0094 Xero Developer",
+   "chars": 40,
+   "signals": {}
+  },
+  {
+   "url": "https://developer.xero.com/global-app-awards-2026",
+   "final_url": "https://developer.xero.com/global-app-awards-2026",
+   "status": 200,
+   "via": "http",
+   "title": "Global App Awards \u2014 Xero Developer",
+   "text": "Global App Awards \u2014 Xero Developer Skip to main content Getting Started Grow with Xero Documentation Tools Support Sign up Log in Main content start Celebrating apps that drive innovation and impact Be recognised. Be trusted. Be global. Award categories Get ready to shine! Our award categories are crafted to celebrate the creativity, innovation, and impact of apps delivered to its users. \ud83c\udf0d Global Awards: app must be available in all 3 regions Australia, the United Kingdom and the United States \ud83d\udccd Regional Awards: Asia, Australia, Canada, Ireland, New Zealand, South Africa, the United Kingdom, the United States 2027 Coming soon... Practice App of the Year This award celebrates apps that empower accounting and bookkeeping practices with meaningful, regionally relevant impact. \ud83c\udf0d \ud83d\udccd Small Business App of the Year This award celebrates apps that make life easier for small businesses and help them thrive. \ud83c\udf0d \ud83d\udccd Emerging App of the Year This award recognises early-stage apps with high potential and strong traction in their region. \ud83c\udf0d Innovation App of the Year This award honours bold, breakthrough ideas that change how work gets done. \ud83c\udf0d People's Choice Award Voted by the Xero community, this award recognises the app that\u2019s captured the hearts (and clicks) of users around the world. Check out the guide and toolkit here . \ud83c\udf0d Development Partner of the Year Recognising the builders, agencies and developers who are helping small businesses and accountants to expand Xero. \ud83c\udf0d Why apply? Nominating your app to the Xero Global App Awards is more than just entering a competition, it\u2019s your chance to celebrate your team's hard work and showcase what sets your app apart. Boost your visibility Finalists and winners get a Xero Awards promo pack with assets and expert tips to amplify your success. Trusted by the community Show the Xero community your app\u2019s impact with an award-winning badge that highlights innovation and real user value. Inspire your team Celebrate your collective achievements, fuel team pride, and attract top talent who want to join a winning team. \ud83d\ude80 Ready to grow, connect, and be recognised? Showcase your innovation. Inspire the Xero community. And get the recognition you\u2019ve earned. Entries open 20 April 2026 and close 10 July 2026. Apply now App awards FAQs AI toolkit RMCP Server Agents Toolkit Prompt Library Documentation OAuth 2 API reference Webhooks Community GitHub Product Feedback Connect to the Community Dev Day Discord Server Find a developer Events News DevBlog API status Changelog Support Contact us FAQ \u00a9 2026 Xero Limited. All rights reserved. \"Xero\", \"Beautiful business\" and \"Your business supercharged\" are trademarks of Xero Limited. About Xero Developer Platform Terms and Conditions The Xero Developer Platform Commercial Terms Xero ecosystem principles Dev Council Terms and Conditions",
+   "chars": 2841,
+   "signals": {
+    "auth:oauth2": 1,
+    "access:partner": 1
+   }
+  },
+  {
+   "url": "https://developer.xero.com/documentation/xero-app-store/app-partner-guides/grow-your-app-with-xero/",
+   "final_url": "https://developer.xero.com/documentation/xero-app-store/app-partner-guides/grow-your-app-with-xero/",
+   "status": 200,
+   "via": "http",
+   "title": "Grow your app with Xero \u00e2\u0080\u0094 Xero Developer",
+   "text": "Grow your app with Xero \u00e2\u0080\u0094 Xero Developer",
+   "chars": 42,
+   "signals": {}
+  }
+ ]
+}

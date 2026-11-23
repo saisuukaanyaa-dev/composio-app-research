@@ -1,0 +1,67 @@
+{
+ "id": "27",
+ "name": "Telegram",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "sansan0/TrendRadar",
+   "stars": 63823,
+   "url": "https://github.com/sansan0/TrendRadar",
+   "vendor_owned": false
+  },
+  {
+   "repo": "sandbox-quantum/switch",
+   "stars": 4697,
+   "url": "https://github.com/sandbox-quantum/switch",
+   "vendor_owned": false
+  },
+  {
+   "repo": "moltis-org/moltis",
+   "stars": 2983,
+   "url": "https://github.com/moltis-org/moltis",
+   "vendor_owned": false
+  },
+  {
+   "repo": "chigwell/telegram-mcp",
+   "stars": 2082,
+   "url": "https://github.com/chigwell/telegram-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "KroMiose/nekro-agent",
+   "stars": 1180,
+   "url": "https://github.com/KroMiose/nekro-agent",
+   "vendor_owned": false
+  },
+  {
+   "repo": "KevRojo/Dulus",
+   "stars": 1003,
+   "url": "https://github.com/KevRojo/Dulus",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Bayselonarrend/OpenIntegrations",
+   "stars": 697,
+   "url": "https://github.com/Bayselonarrend/OpenIntegrations",
+   "vendor_owned": false
+  },
+  {
+   "repo": "chaindead/telegram-mcp",
+   "stars": 353,
+   "url": "https://github.com/chaindead/telegram-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "tuchg/Lucarne",
+   "stars": 344,
+   "url": "https://github.com/tuchg/Lucarne",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Mistgate/mistgate",
+   "stars": 321,
+   "url": "https://github.com/Mistgate/mistgate",
+   "vendor_owned": false
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "id": "85",
+ "name": "iPayX",
+ "fetched_at": "2026-11-23T18:37:09",
+ "pages": [
+  {
+   "url": "https://ipayx.ai/docs",
+   "final_url": "https://ipayx.ai/docs",
+   "status": 200,
+   "via": "browser",
+   "title": "iPayX Protocol \u2014 FINTRAC-registered FX forensic audit layer",
+   "text": "iPayX Protocol \u2014 FINTRAC-registered FX forensic audit layer iPayX Protocol 404 Oops! Page not found Return to Home",
+   "chars": 114,
+   "http_status": 200,
+   "signals": {}
+  },
+  {
+   "url": "https://ipayx.ai/developers",
+   "final_url": "https://ipayx.ai/developers",
+   "status": 200,
+   "via": "browser",
+   "title": "FX Audit API & MCP \u2014 Developer Documentation \u2014 iPayX",
+   "text": "FX Audit API & MCP \u2014 Developer Documentation \u2014 iPayX iPayX Protocol Home FX Audit MCP Developers Pricing EN FR Log in Sign up EN FR MCP-NATIVE FX AUDIT ENGINE The Auditable Truth API & MCP for Modern Fintechs One stable endpoint. A native MCP server. Audit-grade FX proof your sales team \u2014 or your AI agents \u2014 deliver in under 30 seconds. Every FX audit you run today is part of the Vision FX foundation \u2014 the dataset that will power real-time anomaly detection for your stack. Built to become the FX signal layer behind future broker, treasury, and automation workflows. Get API Key Try Sandbox Empower your sales team in minutes. REST API JSON responses Webhooks Production-ready Powered by iPayX AI Engine iPayX AI Engine reads bank statements, detects FX spreads, and returns structured JSON output. Every audit response includes a confidence score and spread benchmark. MCP Server \u2014 Model Context Protocol Officially listed on the MCP Registry (v1.4.0) MCP-native FX audit engine Plug iPayX directly into Claude Desktop, Cursor, ChatGPT, Microsoft Copilot Studio, Perplexity, n8n. Your AI agents can audit an FX transfer, verify a rate, or generate a forensic report \u2014 without leaving their tool. check_fx_mid_market_rate Live mid-market rate for a currency pair audit_fx_transaction Score one FX transaction: FX Score, spread %, hidden fees in dollars compare_fx_sources Compare bank rates vs alternative providers full_forensic_fx_report Full forensic FX report (PDF) \u2014 shares the free allowance of 3 audits per IP per month MCP Server URL https://mcp.ipayx.ai/mcp Copy MCP URL Claude Desktop Cursor Copilot Studio claude_desktop_config.json Copy { \"mcpServers\": { \"ipayx-fx-audit\": { \"url\": \"https://mcp.ipayx.ai/mcp\", \"headers\": { \"Authorization\": \"Bearer ipx_live_your_key\" } } } } Claude Cursor ChatGPT Copilot Studio Perplexity n8n Cline Continue Zed Quickstart FX Audit \u2014 Quickstart Here are three common ways to plug iPayX into your product. FX broker / multi-currency platform Send each client FX conversion (CAD\u2192USD, EUR\u2192CAD, etc.) to the iPayX API and return a 0\u201310 FX score with estimated hidden costs. Corporate treasury Feed your international payments (supplier invoices) into iPayX to compare bank rates vs mid-market and track margin impact. Accounting firm / fractional CFO Use the API to audit your clients' FX conversions at year-end and generate a standardized report with score and potential savings. Connect your data Three ways to send your transactions Pick the source that fits your stack. All converge into the same FX audit engine. CSV / PDF upload Available Global Import statements or receipts. Built-in OCR normalizes transactions automatically. REST API Available Global Send transactions directly via the API. Ideal for ERP, treasury, and platform integrations. Copilot Studio MCP Native Microsoft Connect iPayX FX Audit directly to Microsoft Copilot Studio via MCP. Universal bank coverage \u2014 any bank, any country iPayX accepts any bank statement in PDF or CSV, worldwide \u2014 no degraded experience for your prospects. PDF/CSV: Worldwide, any bank How it works Data source Normalization FX audit engine Structured results Get started in 3 steps 1 Create your account Access your dashboard and generate your production API key. 2 Copy your API key Authenticate using a Bearer token from your backend. 3 Send your first request Post transaction data to the FX audit endpoint and receive a structured JSON response. First request Direct API endpoint. Custom domain api.ipayx.ai coming soon. cURL Node.js Python bash Copy # POST /v1/audit \u2014 see \"Partner Rate Comparison\" section for optional partner_rate field curl -X POST https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/fx-audit-engine \\ -H \"Authorization: Bearer ipx_live_your_key\" \\ -H \"Content-Type: application/json\" \\ -d '{ \"transactions\": [ { \"id\": \"tx_001\", \"source_currency\": \"INR\", \"target_currency\": \"USD\", \"source_amount\": 10000000, \"target_amount\": 10189000, \"trade_timestamp\": \"2026-04-15T14:30:00Z\" } ] }' Try it \u2192 \u26a1 Fastest integration option Embeddable widget \u2014 1 line of code Paste this snippet on your page. The widget auto-resizes, supports FR/EN, and exposes the same FX audit engine as our API. HTML embed Copy <iframe src=\"https://www.ipayx.ai/embed?partner=YOUR_KEY\" width=\"100%\" height=\"640\" frameborder=\"0\"></iframe> See the live widget Response object JSON response Copy { \"audit_id\": \"aud_01HXYZ9K3P8Q2RTM\", \"company_name\": \"Acme Trading Corp\", \"audit_source\": \"api\", \"score_rating\": 87, \"primary_corridor\": \"USD-CAD\", \"spread\": 0.0045, \"avg_markup_pct\": 1.23, \"total_overpaid_cad\": 26000, \"total_volume_cad\": 1375000, \"transaction_count\": 14, \"projected_annual_loss_cad\": 312000, \"recommended_partner\": \"your configured partner\", \"transactions\": [ { \"id\": \"tx_001\", \"source_currency\": \"CAD\", \"target_currency\": \"USD\", \"source_amount\": 100000, \"target_amount\": 71800, \"mid_rate\": 0.731580, \"client_rate\": 0.718000, \"spread_pct\": 1.89, \"fx_cost\": -1856.40, \"commentary\": \"Bank spread 1.89% on CAD/USD \u2014 a configured partner rate would lower the spread and raise the score.\" } ] } Optional \u2014 advanced Partner Rate Comparison Send your competitive rate alongside the bank data. The score reflects the savings opportunity for your client. Example request JSON request Copy { \"api_client_id\": \"your_client_id\", \"transactions\": [ { \"id\": \"tx_001\", \"source_currency\": \"CAD\", \"target_currency\": \"USD\", \"source_amount\": 100000, \"target_amount\": 71800, \"trade_timestamp\": \"2026-04-15T14:30:00Z\" } ] } Example response JSON response Copy { \"bank_fx_score\": 1, \"partner_fx_score\": \"higher \u2014 reflects your configured partner rate\", \"score_basis\": \"bank_vs_partner\", \"scoring_profile\": \"default\", \"avg_markup_pct\": 1.89, \"transactions\": [ { \"id\": \"tx_001\", \"bank_fx_score\": 1, \"partner_fx_score\": \"higher \u2014 reflects your configured partner rate\" } ] } Authentication Authenticate every request using your production API key in the Authorization header. Authorization: Bearer ipx_live_your_key Generate and manage your key in the Dashboard. Keys are server-side credentials and must never be exposed in client-side code. Webhooks & Events Use webhooks to receive event notifications when audits are completed or alerts are triggered. audit.completed alert.triggered api_key.regenerated webhook payload Copy { \"id\": \"evt_01HXYZABCDE\", \"type\": \"audit.completed\", \"created_at\": \"2026-03-12T14:42:05Z\", \"data\": { \"audit_id\": \"aud_01HXYZ9K3P8Q\", \"account_id\": \"acct_01HXYZ7LMN2R\", \"fx_score\": 5.0, \"spread_pct\": 1.90, \"hidden_cost_amount\": 19000, \"hidden_cost_currency\": \"CAD\" } } Error Codes & Limits Code Status Description 400 Bad Request Invalid JSON or missing required fields 401 Unauthorized Invalid or revoked API key 422 Unprocessable Entity Unsupported currency pair or invalid transaction data 429 Rate Limit Too many requests 500 Server Error Unexpected internal error API Base URL https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/fx-audit-engine Rate Limits Developer \u2014 $99/mo \u00b7 100 audits/mo \u00b7 sandbox Starter API \u2014 $499/mo \u00b7 2,500 audits/mo \u00b7 95% SLA Pro API \u2014 $1,499/mo \u00b7 10,000 audits/mo \u00b7 99.5% SLA Scale API \u2014 $4,999/mo \u00b7 50,000 audits/mo \u00b7 99.9% SLA Enterprise \u2014 starting at $100K/year \u00b7 custom SLA API v1 \u2014 stable. Breaking changes announced 90 days in advance. Endpoint summary Method Endpoint Description Status POST /v1/audit Returns structured FX audit analysis for one or more transactions, including per-partner score and thresholds applied. Live GET /v1/score-config List scoring profiles Live PUT /v1/score-config Upsert a profile Live DELETE /v1/score-config Remove a profile Live BROKER / FINTECH SETUP Your Competitive Rate \u2014 Partner Configuration Log in to configure your competitive rate \u2192 HOW PARTNER SCORING WORKS When your API key makes an audit call, iPayX scores the client's bank rate AND your competitive rate \u2014 separately. Example: Client bank spread \u2192 1.89% above mid \u2192 FX Score 1/10 Your configured partner rate \u2192 a lower spread \u2192 a higher FX Score The client sees two scores. You don't fight the bank. You show the math. The client decides. FAQ How long does integration take? Can I customize the widget? How does usage billing work? Is there a test environment? Ready to integrate? Sign up to get started iPayX Protocol Integrations API Docs Pricing Methodology Privacy Terms API Terms Contact Developers MCP Server Docs Microsoft Azure Foundry System Status REST API Reference iPayX Protocol is registered with FINTRAC as a Money Services Business (MSB C10001283) under the Proceeds of Crime (Money Laundering) and Terrorist Financing Act. iPayX is a financial technology platform \u2014 not a bank or financial institution. FX audit results are informational and do not constitute financial advice. \u00a9 2026 iPayX Protocol Inc.",
+   "chars": 8772,
+   "http_status": 200,
+   "signals": {
+    "auth:api_key": 7,
+    "auth:bearer_token": 4,
+    "api:REST": 13,
+    "api:MCP": 18,
+    "mcp": 18,
+    "access:self_serve": 2,
+    "access:trial": 1,
+    "access:paid": 2,
+    "access:approval": 1
+   }
+  },
+  {
+   "url": "https://ipayx.ai/mcp",
+   "final_url": "https://ipayx.ai/mcp",
+   "status": 200,
+   "via": "browser",
+   "title": "iPayX MCP \u2014 Forensic FX audit for Claude, ChatGPT, Grok, Perplexity",
+   "text": "iPayX MCP \u2014 Forensic FX audit for Claude, ChatGPT, Grok, Perplexity iPayX Protocol Home FX Audit MCP Developers Pricing EN FR Log in Sign up EN FR MCP Compatible Streamable HTTP OpenAPI 3.1 FINTRAC MSB Connect iPayX to your AI agent One MCP server. Claude, ChatGPT, Grok, Perplexity, DeepSeek, Qwen, MiniMax, Copilot, Cursor, n8n \u2014 real-time forensic FX audit. MCP Server URL https://mcp.ipayx.ai/mcp Copy No account or API key required. Transaction audits and forensic reports share 3 free audits per IP per calendar month (UTC). Rate lookups and comparisons are free without an audit quota. Add to Claude Settings \u2192 Connectors \u2192 Add custom connector Server URL: https://mcp.ipayx.ai/mcp Pick your AI client Claude (Anthropic) ChatGPT (OpenAI) Grok (xAI) Perplexity DeepSeek Qwen (Alibaba) MiniMax Microsoft Copilot Studio Cursor / Windsurf / Zed / Continue Cline n8n / Zapier / Pipedream Desktop: claude_desktop_config.json \u2014 Web/Teams: Settings \u203a Connectors \u203a Add custom connector Claude (Anthropic) Copy { \"mcpServers\": { \"ipayx-fx-audit\": { \"url\": \"https://mcp.ipayx.ai/mcp\", \"transport\": \"streamable-http\" } } } Restart your client after saving for the iPayX tools to appear. Exposed tools check_fx_mid_market_rate Live mid-market rate, both directions + optional spread analysis. Public audit_fx_transaction Scores one FX transaction against the live mid-market reference rate. Public compare_fx_sources Benchmark a bank rate against independent institutional sources. Public full_forensic_fx_report Detailed FX report with score, reference-rate evidence, spread and estimated loss. Public OpenAPI 3.1 Spec For non-MCP platforms (Zapier, n8n, Pipedream, Custom GPT, Microsoft Copilot). View spec View MCP manifest Read-only server. It never moves money. Reference rates come from public sources. This audit provides a comparative estimate and does not constitute financial advice. Privacy policy support@ipayx.ai iPayX Protocol Integrations API Docs Pricing Methodology Privacy Terms API Terms Contact Developers MCP Server Docs Microsoft Azure Foundry System Status REST API Reference iPayX Protocol is registered with FINTRAC as a Money Services Business (MSB C10001283) under the Proceeds of Crime (Money Laundering) and Terrorist Financing Act. iPayX is a financial technology platform \u2014 not a bank or financial institution. FX audit results are informational and do not constitute financial advice. \u00a9 2026 iPayX Protocol Inc.",
+   "chars": 2437,
+   "http_status": 200,
+   "signals": {
+    "auth:api_key": 1,
+    "api:REST": 1,
+    "api:MCP": 14,
+    "mcp": 14,
+    "access:paid": 2
+   }
+  },
+  {
+   "url": "https://ipayx.ai/pricing",
+   "final_url": "https://ipayx.ai/pricing",
+   "status": 200,
+   "via": "browser",
+   "title": "Pricing \u2014 iPayX Forensic Reports & FX Audit API",
+   "text": "Pricing \u2014 iPayX Forensic Reports & FX Audit API iPayX Protocol Home FX Audit MCP Developers Pricing EN FR Log in Sign up EN FR Forensic FX reports for finance teams. Audit API for fintechs. Free audit included. Upgrade to signed reports or production-grade API. Back to home iPayX Pricing Pricing Three options. No jargon, no hidden tiers. Free You have 3 free audits. $0 3 audits, lifetime FX Score 0-10 Automatic markup detection Multi-bank (PDF / CSV) Start free Most Popular Credit Pack 100 100 audits. Never expire. Use them at your own pace. $99 USD One-time payment \u00b7 $0.99 / audit 100 credits added instantly No subscription No expiration date Full PDF reports Buy pack \u2014 $99 Unlimited Unlimited audits. For teams running audits every week. $299 / mo Cancel anytime Unlimited audits Priority support access All Pack features included Access through end of paid period Subscribe \u2014 $299/mo Need a FINTRAC-signed PDF report? See Forensic Packs \u00b7 Banks and institutions: contact sales Already subscribed? Manage subscription",
+   "chars": 1028,
+   "http_status": 200,
+   "signals": {
+    "api:MCP": 1,
+    "mcp": 1,
+    "access:trial": 1,
+    "access:paid": 7,
+    "access:partner": 1
+   }
+  },
+  {
+   "url": "https://ipayx.ai/developers/sandbox",
+   "final_url": "https://ipayx.ai/developers/sandbox",
+   "status": 200,
+   "via": "browser",
+   "title": "FX Proof API \u2014 Sandbox Reference | iPayX",
+   "text": "FX Proof API \u2014 Sandbox Reference | iPayX iPayX Protocol Home FX Audit MCP Developers Pricing EN FR Log in Sign up EN FR Developers API Reference iPayX FX Proof API Audit FX transactions against the mid-market rate. Returns the hidden spread, true cost, and an FX score (1\u201310). Base URL https://api.ipayx.ai/v1 Authentication Authorization: Bearer ipx_live_\u2026 POST /audit Submit up to 50 FX transactions per request. The API fetches the mid-market rate at the time of each transaction, computes the spread and implicit cost, and returns an FX execution score for the batch. Headers Content-Type string required Must be application/json . Authorization string required Bearer ipx_live_\u2026 \u2014 generate keys from /developers while signed in. Request body JSON Copy { \"language\": \"en\", \"transactions\": [ { \"id\": \"tx_001\", \"source_currency\": \"CAD\", \"target_currency\": \"USD\", \"source_amount\": 10000, \"target_amount\": 7250, \"date\": \"2026-04-18T15:32:00Z\", \"provider_name\": \"BigBank_CA\" } ] } transactions array required Up to 50 transaction objects. Each object must include all fields below. transactions[].id string required Your internal transaction identifier. Echoed back in the response. transactions[].source_currency string required 3-letter ISO code (e.g. \"CAD\" ). transactions[].target_currency string required 3-letter ISO code (e.g. \"USD\" ). transactions[].source_amount number required Amount debited in source_currency . transactions[].target_amount number required Amount received in target_currency . transactions[].date ISO 8601 Execution timestamp. Optional. transactions[].provider_name string Free-text label for the provider/bank. Optional. language string \"en\" (default) or \"fr\" . Controls the AI commentary language. Response \u2014 200 OK JSON Copy { \"fx_score\": 6, \"score_rating\": \"fair\", \"avg_spread_pct\": 1.823, \"total_fx_cost\": 132.02, \"transactions_analyzed\": 1, \"transactions\": [ { \"id\": \"tx_001\", \"source_currency\": \"CAD\", \"target_currency\": \"USD\", \"source_amount\": 10000, \"target_amount\": 7250, \"mid_rate\": 0.738523, \"client_rate\": 0.725, \"spread_pct\": 1.823, \"fx_cost\": -132.02, \"commentary\": \"A 1.823% spread on a CAD/USD transaction is meaningfully above the typical mid-market reference. The implicit cost of ~132 CAD on a 10,000 notional reflects a non-competitive execution. Consider routing larger volumes through specialised FX providers.\" } ], \"usage\": { \"plan\": \"starter\", \"audits_this_month\": 1, \"soft_limit\": 1000, \"over_limit\": false } } fx_score number Execution score from 1 (critical) to 10 (excellent). score_rating string excellent | good | fair | poor | critical . avg_spread_pct number Average spread across all submitted transactions, in percent. total_fx_cost number Sum of absolute implicit costs across the batch, in source currency units. transactions array Per-transaction results: mid_rate , client_rate , spread_pct , fx_cost , and an AI commentary on the first item. usage object Current month usage: plan , audits_this_month , soft_limit , over_limit . Error \u2014 401 Unauthorized JSON Copy { \"error\": \"invalid_api_key\", \"message\": \"Missing or malformed Authorization header\" } Error \u2014 400 Validation JSON Copy { \"error\": \"validation_error\", \"message\": \"Transaction tx_001 missing required fields (id, source_currency, target_currency, source_amount, target_amount)\" } Error \u2014 429 Rate Limit JSON Copy { \"error\": \"rate_limit_exceeded\", \"message\": \"Too many requests. Try again later.\" } Rate limits are enforced per API key on a rolling 60-second window. The limit depends on your plan. cURL bash Copy curl -X POST https://api.ipayx.ai/v1/audit \\ -H \"Content-Type: application/json\" \\ -H \"Authorization: Bearer ipx_live_YOUR_API_KEY\" \\ -d '{ \"language\": \"en\", \"transactions\": [ { \"id\": \"tx_001\", \"source_currency\": \"CAD\", \"target_currency\": \"USD\", \"source_amount\": 10000, \"target_amount\": 7250, \"date\": \"2026-04-18T15:32:00Z\", \"provider_name\": \"BigBank_CA\" } ] }' Notes Generate API keys from the /developers page once signed in. Keys start with ipx_live_ . Maximum 50 transactions per request. Submit additional batches if needed. Mid-market rates are fetched live from regulated interbank data providers. Soft monthly limits apply per plan: Starter 1,000 / Pro 10,000 / Enterprise unmetered. Above the soft limit, an X-Usage-Warning header is returned. Ready to integrate? Generate an API key in under a minute. Get API key iPayX Protocol Integrations API Docs Pricing Methodology Privacy Terms API Terms Contact Developers MCP Server Docs Microsoft Azure Foundry System Status REST API Reference iPayX Protocol is registered with FINTRAC as a Money Services Business (MSB C10001283) under the Proceeds of Crime (Money Laundering) and Terrorist Financing Act. iPayX is a financial technology platform \u2014 not a bank or financial institution. FX audit results are informational and do not constitute financial advice. \u00a9 2026 iPayX Protocol Inc.",
+   "chars": 4885,
+   "http_status": 200,
+   "signals": {
+    "auth:api_key": 6,
+    "auth:bearer_token": 3,
+    "api:REST": 4,
+    "api:MCP": 2,
+    "mcp": 2,
+    "access:self_serve": 1,
+    "access:paid": 2,
+    "access:approval": 2
+   }
+  },
+  {
+   "url": "https://ipayx.ai/auth",
+   "final_url": "https://ipayx.ai/auth",
+   "status": 200,
+   "via": "browser",
+   "title": "iPayX Protocol \u2014 FINTRAC-registered FX forensic audit layer",
+   "text": "iPayX Protocol \u2014 FINTRAC-registered FX forensic audit layer iPayX Protocol 404 Oops! Page not found Return to Home",
+   "chars": 114,
+   "http_status": 200,
+   "signals": {}
+  },
+  {
+   "url": "https://ipayx.ai/docs/mcp-server",
+   "final_url": "https://ipayx.ai/docs/mcp-server",
+   "status": 200,
+   "via": "browser",
+   "title": "iPayX MCP Server \u2014 Documentation",
+   "text": "iPayX MCP Server \u2014 Documentation iPayX Protocol Home FX Audit MCP Developers Pricing EN FR Log in Sign up EN FR iPayX MCP Server \u2014 Documentation Connect your AI agent to real-time FX audit verdicts. 1. Endpoints Production MCP: https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/mcp-server Documentation: https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/mcp-server/docs 2. Available Tools audit_fx_transaction Free tier Score any FX transaction 1-10 with a qualitative verdict. Spread % and mid-market rate are never returned in the public response. Input { \"amount\": 10000, \"currency_from\": \"USD\", \"currency_to\": \"EUR\", \"bank_rate\": 0.9123, \"date\": \"2026-05-13\" } Output (opaque public response) { \"score\": 7, \"color\": \"yellow\", \"verdict\": \"Fair FX pricing\", \"currency_pair\": \"USD/EUR\", \"amount\": 10000, \"date\": \"2026-05-13\", \"encouragement\": null } Rate limit: 10 audits / day per API key (free). full_forensic_fx_report Paid tier ($199) Full forensic audit including spread breakdown, projected loss, and partner routing intelligence. Requires a paid Bearer token. Input { \"audit_id\": \"uuid\", \"include_routing\": true } Output (opaque public response) { \"audit_id\": \"uuid\", \"score\": 4, \"color\": \"orange\", \"verdict\": \"FX pricing above market expectations\", \"spread_pct\": 2.21, \"mid_market_rate\": 0.9241, \"projected_annual_loss_usd\": 184500, \"recommended_partner\": \"ebury\" } Rate limit: Unlimited on paid tier; priority routing. check_fx_mid_market_rate Free tier Fetch the live mid-market reference rate for a currency pair. Returns both directions to help detect inverted quotes. Input { \"base\": \"USD\", \"quote\": \"EUR\" } Output (opaque public response) { \"pair\": \"USD/EUR\", \"mid_market_rate\": 0.9241, \"inverted_pair\": \"EUR/USD\", \"inverted_mid_rate\": 1.0821, \"as_of\": \"2026-05-13T12:00:00Z\" } Rate limit: 60 calls / minute per API key. 3. Authentication Method: HTTP Bearer token in Authorization header. Format: ipx_live_xxxxx (production) or ipx_test_xxxxx (sandbox). How to get a key: Open your iPayX dashboard \u2192 API keys . Authorization: Bearer ipx_live_xxxxxxxxxxxxxxxxxxxxxxxx Content-Type: application/json Accept: application/json, text/event-stream 4. Compatible MCP Clients Claude Desktop / Claude.ai ChatGPT (via OpenAI Apps SDK) Microsoft Azure Foundry Agents \u2014 setup guide Cursor / Continue / Cline Lovable Agent 5. Rate Limits & SLA Free tier: 10 audits / day per API key. Paid tier ($199): unlimited audits, priority routing. SLA: 99.5% uptime, response time < 2s p95. Live status: /status . iPayX Protocol Integrations API Docs Pricing Methodology Privacy Terms API Terms Contact Developers MCP Server Docs Microsoft Azure Foundry System Status REST API Reference iPayX Protocol is registered with FINTRAC as a Money Services Business (MSB C10001283) under the Proceeds of Crime (Money Laundering) and Terrorist Financing Act. iPayX is a financial technology platform \u2014 not a bank or financial institution. FX audit results are informational and do not constitute financial advice. \u00a9 2026 iPayX Protocol Inc.",
+   "chars": 3032,
+   "http_status": 200,
+   "signals": {
+    "auth:api_key": 4,
+    "auth:bearer_token": 3,
+    "api:REST": 2,
+    "api:MCP": 8,
+    "mcp": 8,
+    "access:self_serve": 4,
+    "access:paid": 4,
+    "access:approval": 2
+   }
+  }
+ ]
+}

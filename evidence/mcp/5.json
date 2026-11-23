@@ -1,0 +1,67 @@
+{
+ "id": "5",
+ "name": "Twenty",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "mhenry3164/twenty-crm-mcp-server",
+   "stars": 109,
+   "url": "https://github.com/mhenry3164/twenty-crm-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "jezweb/twenty-mcp",
+   "stars": 53,
+   "url": "https://github.com/jezweb/twenty-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Jdu278/twenty-mcp-server",
+   "stars": 14,
+   "url": "https://github.com/Jdu278/twenty-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "KonstiDoll/twenty-crm-mcp-server",
+   "stars": 9,
+   "url": "https://github.com/KonstiDoll/twenty-crm-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "smartsheet/cli-agent-power-tools",
+   "stars": 9,
+   "url": "https://github.com/smartsheet/cli-agent-power-tools",
+   "vendor_owned": false
+  },
+  {
+   "repo": "devchaudhary24k/skill-twenty-crm",
+   "stars": 8,
+   "url": "https://github.com/devchaudhary24k/skill-twenty-crm",
+   "vendor_owned": false
+  },
+  {
+   "repo": "bcharleson/twenty-agent-cli",
+   "stars": 5,
+   "url": "https://github.com/bcharleson/twenty-agent-cli",
+   "vendor_owned": false
+  },
+  {
+   "repo": "levelcfo/open-finance-skills",
+   "stars": 4,
+   "url": "https://github.com/levelcfo/open-finance-skills",
+   "vendor_owned": false
+  },
+  {
+   "repo": "0xfabrica/twentycrm-mcp",
+   "stars": 3,
+   "url": "https://github.com/0xfabrica/twentycrm-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Knuckles-Team/twenty-mcp",
+   "stars": 1,
+   "url": "https://github.com/Knuckles-Team/twenty-mcp",
+   "vendor_owned": false
+  }
+ ]
+}

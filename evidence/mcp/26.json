@@ -1,0 +1,67 @@
+{
+ "id": "26",
+ "name": "Discord",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "sandbox-quantum/switch",
+   "stars": 4697,
+   "url": "https://github.com/sandbox-quantum/switch",
+   "vendor_owned": false
+  },
+  {
+   "repo": "moltis-org/moltis",
+   "stars": 2983,
+   "url": "https://github.com/moltis-org/moltis",
+   "vendor_owned": false
+  },
+  {
+   "repo": "heshengtao/comfyui_LLM_party",
+   "stars": 2393,
+   "url": "https://github.com/heshengtao/comfyui_LLM_party",
+   "vendor_owned": false
+  },
+  {
+   "repo": "zzet/gortex",
+   "stars": 2095,
+   "url": "https://github.com/zzet/gortex",
+   "vendor_owned": false
+  },
+  {
+   "repo": "KroMiose/nekro-agent",
+   "stars": 1180,
+   "url": "https://github.com/KroMiose/nekro-agent",
+   "vendor_owned": false
+  },
+  {
+   "repo": "SaseQ/discord-mcp",
+   "stars": 615,
+   "url": "https://github.com/SaseQ/discord-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "zhimaAi/ChatClaw",
+   "stars": 316,
+   "url": "https://github.com/zhimaAi/ChatClaw",
+   "vendor_owned": false
+  },
+  {
+   "repo": "v-3/discordmcp",
+   "stars": 248,
+   "url": "https://github.com/v-3/discordmcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "KOBA789/human-in-the-loop",
+   "stars": 234,
+   "url": "https://github.com/KOBA789/human-in-the-loop",
+   "vendor_owned": false
+  },
+  {
+   "repo": "mr-tbot/mesh-api",
+   "stars": 188,
+   "url": "https://github.com/mr-tbot/mesh-api",
+   "vendor_owned": false
+  }
+ ]
+}

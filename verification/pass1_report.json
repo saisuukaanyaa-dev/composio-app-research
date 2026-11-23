@@ -1,0 +1,4704 @@
+{
+ "label": "pass1",
+ "records": "data/pass1_llm.psv",
+ "summary": {
+  "claims": 614,
+  "status": {
+   "supported": 560,
+   "unsupported": 30,
+   "broken_link": 3,
+   "no_evidence": 21
+  },
+  "supported_rate": 0.912,
+  "precision_on_checkable": 0.944,
+  "omission_flags": 71,
+  "by_field": {
+   "docs_url": {
+    "supported": 92,
+    "broken_link": 2,
+    "no_evidence": 6
+   },
+   "auth_url": {
+    "supported": 66,
+    "broken_link": 1,
+    "no_evidence": 5
+   },
+   "auth": {
+    "supported": 157,
+    "unsupported": 6,
+    "no_evidence": 4
+   },
+   "api": {
+    "supported": 101,
+    "unsupported": 3,
+    "no_evidence": 3
+   },
+   "access": {
+    "supported": 78,
+    "unsupported": 17,
+    "no_evidence": 3
+   },
+   "mcp": {
+    "supported": 66,
+    "unsupported": 4
+   }
+  },
+  "apps_flagged": 68,
+  "apps_no_evidence": 3
+ },
+ "results": [
+  {
+   "id": "1",
+   "name": "Salesforce",
+   "category": "CRM and Sales",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest.htm",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "SOAP",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "unsupported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "api=GraphQL is unsupported"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "salesforcecli/mcp",
+    "smn2gnt/MCP-Salesforce",
+    "tsmztech/mcp-server-salesforce"
+   ]
+  },
+  {
+   "id": "2",
+   "name": "HubSpot",
+   "category": "CRM and Sales",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.hubspot.com/docs/api/overview",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.hubspot.com/docs/api/oauth-quickstart-guide",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 7,
+   "pages": 8,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "baryhuang/mcp-hubspot",
+    "shinzo-labs/hubspot-mcp",
+    "lkm1developer/hubspot-mcp-server"
+   ]
+  },
+  {
+   "id": "3",
+   "name": "Pipedrive",
+   "category": "CRM and Sales",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.pipedrive.com/docs/api/v1",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://pipedrive.readme.io/docs/marketplace-oauth-authorization",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "WillDent/pipedrive-mcp-server",
+    "Wirasm/pipedrive-mcp",
+    "nubiia-dev/mcp-pipedrive"
+   ]
+  },
+  {
+   "id": "4",
+   "name": "Attio",
+   "category": "CRM and Sales",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.attio.com/rest-api/overview",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.attio.com/rest-api/guides/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'api_key' (7 hits)",
+    "docs push 'contact sales' but pass says self-serve",
+    "access=self_serve is unsupported"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "kesslerio/attio-mcp-server",
+    "hmk/attio-mcp-server",
+    "redriverwest/attio-mcp"
+   ]
+  },
+  {
+   "id": "5",
+   "name": "Twenty",
+   "category": "CRM and Sales",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://twenty.com/developers",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://twenty.com/developers/section/api-and-webhooks/api",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'oauth2' (57 hits)",
+    "vendor's own site documents an MCP server (1 hits) but pass says community"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "mhenry3164/twenty-crm-mcp-server",
+    "jezweb/twenty-mcp",
+    "Jdu278/twenty-mcp-server"
+   ]
+  },
+  {
+   "id": "6",
+   "name": "Podio",
+   "category": "CRM and Sales",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.podio.com/doc",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.podio.com/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'api_key' (16 hits)",
+    "access=self_serve is unsupported"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "Podiom/Podiom",
+    "stoskov/podio-mcp",
+    "jscord30/MCPServer-Podio"
+   ]
+  },
+  {
+   "id": "7",
+   "name": "Zoho CRM",
+   "category": "CRM and Sales",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://www.zoho.com/crm/developer/docs/api/v7/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://www.zoho.com/crm/developer/docs/api/v7/oauth-overview.html",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "docs advertise a time-limited free trial and no free plan, but pass says self_serve"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "Officehub-Tech-LLC/MCP-Server",
+    "Mgabr90/zoho-mcp-server",
+    "LokiMCPUniverse/zoho-crm-mcp-server"
+   ]
+  },
+  {
+   "id": "8",
+   "name": "Close",
+   "category": "CRM and Sales",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.close.com/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.close.com/topics/authentication/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "runekaagaard/mcp-redmine",
+    "HazAT/pi-solo",
+    "jordigilh/kubernaut"
+   ]
+  },
+  {
+   "id": "9",
+   "name": "Copper",
+   "category": "CRM and Sales",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.copper.com/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.copper.com/introduction/authentication.html",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'oauth2' (59 hits)"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "claynicholson/copper-kicad-mcp",
+    "Copperpour/Copperpour",
+    "seunghyukchoe/copper-mcp"
+   ]
+  },
+  {
+   "id": "10",
+   "name": "DealCloud",
+   "category": "CRM and Sales",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://api.docs.dealcloud.com/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://api.docs.dealcloud.com/docs/auth",
+     "status": "broken_link"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "partner",
+     "status": "unsupported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'api_key' (39 hits)",
+    "MCP mentioned on docs (106 hits) but pass says none",
+    "auth_url=https://api.docs.dealcloud.com/docs/auth is broken_link",
+    "access=partner is unsupported"
+   ],
+   "readable_pages": 13,
+   "pages": 14,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "jstewartrr/infra-20251230-mcp-dealcloud"
+   ]
+  },
+  {
+   "id": "11",
+   "name": "Zendesk",
+   "category": "Support and Helpdesk",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.zendesk.com/api-reference/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'jwt' (6 hits)"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "chattermate/chattermate.chat",
+    "reminia/zendesk-mcp-server",
+    "mattcoatsworth/zendesk-mcp-server"
+   ]
+  },
+  {
+   "id": "12",
+   "name": "Intercom",
+   "category": "Support and Helpdesk",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.intercom.com/docs/references/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "melgarafael/DeskcommCRM",
+    "chattermate/chattermate.chat",
+    "PersonaliAI/chatty"
+   ]
+  },
+  {
+   "id": "13",
+   "name": "Freshdesk",
+   "category": "Support and Helpdesk",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.freshdesk.com/api/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.freshdesk.com/api/#authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'oauth2' (14 hits)",
+    "strong evidence for unclaimed auth 'jwt' (45 hits)"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "effytech/freshdesk_mcp",
+    "Enreign/freshdeck-mcp",
+    "hashcott/freshdesk-mcp"
+   ]
+  },
+  {
+   "id": "14",
+   "name": "Front",
+   "category": "Support and Helpdesk",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://dev.frontapp.com/reference/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://dev.frontapp.com/docs/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'api_key' (31 hits)",
+    "vendor's own site documents an MCP server (6 hits) but pass says community"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "IBM/mcp-context-forge",
+    "wilwaldon/Claude-Code-Frontend-Design-Toolkit",
+    "mrwyndham/pocketbase-mcp"
+   ]
+  },
+  {
+   "id": "15",
+   "name": "Pylon",
+   "category": "Support and Helpdesk",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.usepylon.com/pylon-docs/developer/api",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'api_key' (10 hits)",
+    "MCP mentioned on docs (10 hits) but pass says none"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "JustinBeckwith/pylon-mcp",
+    "toalba/Pylon",
+    "OpenAgentsInc/pylon-previous"
+   ]
+  },
+  {
+   "id": "16",
+   "name": "LiveAgent",
+   "category": "Support and Helpdesk",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://support.liveagent.com/805161-API-v3",
+     "status": "broken_link"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "MCP mentioned on docs (15 hits) but pass says none",
+    "docs_url=https://support.liveagent.com/805161-API-v3 is broken_link"
+   ],
+   "readable_pages": 4,
+   "pages": 5,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "QualityUnit/liveagent-mcp-server",
+    "shinnjr/liveagentdata-mcp",
+    "wiselingsnet-ops/liveagent-mcp"
+   ]
+  },
+  {
+   "id": "17",
+   "name": "Plain",
+   "category": "Support and Helpdesk",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://www.plain.com/docs/graphql/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://www.plain.com/docs/graphql/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'oauth2' (55 hits)",
+    "MCP mentioned on docs (61 hits) but pass says none"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "aicodeking/leanrea",
+    "Mibayy/token-savior",
+    "alpacahq/alpaca-mcp-server"
+   ]
+  },
+  {
+   "id": "18",
+   "name": "Help Scout",
+   "category": "Support and Helpdesk",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.helpscout.com/mailbox-api/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "drewburchfield/help-scout-mcp-server",
+    "WayLit/help-scout-mcp-server",
+    "BryanMcKinney/HelpScoutMCP"
+   ]
+  },
+  {
+   "id": "19",
+   "name": "Gorgias",
+   "category": "Support and Helpdesk",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.gorgias.com/reference/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.gorgias.com/docs/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "unsupported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "auth=basic is unsupported"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "mattcoatsworth/Gorgias-MCP-Server",
+    "benpalmer1/Gorgias-MCP-Server",
+    "gorgias/mcp-cookbook"
+   ]
+  },
+  {
+   "id": "20",
+   "name": "Gladly",
+   "category": "Support and Helpdesk",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.gladly.com/rest/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.gladly.com/rest/#section/Getting-Started/Creating-API-Tokens",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "partner",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'jwt' (11 hits)"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "estebanruiz-beep/gladly-mcp-demo",
+    "gladly-hyphenated-21/flight-mcp"
+   ]
+  },
+  {
+   "id": "21",
+   "name": "Slack",
+   "category": "Communications and Messaging",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://api.slack.com/web",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://api.slack.com/authentication/oauth-v2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "sansan0/TrendRadar",
+    "PostHog/posthog",
+    "sandbox-quantum/switch"
+   ]
+  },
+  {
+   "id": "22",
+   "name": "Twilio",
+   "category": "Communications and Messaging",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://www.twilio.com/docs/usage/api",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://www.twilio.com/docs/iam/api-keys",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'oauth2' (49 hits)"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "sosoj92/jarvis-assistant-vocal",
+    "XiyaoWang0519/agent-call",
+    "lgesuellip/langgraph-whatsapp-agent"
+   ]
+  },
+  {
+   "id": "23",
+   "name": "Zoho Cliq",
+   "category": "Communications and Messaging",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://www.zoho.com/cliq/help/restapi/v2/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "unsupported"
+    }
+   ],
+   "flags": [
+    "access=self_serve is unsupported",
+    "mcp=official is unsupported"
+   ],
+   "readable_pages": 3,
+   "pages": 3,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "The-Luminous-Group/cliq-api-integration"
+   ]
+  },
+  {
+   "id": "24",
+   "name": "Lark (Larksuite)",
+   "category": "Communications and Messaging",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://open.larksuite.com/document/home/index",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://open.larksuite.com/document/server-docs/authentication-management/access-token/tenant_access_token_internal",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "unsupported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "auth=oauth2 is unsupported"
+   ],
+   "readable_pages": 5,
+   "pages": 8,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "larksuite/lark-openapi-mcp",
+    "cso1z/Feishu-MCP",
+    "TGYD-helige/pi"
+   ]
+  },
+  {
+   "id": "25",
+   "name": "Pumble",
+   "category": "Communications and Messaging",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://pumble.com/help/integrations/add-pumble-apps/pumble-api-keys-integration/",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "no_evidence"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "no_evidence"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "no_evidence"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 0,
+   "pages": 2,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "infralayers/pumble-mcp",
+    "nitindermohan/pumble-mcp",
+    "apet97/pumble-python-sdk"
+   ]
+  },
+  {
+   "id": "26",
+   "name": "Discord",
+   "category": "Communications and Messaging",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://discord.com/developers/docs/reference",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://discord.com/developers/docs/topics/oauth2",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "no_evidence"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "no_evidence"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "no_evidence"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 0,
+   "pages": 3,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "sandbox-quantum/switch",
+    "moltis-org/moltis",
+    "heshengtao/comfyui_LLM_party"
+   ]
+  },
+  {
+   "id": "27",
+   "name": "Telegram",
+   "category": "Communications and Messaging",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://core.telegram.org/bots/api",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://core.telegram.org/bots/api#authorizing-your-bot",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "no_evidence"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "no_evidence"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "no_evidence"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 0,
+   "pages": 3,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "sansan0/TrendRadar",
+    "sandbox-quantum/switch",
+    "moltis-org/moltis"
+   ]
+  },
+  {
+   "id": "28",
+   "name": "WhatsApp Business",
+   "category": "Communications and Messaging",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.facebook.com/docs/whatsapp/cloud-api",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.facebook.com/docs/whatsapp/business-management-api/get-started",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "approval",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "vendor's own site documents an MCP server (4 hits) but pass says community"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "Eyalm321/zernio-mcp",
+    "wassengerhq/whatsapp-mcp",
+    "victorgalletti/zappion"
+   ]
+  },
+  {
+   "id": "29",
+   "name": "Aircall",
+   "category": "Communications and Messaging",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.aircall.io/api-references/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.aircall.io/api-references/#authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 7,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "themobilefirstco/aircall-mcp-server",
+    "TheAiShark/aircall-mcp-oauth",
+    "MaximeDeconinck/aircall-mcp"
+   ]
+  },
+  {
+   "id": "30",
+   "name": "Vonage",
+   "category": "Communications and Messaging",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.vonage.com/en/api",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "jwt",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "vendor's own site documents an MCP server (1 hits) but pass says community"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "khan2a/telephony-mcp-server",
+    "Vonage-Community/vonage-mcp-server-api-bindings",
+    "mobilebiz/vonage-cloudflare-mcp"
+   ]
+  },
+  {
+   "id": "31",
+   "name": "Google Ads",
+   "category": "Marketing, Ads, Email and Social",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.google.com/google-ads/api/docs/start",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "gRPC",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "approval",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "irinabuht12-oss/marketing-skills",
+    "irinabuht12-oss/google-ads-meta-ads-mcp",
+    "googleads/google-ads-mcp"
+   ]
+  },
+  {
+   "id": "32",
+   "name": "Meta Ads",
+   "category": "Marketing, Ads, Email and Social",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.facebook.com/docs/marketing-apis",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "unsupported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "approval",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "vendor's own site documents an MCP server (5 hits) but pass says community",
+    "auth=oauth2 is unsupported"
+   ],
+   "readable_pages": 6,
+   "pages": 7,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "irinabuht12-oss/marketing-skills",
+    "irinabuht12-oss/google-ads-meta-ads-mcp",
+    "pipeboard-co/meta-ads-mcp"
+   ]
+  },
+  {
+   "id": "33",
+   "name": "LinkedIn Ads",
+   "category": "Marketing, Ads, Email and Social",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://learn.microsoft.com/en-us/linkedin/marketing/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "approval",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "amekala/ads-mcp",
+    "markifact/markifact-mcp",
+    "danielpopamd/linkedin-ads-mcp"
+   ]
+  },
+  {
+   "id": "34",
+   "name": "GoHighLevel",
+   "category": "Marketing, Ads, Email and Social",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://highlevel.stoplight.io/docs/integrations/",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "access=trial is unsupported"
+   ],
+   "readable_pages": 6,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "mastanley13/GoHighLevel-MCP",
+    "BusyBee3333/Go-High-Level-MCP-2026-Complete",
+    "basicmachines-co/open-ghl-mcp"
+   ]
+  },
+  {
+   "id": "35",
+   "name": "Mailchimp",
+   "category": "Marketing, Ads, Email and Social",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://mailchimp.com/developer/marketing/api/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "docs push 'contact sales' but pass says self-serve",
+    "vendor's own site documents an MCP server (1 hits) but pass says community",
+    "access=self_serve is unsupported"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "damientilman/mailchimp-mcp-server",
+    "AgentX-ai/mailchimp-mcp",
+    "CosmoBlk/email-design"
+   ]
+  },
+  {
+   "id": "36",
+   "name": "Klaviyo",
+   "category": "Marketing, Ads, Email and Social",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.klaviyo.com/en/reference/api_overview",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.klaviyo.com/en/docs/set_up_oauth",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "CosmoBlk/email-design",
+    "mattcoatsworth/Klaviyo-MCP-Server",
+    "mattcoatsworth/Klaviyo-MCP-Server-4-15"
+   ]
+  },
+  {
+   "id": "37",
+   "name": "systeme.io",
+   "category": "Marketing, Ads, Email and Social",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.systeme.io/reference/api",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "MCP mentioned on docs (2 hits) but pass says none"
+   ],
+   "readable_pages": 7,
+   "pages": 7,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "snzeeee/mcp-server-systemeio",
+    "management3consulting69-ops/systeme-mcp",
+    "cotlet-connect/systeme-io-mcp"
+   ]
+  },
+  {
+   "id": "38",
+   "name": "Pinterest",
+   "category": "Marketing, Ads, Email and Social",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.pinterest.com/docs/api/v5/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.pinterest.com/docs/getting-started/authentication-and-scopes/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "approval",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'api_key' (13 hits)",
+    "MCP mentioned on docs (3 hits) but pass says none"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "itallstartedwithaidea/advertising-hub",
+    "terryso/mcp-pinterest",
+    "collactivelabs/pinterest-mcp-server"
+   ]
+  },
+  {
+   "id": "39",
+   "name": "Threads (Meta)",
+   "category": "Marketing, Ads, Email and Social",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.facebook.com/docs/threads",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.facebook.com/docs/threads/get-started",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "approval",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "vendor's own site documents an MCP server (4 hits) but pass says community"
+   ],
+   "readable_pages": 7,
+   "pages": 7,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "Dicklesworthstone/mcp_agent_mail",
+    "risa-labs-inc/BossConsole",
+    "irockel/tda"
+   ]
+  },
+  {
+   "id": "40",
+   "name": "SendGrid",
+   "category": "Marketing, Ads, Email and Social",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://www.twilio.com/docs/sendgrid/api-reference",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "Garoth/sendgrid-mcp",
+    "KiKi-Builds/AI-Briefing-Skill",
+    "deyikong/sendgrid-mcp"
+   ]
+  },
+  {
+   "id": "41",
+   "name": "Shopify",
+   "category": "Ecommerce",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://shopify.dev/docs/api/admin-graphql",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://shopify.dev/docs/apps/build/authentication-authorization",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "access=self_serve is unsupported"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "42",
+   "name": "WooCommerce",
+   "category": "Ecommerce",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://woocommerce.github.io/woocommerce-rest-api-docs/#authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth1",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'oauth2' (16 hits)"
+   ],
+   "readable_pages": 6,
+   "pages": 6,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "techspawn/woocommerce-mcp-server",
+    "gobuildwp/wordpress-mcp-ai-gobuildwp",
+    "tropk-ai/mcp-for-wordpress"
+   ]
+  },
+  {
+   "id": "43",
+   "name": "BigCommerce",
+   "category": "Ecommerce",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.bigcommerce.com/docs/rest-management",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.bigcommerce.com/docs/start/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'api_key' (13 hits)",
+    "strong evidence for unclaimed auth 'jwt' (23 hits)",
+    "MCP mentioned on docs (59 hits) but pass says none"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "44",
+   "name": "Salesforce Commerce Cloud",
+   "category": "Ecommerce",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "partner",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'jwt' (22 hits)",
+    "MCP mentioned on docs (4 hits) but pass says none"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "45",
+   "name": "Magento (Adobe Commerce)",
+   "category": "Ecommerce",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.adobe.com/commerce/webapi/rest/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth1",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'oauth2' (82 hits)"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "46",
+   "name": "Squarespace",
+   "category": "Ecommerce",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.squarespace.com/commerce-apis/overview",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "approval",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "MCP mentioned on docs (21 hits) but pass says none"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "47",
+   "name": "Ecwid",
+   "category": "Ecommerce",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://api-docs.ecwid.com/reference/overview",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://api-docs.ecwid.com/docs/get-access-token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 5,
+   "pages": 5,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "48",
+   "name": "Gumroad",
+   "category": "Ecommerce",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://app.gumroad.com/api",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 4,
+   "pages": 6,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "49",
+   "name": "Amazon Selling Partner",
+   "category": "Ecommerce",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer-docs.amazon.com/sp-api/docs/what-is-the-selling-partner-api",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer-docs.amazon.com/sp-api/docs/authorizing-selling-partner-api-applications",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "approval",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'api_key' (8 hits)"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "50",
+   "name": "fanbasis",
+   "category": "Ecommerce",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://www.fanbasis.com/",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'api_key' (69 hits)",
+    "MCP mentioned on docs (4 hits) but pass says none"
+   ],
+   "readable_pages": 4,
+   "pages": 5,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "51",
+   "name": "DataForSEO",
+   "category": "Data, SEO and Scraping",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.dataforseo.com/v3/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.dataforseo.com/v3/auth/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 3,
+   "pages": 3,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "dataforseo/mcp-server-typescript",
+    "houtini-ai/seo-audit",
+    "Skobyn/dataforseo-mcp-server"
+   ]
+  },
+  {
+   "id": "52",
+   "name": "SE Ranking",
+   "category": "Data, SEO and Scraping",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://seranking.com/api.html",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 6,
+   "pages": 7,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "53",
+   "name": "Ahrefs",
+   "category": "Data, SEO and Scraping",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.ahrefs.com/docs/api/reference/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'oauth2' (8 hits)"
+   ],
+   "readable_pages": 7,
+   "pages": 7,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "54",
+   "name": "MrScraper",
+   "category": "Data, SEO and Scraping",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.mrscraper.com/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "MCP mentioned on docs (21 hits) but pass says none"
+   ],
+   "readable_pages": 7,
+   "pages": 7,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "55",
+   "name": "Apify",
+   "category": "Data, SEO and Scraping",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.apify.com/api/v2",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.apify.com/platform/integrations/api",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'api_key' (88 hits)"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "56",
+   "name": "Firecrawl",
+   "category": "Data, SEO and Scraping",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.firecrawl.dev/api-reference/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'oauth2' (57 hits)"
+   ],
+   "readable_pages": 7,
+   "pages": 7,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "57",
+   "name": "Bright Data",
+   "category": "Data, SEO and Scraping",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.brightdata.com/api-reference/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.brightdata.com/api-reference/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "58",
+   "name": "Sherlock",
+   "category": "Data, SEO and Scraping",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://github.com/sherlock-project/sherlock",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "CLI",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 3,
+   "pages": 3,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "59",
+   "name": "Waterfall.io",
+   "category": "Data, SEO and Scraping",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://waterfall.io/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "partner",
+     "status": "unsupported"
+    }
+   ],
+   "flags": [
+    "access=partner is unsupported"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "60",
+   "name": "Clay",
+   "category": "Data, SEO and Scraping",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://www.clay.com/university/guide/webhook-integration-guide",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "partner",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "MCP mentioned on docs (36 hits) but pass says none"
+   ],
+   "readable_pages": 6,
+   "pages": 6,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "61",
+   "name": "GitHub",
+   "category": "Developer, Infra and Data platforms",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.github.com/en/rest",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "github/github-mcp-server",
+    "idosal/git-mcp",
+    "kucherenko/jscpd"
+   ]
+  },
+  {
+   "id": "62",
+   "name": "Vercel",
+   "category": "Developer, Infra and Data platforms",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://vercel.com/docs/rest-api",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://vercel.com/docs/rest-api/reference/welcome#authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 6,
+   "pages": 7,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "63",
+   "name": "Netlify",
+   "category": "Developer, Infra and Data platforms",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.netlify.com/api/get-started/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.netlify.com/api/get-started/#authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'api_key' (6 hits)",
+    "docs push 'contact sales' but pass says self-serve",
+    "access=self_serve is unsupported"
+   ],
+   "readable_pages": 4,
+   "pages": 4,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "netlify/netlify-mcp",
+    "bella-and-c/sleepy-dog-lock",
+    "jbulger82/LLAMA_Hub"
+   ]
+  },
+  {
+   "id": "64",
+   "name": "Cloudflare",
+   "category": "Developer, Infra and Data platforms",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.cloudflare.com/api/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'oauth2' (66 hits)"
+   ],
+   "readable_pages": 7,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "65",
+   "name": "Supabase",
+   "category": "Developer, Infra and Data platforms",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://supabase.com/docs/reference/api/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 7,
+   "pages": 7,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "66",
+   "name": "Neo4j",
+   "category": "Developer, Infra and Data platforms",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://neo4j.com/docs/query-api/current/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "unsupported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "auth=oauth2 is unsupported"
+   ],
+   "readable_pages": 7,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "67",
+   "name": "Snowflake",
+   "category": "Developer, Infra and Data platforms",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "jwt",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "Snowflake-Labs/mcp",
+    "isaacwasserman/mcp-snowflake-server",
+    "ralforion/orionbelt-analytics"
+   ]
+  },
+  {
+   "id": "68",
+   "name": "MongoDB Atlas",
+   "category": "Developer, Infra and Data platforms",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://www.mongodb.com/docs/atlas/api/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "69",
+   "name": "Datadog",
+   "category": "Developer, Infra and Data platforms",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.datadoghq.com/api/latest/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.datadoghq.com/api/latest/authentication/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "70",
+   "name": "Sentry",
+   "category": "Developer, Infra and Data platforms",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.sentry.io/api/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.sentry.io/api/auth/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "unsupported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'api_key' (11 hits)",
+    "mcp=official is unsupported"
+   ],
+   "readable_pages": 6,
+   "pages": 6,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "buggregator/server",
+    "TheHoltz/errex",
+    "theRubberDuckiee/mcp-server-configs"
+   ]
+  },
+  {
+   "id": "71",
+   "name": "Notion",
+   "category": "Productivity and Project Management",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.notion.com/reference/intro",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.notion.com/docs/authorization",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'api_key' (20 hits)"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "72",
+   "name": "Airtable",
+   "category": "Productivity and Project Management",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://airtable.com/developers/web/api/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://airtable.com/developers/web/api/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "vendor's own site documents an MCP server (4 hits) but pass says community"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "73",
+   "name": "Linear",
+   "category": "Productivity and Project Management",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://linear.app/developers/graphql",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://linear.app/developers/oauth-2-0-authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "unsupported"
+    }
+   ],
+   "flags": [
+    "access=self_serve is unsupported",
+    "mcp=official is unsupported"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "sandbox-quantum/switch",
+    "jerhadf/linear-mcp-server",
+    "khoj-ai/pipali"
+   ]
+  },
+  {
+   "id": "74",
+   "name": "Jira",
+   "category": "Productivity and Project Management",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "access=self_serve is unsupported"
+   ],
+   "readable_pages": 7,
+   "pages": 8,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "sooperset/mcp-atlassian",
+    "sandbox-quantum/switch",
+    "pipeshub-ai/pipeshub-ai"
+   ]
+  },
+  {
+   "id": "75",
+   "name": "Asana",
+   "category": "Productivity and Project Management",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.asana.com/reference/rest-api-reference",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.asana.com/docs/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "76",
+   "name": "Monday.com",
+   "category": "Productivity and Project Management",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.monday.com/api-reference/docs",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.monday.com/api-reference/docs/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "77",
+   "name": "ClickUp",
+   "category": "Productivity and Project Management",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.clickup.com/reference",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.clickup.com/docs/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "access=self_serve is unsupported"
+   ],
+   "readable_pages": 6,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "78",
+   "name": "Coda",
+   "category": "Productivity and Project Management",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://coda.io/developers/apis/v1",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'api_key' (232 hits)",
+    "vendor's own site documents an MCP server (4 hits) but pass says community"
+   ],
+   "readable_pages": 5,
+   "pages": 5,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "79",
+   "name": "Smartsheet",
+   "category": "Productivity and Project Management",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.smartsheet.com/api/smartsheet/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'api_key' (18 hits)"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "80",
+   "name": "Harvest",
+   "category": "Productivity and Project Management",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://help.getharvest.com/api-v2/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 5,
+   "pages": 6,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "taiste/harvest-mcp-server",
+    "Dominic-DK/mac-shortcuts-mcp",
+    "nospicyplease/amazon-ppc-advanced-skills"
+   ]
+  },
+  {
+   "id": "81",
+   "name": "Stripe",
+   "category": "Finance and Fintech",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.stripe.com/api",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.stripe.com/api/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "unsupported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "unsupported"
+    }
+   ],
+   "flags": [
+    "auth=oauth2 is unsupported",
+    "mcp=official is unsupported"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "iannuttall/mcp-boilerplate",
+    "Kronova-Intelligent-Systems/asset-intel-orchestration-engine",
+    "Justin0504/Sovereign-OS"
+   ]
+  },
+  {
+   "id": "82",
+   "name": "Plaid",
+   "category": "Finance and Fintech",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://plaid.com/docs/api/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://plaid.com/docs/api/#api-access",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'oauth2' (91 hits)"
+   ],
+   "readable_pages": 7,
+   "pages": 7,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "83",
+   "name": "Binance",
+   "category": "Finance and Fintech",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api/request-security",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "hmac",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "vendor's own site documents an MCP server (5 hits) but pass says community",
+    "access=self_serve is unsupported"
+   ],
+   "readable_pages": 7,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "84",
+   "name": "Paygent Connect",
+   "category": "Finance and Fintech",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.nmi.com/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "unsupported"
+    },
+    {
+     "field": "access",
+     "value": "partner",
+     "status": "unsupported"
+    }
+   ],
+   "flags": [
+    "MCP mentioned on docs (3 hits) but pass says none",
+    "api=REST is unsupported",
+    "access=partner is unsupported"
+   ],
+   "readable_pages": 2,
+   "pages": 3,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "85",
+   "name": "iPayX",
+   "category": "Finance and Fintech",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://ipayx.ai/docs",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "MCP mentioned on docs (43 hits) but pass says none"
+   ],
+   "readable_pages": 5,
+   "pages": 7,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "Ipayx-stellar/mcp-submit",
+    "Ipayx-stellar/mcp-fx-audit",
+    "iPAYX-Technologies/mcp-fx-audit"
+   ]
+  },
+  {
+   "id": "86",
+   "name": "QuickBooks",
+   "category": "Finance and Fintech",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.intuit.com/app/developer/qbo/docs/develop",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "intuit/quickbooks-online-mcp-server",
+    "Scottcjn/qb-auto",
+    "CDataSoftware/quickbooks-mcp-server-by-cdata"
+   ]
+  },
+  {
+   "id": "87",
+   "name": "Xero",
+   "category": "Finance and Fintech",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.xero.com/documentation/api/accounting/overview",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "unsupported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "api=REST is unsupported"
+   ],
+   "readable_pages": 3,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "88",
+   "name": "Brex",
+   "category": "Finance and Fintech",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.brex.com/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.brex.com/docs/authentication/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "unsupported"
+    }
+   ],
+   "flags": [
+    "MCP mentioned on docs (7 hits) but pass says none",
+    "access=paid is unsupported"
+   ],
+   "readable_pages": 8,
+   "pages": 8,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "89",
+   "name": "Ramp",
+   "category": "Finance and Fintech",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.ramp.com/developer-api/v1/overview/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.ramp.com/developer-api/v1/authorization",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "unsupported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "auth=oauth2 is unsupported",
+    "access=paid is unsupported"
+   ],
+   "readable_pages": 3,
+   "pages": 3,
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "highflame-ai/ramparts",
+    "ramp-public/ramp_mcp",
+    "KevinRabun/FedRAMP20xMCP"
+   ]
+  },
+  {
+   "id": "90",
+   "name": "PitchBook",
+   "category": "Finance and Fintech",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://pitchbook.com/data/api",
+     "status": "broken_link"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "partner",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "docs_url=https://pitchbook.com/data/api is broken_link"
+   ],
+   "readable_pages": 4,
+   "pages": 5,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "91",
+   "name": "NotebookLM",
+   "category": "AI, Research and Media-native",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "vendor's own site documents an MCP server (1 hits) but pass says community"
+   ],
+   "readable_pages": 7,
+   "pages": 7,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "92",
+   "name": "Otter AI",
+   "category": "AI, Research and Media-native",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://help.otter.ai/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "MCP",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'api_key' (24 hits)"
+   ],
+   "readable_pages": 6,
+   "pages": 6,
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "DarrenZal/otter-mcp",
+    "StanAngeloff/otter-mcp",
+    "bcharleson/otter-cli"
+   ]
+  },
+  {
+   "id": "93",
+   "name": "Fathom",
+   "category": "AI, Research and Media-native",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.fathom.ai/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "vendor's own site documents an MCP server (9 hits) but pass says community"
+   ],
+   "readable_pages": 6,
+   "pages": 7,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "94",
+   "name": "Consensus",
+   "category": "AI, Research and Media-native",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.consensus.app/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "partner",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 6,
+   "pages": 6,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "95",
+   "name": "Reducto",
+   "category": "AI, Research and Media-native",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.reducto.ai/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    }
+   ],
+   "flags": [
+    "MCP mentioned on docs (113 hits) but pass says none",
+    "docs push 'contact sales' but pass says self-serve",
+    "access=self_serve is unsupported"
+   ],
+   "readable_pages": 7,
+   "pages": 7,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "96",
+   "name": "Devin",
+   "category": "AI, Research and Media-native",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.devin.ai/api-reference/overview",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'api_key' (61 hits)"
+   ],
+   "readable_pages": 7,
+   "pages": 7,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "97",
+   "name": "higgsfield",
+   "category": "AI, Research and Media-native",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.higgsfield.ai/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "MCP mentioned on docs (20 hits) but pass says none"
+   ],
+   "readable_pages": 5,
+   "pages": 6,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "98",
+   "name": "Mermaid CLI",
+   "category": "AI, Research and Media-native",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://github.com/mermaid-js/mermaid-cli",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "CLI",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [],
+   "readable_pages": 3,
+   "pages": 3,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "99",
+   "name": "YouTube Transcript",
+   "category": "AI, Research and Media-native",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://transcriptapi.com/docs",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'oauth2' (58 hits)",
+    "vendor's own site documents an MCP server (75 hits) but pass says community"
+   ],
+   "readable_pages": 7,
+   "pages": 7,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  },
+  {
+   "id": "100",
+   "name": "Grain",
+   "category": "AI, Research and Media-native",
+   "claims": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.grain.com/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    }
+   ],
+   "flags": [
+    "strong evidence for unclaimed auth 'oauth2' (37 hits)",
+    "MCP mentioned on docs (20 hits) but pass says none"
+   ],
+   "readable_pages": 7,
+   "pages": 7,
+   "github_mcp": "none_found",
+   "github_mcp_repos": []
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "id": "25",
+ "name": "Pumble",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "infralayers/pumble-mcp",
+   "stars": 3,
+   "url": "https://github.com/infralayers/pumble-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "nitindermohan/pumble-mcp",
+   "stars": 0,
+   "url": "https://github.com/nitindermohan/pumble-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "apet97/pumble-python-sdk",
+   "stars": 0,
+   "url": "https://github.com/apet97/pumble-python-sdk",
+   "vendor_owned": false
+  },
+  {
+   "repo": "shoutkol/pumble-mcp-server",
+   "stars": 0,
+   "url": "https://github.com/shoutkol/pumble-mcp-server",
+   "vendor_owned": false
+  }
+ ]
+}

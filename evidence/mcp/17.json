@@ -1,0 +1,67 @@
+{
+ "id": "17",
+ "name": "Plain",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "aicodeking/leanrea",
+   "stars": 4444,
+   "url": "https://github.com/aicodeking/leanrea",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Mibayy/token-savior",
+   "stars": 1228,
+   "url": "https://github.com/Mibayy/token-savior",
+   "vendor_owned": false
+  },
+  {
+   "repo": "alpacahq/alpaca-mcp-server",
+   "stars": 1111,
+   "url": "https://github.com/alpacahq/alpaca-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "ooples/token-optimizer-mcp",
+   "stars": 593,
+   "url": "https://github.com/ooples/token-optimizer-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "racdeufindurch198812/Blender-AI-MCP-Studio",
+   "stars": 518,
+   "url": "https://github.com/racdeufindurch198812/Blender-AI-MCP-Studio",
+   "vendor_owned": false
+  },
+  {
+   "repo": "credoksopho1984/blender-ai-copilot-studio",
+   "stars": 516,
+   "url": "https://github.com/credoksopho1984/blender-ai-copilot-studio",
+   "vendor_owned": false
+  },
+  {
+   "repo": "findavoulot1973/Blender-AI-MCP-Suite",
+   "stars": 495,
+   "url": "https://github.com/findavoulot1973/Blender-AI-MCP-Suite",
+   "vendor_owned": false
+  },
+  {
+   "repo": "realopslabs/kubeledger",
+   "stars": 485,
+   "url": "https://github.com/realopslabs/kubeledger",
+   "vendor_owned": false
+  },
+  {
+   "repo": "mrmps/classifier-dev",
+   "stars": 442,
+   "url": "https://github.com/mrmps/classifier-dev",
+   "vendor_owned": false
+  },
+  {
+   "repo": "bx33661/Wireshark-MCP",
+   "stars": 410,
+   "url": "https://github.com/bx33661/Wireshark-MCP",
+   "vendor_owned": false
+  }
+ ]
+}

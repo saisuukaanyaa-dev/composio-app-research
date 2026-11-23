@@ -1,0 +1,67 @@
+{
+ "id": "2",
+ "name": "HubSpot",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "baryhuang/mcp-hubspot",
+   "stars": 129,
+   "url": "https://github.com/baryhuang/mcp-hubspot",
+   "vendor_owned": false
+  },
+  {
+   "repo": "shinzo-labs/hubspot-mcp",
+   "stars": 35,
+   "url": "https://github.com/shinzo-labs/hubspot-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "lkm1developer/hubspot-mcp-server",
+   "stars": 12,
+   "url": "https://github.com/lkm1developer/hubspot-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "scopiousdigital/hubspot-mcp",
+   "stars": 11,
+   "url": "https://github.com/scopiousdigital/hubspot-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "bcharleson/hubspot-cli",
+   "stars": 8,
+   "url": "https://github.com/bcharleson/hubspot-cli",
+   "vendor_owned": false
+  },
+  {
+   "repo": "pejmanjohn/chickpea",
+   "stars": 8,
+   "url": "https://github.com/pejmanjohn/chickpea",
+   "vendor_owned": false
+  },
+  {
+   "repo": "CelestoAI/SuperAuth",
+   "stars": 6,
+   "url": "https://github.com/CelestoAI/SuperAuth",
+   "vendor_owned": false
+  },
+  {
+   "repo": "HubSpot/mcp-server",
+   "stars": 6,
+   "url": "https://github.com/HubSpot/mcp-server",
+   "vendor_owned": true
+  },
+  {
+   "repo": "HubSpot/hubspot-mcp-plugins",
+   "stars": 5,
+   "url": "https://github.com/HubSpot/hubspot-mcp-plugins",
+   "vendor_owned": true
+  },
+  {
+   "repo": "M-Pineapple/hubspot-auditor",
+   "stars": 4,
+   "url": "https://github.com/M-Pineapple/hubspot-auditor",
+   "vendor_owned": false
+  }
+ ]
+}

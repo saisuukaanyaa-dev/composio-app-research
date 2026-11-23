@@ -1,0 +1,7101 @@
+{
+ "generated_from": "data/pass2_verified.psv",
+ "schema": {
+  "auth": [
+   "oauth2",
+   "api_key",
+   "bearer_token",
+   "basic",
+   "jwt",
+   "hmac",
+   "oauth1",
+   "none",
+   "unknown"
+  ],
+  "access": [
+   "self_serve",
+   "trial",
+   "paid",
+   "approval",
+   "partner",
+   "unknown"
+  ],
+  "verdict": [
+   "ready",
+   "ready_with_review",
+   "blocked"
+  ]
+ },
+ "patterns": [
+  "OAuth 2.0 dominates, but keys are the fast lane. 72/100 apps offer OAuth 2.0 and 23 are key/token-only. 55 of the 72 OAuth apps <i>also</i> issue a personal key or token, so a toolkit can ship on keys first and add OAuth for multi-tenant use. The OAuth-only ones include the app-review platforms (Google Ads, LinkedIn, Amazon, Pinterest, Threads) and accounting (QuickBooks, Xero).",
+  "73/100 are self-serve (57 free, 16 via free trial). The gates are concentrated. 8 need platform app review (WhatsApp Business, Google Ads, Meta Ads, LinkedIn Ads, Pinterest, Threads (Meta), Squarespace, Amazon Selling Partner). 8 are partner / contact-sales (DealCloud, Gladly, Salesforce Commerce Cloud, Waterfall.io, Clay, Paygent Connect, PitchBook, Consensus), and 11 need a paid plan.",
+  "Openness tracks category. Fully open: Developer, Infra and Data platforms (10/10), Productivity and Project Management (10/10). Most gated: Marketing, Ads, Email and Social (5/10, mostly app review / approval), AI, Research and Media-native (5/10, mostly paid plan).",
+  "The #1 blocker is commercial, not technical. Enterprise contract / customer account (14), Platform app review / approval (11), Paid plan required (7). Only 5 apps are truly blocked today; 63 are ready and 32 are buildable with a caveat.",
+  "MCP is already mainstream. 73/100 apps ship an official MCP server and 14 more have community ones. Several gated or API-less products (Clay, Otter, DealCloud, iPayX) now expose MCP before, or instead of, a broad REST API.",
+  "63 easy wins vs 16 need outreach. Easy wins are self-serve, documented and verdict ready; outreach means partnership, app review or a contract."
+ ],
+ "verification": {
+  "pass1_naivecrawl": {
+   "claims": 614,
+   "status": {
+    "broken_link": 18,
+    "unsupported": 52,
+    "supported": 476,
+    "no_evidence": 68
+   },
+   "supported_rate": 0.775,
+   "precision_on_checkable": 0.872,
+   "by_field": {
+    "docs_url": {
+     "broken_link": 10,
+     "supported": 80,
+     "no_evidence": 10
+    },
+    "auth_url": {
+     "broken_link": 8,
+     "supported": 59,
+     "no_evidence": 5
+    },
+    "auth": {
+     "unsupported": 8,
+     "supported": 140,
+     "no_evidence": 19
+    },
+    "api": {
+     "supported": 88,
+     "unsupported": 6,
+     "no_evidence": 13
+    },
+    "access": {
+     "supported": 66,
+     "unsupported": 20,
+     "no_evidence": 12
+    },
+    "mcp": {
+     "supported": 43,
+     "unsupported": 18,
+     "no_evidence": 9
+    }
+   },
+   "apps_flagged": 74,
+   "apps_no_evidence": 13
+  },
+  "pass1": {
+   "claims": 614,
+   "status": {
+    "supported": 560,
+    "unsupported": 30,
+    "broken_link": 3,
+    "no_evidence": 21
+   },
+   "supported_rate": 0.912,
+   "precision_on_checkable": 0.944,
+   "omission_flags": 71,
+   "by_field": {
+    "docs_url": {
+     "supported": 92,
+     "broken_link": 2,
+     "no_evidence": 6
+    },
+    "auth_url": {
+     "supported": 66,
+     "broken_link": 1,
+     "no_evidence": 5
+    },
+    "auth": {
+     "supported": 157,
+     "unsupported": 6,
+     "no_evidence": 4
+    },
+    "api": {
+     "supported": 101,
+     "unsupported": 3,
+     "no_evidence": 3
+    },
+    "access": {
+     "supported": 78,
+     "unsupported": 17,
+     "no_evidence": 3
+    },
+    "mcp": {
+     "supported": 66,
+     "unsupported": 4
+    }
+   },
+   "apps_flagged": 68,
+   "apps_no_evidence": 3
+  },
+  "pass2": {
+   "claims": 648,
+   "status": {
+    "supported": 598,
+    "unsupported": 30,
+    "no_evidence": 20
+   },
+   "supported_rate": 0.923,
+   "precision_on_checkable": 0.952,
+   "omission_flags": 35,
+   "by_field": {
+    "docs_url": {
+     "supported": 95,
+     "no_evidence": 5
+    },
+    "auth_url": {
+     "supported": 68,
+     "no_evidence": 5
+    },
+    "auth": {
+     "supported": 167,
+     "unsupported": 6,
+     "no_evidence": 4
+    },
+    "api": {
+     "supported": 105,
+     "unsupported": 3,
+     "no_evidence": 3
+    },
+    "access": {
+     "supported": 80,
+     "unsupported": 17,
+     "no_evidence": 3
+    },
+    "mcp": {
+     "supported": 83,
+     "unsupported": 4
+    }
+   },
+   "apps_flagged": 48,
+   "apps_no_evidence": 3
+  },
+  "hand_sample": {
+   "auth": {
+    "p1": [
+     14,
+     20
+    ],
+    "p2": [
+     19,
+     20
+    ]
+   },
+   "access": {
+    "p1": [
+     13,
+     16
+    ],
+    "p2": [
+     14,
+     16
+    ]
+   },
+   "api": {
+    "p1": [
+     18,
+     20
+    ],
+    "p2": [
+     20,
+     20
+    ]
+   },
+   "mcp": {
+    "p1": [
+     10,
+     17
+    ],
+    "p2": [
+     15,
+     17
+    ]
+   },
+   "verdict": {
+    "p1": [
+     18,
+     20
+    ],
+    "p2": [
+     20,
+     20
+    ]
+   }
+  },
+  "corrections": 84
+ },
+ "apps": [
+  {
+   "id": "1",
+   "name": "Salesforce",
+   "category": "CRM and Sales",
+   "hint": "salesforce.com",
+   "one_liner": "Enterprise CRM platform for sales, service and custom objects",
+   "auth": "oauth2",
+   "access": "self_serve",
+   "access_note": "Free Developer Edition org; Connected App for OAuth",
+   "api": "REST+SOAP+GraphQL",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest.htm",
+   "auth_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 8,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest.htm",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "SOAP",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "unsupported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "salesforcecli/mcp",
+    "smn2gnt/MCP-Salesforce",
+    "tsmztech/mcp-server-salesforce"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST+SOAP+GraphQL",
+    "docs_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest.htm"
+   }
+  },
+  {
+   "id": "2",
+   "name": "HubSpot",
+   "category": "CRM and Sales",
+   "hint": "hubspot.com",
+   "one_liner": "Inbound marketing, sales and service CRM",
+   "auth": "oauth2+bearer_token",
+   "access": "self_serve",
+   "access_note": "Free developer account and test portals; private app tokens",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developers.hubspot.com/docs/api/overview",
+   "auth_url": "https://developers.hubspot.com/docs/api/oauth-quickstart-guide",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.hubspot.com/docs/api/overview",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.hubspot.com/docs/api/oauth-quickstart-guide",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "baryhuang/mcp-hubspot",
+    "shinzo-labs/hubspot-mcp",
+    "lkm1developer/hubspot-mcp-server"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developers.hubspot.com/docs/api/overview"
+   }
+  },
+  {
+   "id": "3",
+   "name": "Pipedrive",
+   "category": "CRM and Sales",
+   "hint": "pipedrive.com",
+   "one_liner": "Pipeline-focused sales CRM for SMBs",
+   "auth": "oauth2+api_key",
+   "access": "self_serve",
+   "access_note": "Free developer sandbox account",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developers.pipedrive.com/docs/api/v1",
+   "auth_url": "https://pipedrive.readme.io/docs/marketplace-oauth-authorization",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.pipedrive.com/docs/api/v1",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://pipedrive.readme.io/docs/marketplace-oauth-authorization",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "WillDent/pipedrive-mcp-server",
+    "Wirasm/pipedrive-mcp",
+    "nubiia-dev/mcp-pipedrive"
+   ],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "oauth2+api_key",
+    "access": "self_serve",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developers.pipedrive.com/docs/api/v1"
+   }
+  },
+  {
+   "id": "4",
+   "name": "Attio",
+   "category": "CRM and Sales",
+   "hint": "attio.com",
+   "one_liner": "Flexible, data-driven CRM with custom objects",
+   "auth": "oauth2+bearer_token",
+   "access": "self_serve",
+   "access_note": "Free plan; access tokens from workspace settings",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://docs.attio.com/rest-api/overview",
+   "auth_url": "https://docs.attio.com/rest-api/guides/authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 6,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.attio.com/rest-api/overview",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.attio.com/rest-api/guides/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "kesslerio/attio-mcp-server",
+    "hmk/attio-mcp-server",
+    "redriverwest/attio-mcp"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://docs.attio.com/rest-api/overview"
+   }
+  },
+  {
+   "id": "5",
+   "name": "Twenty",
+   "category": "CRM and Sales",
+   "hint": "twenty.com (open-source CRM)",
+   "one_liner": "Open-source CRM, self-hostable or cloud",
+   "auth": "api_key+oauth2",
+   "access": "self_serve",
+   "access_note": "Open source; API keys created in settings",
+   "api": "REST+GraphQL",
+   "breadth": "medium",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://twenty.com/developers",
+   "auth_url": "https://twenty.com/developers/section/api-and-webhooks/api",
+   "blocker_bucket": "None",
+   "claims_supported": 8,
+   "claims_total": 8,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://twenty.com/developers",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://twenty.com/developers/section/api-and-webhooks/api",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "mhenry3164/twenty-crm-mcp-server",
+    "jezweb/twenty-mcp",
+    "Jdu278/twenty-mcp-server"
+   ],
+   "corrected_fields": [
+    "auth",
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "api_key",
+    "access": "self_serve",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "REST+GraphQL",
+    "docs_url": "https://twenty.com/developers"
+   }
+  },
+  {
+   "id": "6",
+   "name": "Podio",
+   "category": "CRM and Sales",
+   "hint": "podio.com",
+   "one_liner": "Citrix/Progress work-management and lightweight CRM app builder",
+   "auth": "oauth2",
+   "access": "self_serve",
+   "access_note": "API keys generated from any Podio account",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "none",
+   "verdict": "ready_with_review",
+   "blocker": "Legacy platform with limited investment",
+   "docs_url": "https://developers.podio.com/doc",
+   "auth_url": "https://developers.podio.com/authentication",
+   "blocker_bucket": "Other caveat",
+   "claims_supported": 4,
+   "claims_total": 5,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.podio.com/doc",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.podio.com/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "Podiom/Podiom",
+    "stoskov/podio-mcp",
+    "jscord30/MCPServer-Podio"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2",
+    "access": "self_serve",
+    "mcp": "none",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://developers.podio.com/doc"
+   }
+  },
+  {
+   "id": "7",
+   "name": "Zoho CRM",
+   "category": "CRM and Sales",
+   "hint": "zoho.com/crm",
+   "one_liner": "Zoho's CRM suite for sales automation",
+   "auth": "oauth2",
+   "access": "self_serve",
+   "access_note": "Free edition and self-client in API console",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "Multi-datacenter domains must be handled",
+   "docs_url": "https://www.zoho.com/crm/developer/docs/api/v7/",
+   "auth_url": "https://www.zoho.com/crm/developer/docs/api/v7/oauth-overview.html",
+   "blocker_bucket": "None",
+   "claims_supported": 6,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://www.zoho.com/crm/developer/docs/api/v7/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://www.zoho.com/crm/developer/docs/api/v7/oauth-overview.html",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "Officehub-Tech-LLC/MCP-Server",
+    "Mgabr90/zoho-mcp-server",
+    "LokiMCPUniverse/zoho-crm-mcp-server"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://www.zoho.com/crm/developer/docs/api/v7/"
+   }
+  },
+  {
+   "id": "8",
+   "name": "Close",
+   "category": "CRM and Sales",
+   "hint": "close.com",
+   "one_liner": "Sales CRM with built-in calling and email",
+   "auth": "api_key+basic+oauth2",
+   "access": "trial",
+   "access_note": "14-day free trial; API key used as Basic username",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developer.close.com/",
+   "auth_url": "https://developer.close.com/topics/authentication/",
+   "blocker_bucket": "None",
+   "claims_supported": 8,
+   "claims_total": 8,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.close.com/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.close.com/topics/authentication/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "runekaagaard/mcp-redmine",
+    "HazAT/pi-solo",
+    "jordigilh/kubernaut"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "api_key+basic+oauth2",
+    "access": "trial",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developer.close.com/"
+   }
+  },
+  {
+   "id": "9",
+   "name": "Copper",
+   "category": "CRM and Sales",
+   "hint": "copper.com",
+   "one_liner": "Google Workspace-native CRM",
+   "auth": "api_key+oauth2",
+   "access": "trial",
+   "access_note": "Free trial; API key + user email headers",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "none",
+   "verdict": "ready_with_review",
+   "blocker": "API key requires paid plan after trial",
+   "docs_url": "https://developer.copper.com/",
+   "auth_url": "https://developer.copper.com/introduction/authentication.html",
+   "blocker_bucket": "Paid plan required",
+   "claims_supported": 6,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.copper.com/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.copper.com/introduction/authentication.html",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "claynicholson/copper-kicad-mcp",
+    "Copperpour/Copperpour",
+    "seunghyukchoe/copper-mcp"
+   ],
+   "corrected_fields": [
+    "auth"
+   ],
+   "pass1": {
+    "auth": "api_key",
+    "access": "trial",
+    "mcp": "none",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://developer.copper.com/"
+   }
+  },
+  {
+   "id": "10",
+   "name": "DealCloud",
+   "category": "CRM and Sales",
+   "hint": "api.docs.dealcloud.com",
+   "one_liner": "Intapp relationship and deal management for capital markets",
+   "auth": "oauth2",
+   "access": "partner",
+   "access_note": "Enterprise customers only; MCP server and SDKs documented publicly",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "official",
+   "verdict": "blocked",
+   "blocker": "Requires an Intapp DealCloud enterprise tenant",
+   "docs_url": "https://api.docs.dealcloud.com/",
+   "auth_url": "https://api.docs.dealcloud.com/sdk/python/authentication",
+   "blocker_bucket": "Enterprise contract / customer account",
+   "claims_supported": 5,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://api.docs.dealcloud.com/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://api.docs.dealcloud.com/sdk/python/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "partner",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "jstewartrr/infra-20251230-mcp-dealcloud"
+   ],
+   "corrected_fields": [
+    "access_note",
+    "auth_url",
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "oauth2",
+    "access": "partner",
+    "mcp": "none",
+    "verdict": "blocked",
+    "api": "REST",
+    "docs_url": "https://api.docs.dealcloud.com/"
+   }
+  },
+  {
+   "id": "11",
+   "name": "Zendesk",
+   "category": "Support and Helpdesk",
+   "hint": "zendesk.com",
+   "one_liner": "Customer service ticketing and help center",
+   "auth": "oauth2",
+   "access": "trial",
+   "access_note": "14-day trial; sponsored developer accounts",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "community",
+   "verdict": "ready",
+   "blocker": "Legacy API tokens / Basic auth deprecated; build on OAuth",
+   "docs_url": "https://developer.zendesk.com/api-reference/",
+   "auth_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+   "blocker_bucket": "None",
+   "claims_supported": 6,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.zendesk.com/api-reference/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "chattermate/chattermate.chat",
+    "reminia/zendesk-mcp-server",
+    "mattcoatsworth/zendesk-mcp-server"
+   ],
+   "corrected_fields": [
+    "auth",
+    "blocker"
+   ],
+   "pass1": {
+    "auth": "oauth2+api_key+basic",
+    "access": "trial",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developer.zendesk.com/api-reference/"
+   }
+  },
+  {
+   "id": "12",
+   "name": "Intercom",
+   "category": "Support and Helpdesk",
+   "hint": "intercom.com",
+   "one_liner": "AI-first customer messaging and support",
+   "auth": "oauth2+bearer_token",
+   "access": "self_serve",
+   "access_note": "Free development workspace for app builders",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developers.intercom.com/docs/references/introduction",
+   "auth_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.intercom.com/docs/references/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "melgarafael/DeskcommCRM",
+    "chattermate/chattermate.chat",
+    "PersonaliAI/chatty"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developers.intercom.com/docs/references/introduction"
+   }
+  },
+  {
+   "id": "13",
+   "name": "Freshdesk",
+   "category": "Support and Helpdesk",
+   "hint": "freshdesk.com",
+   "one_liner": "Freshworks helpdesk ticketing",
+   "auth": "api_key+basic+oauth2",
+   "access": "self_serve",
+   "access_note": "Free plan; API key used with Basic auth",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "community",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developers.freshdesk.com/api/",
+   "auth_url": "https://developers.freshdesk.com/api/#authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 8,
+   "claims_total": 8,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.freshdesk.com/api/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.freshdesk.com/api/#authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "effytech/freshdesk_mcp",
+    "Enreign/freshdeck-mcp",
+    "hashcott/freshdesk-mcp"
+   ],
+   "corrected_fields": [
+    "auth"
+   ],
+   "pass1": {
+    "auth": "api_key+basic",
+    "access": "self_serve",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developers.freshdesk.com/api/"
+   }
+  },
+  {
+   "id": "14",
+   "name": "Front",
+   "category": "Support and Helpdesk",
+   "hint": "front.com",
+   "one_liner": "Shared inbox and customer operations platform",
+   "auth": "oauth2+bearer_token",
+   "access": "self_serve",
+   "access_note": "Free developer account available",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://dev.frontapp.com/reference/introduction",
+   "auth_url": "https://dev.frontapp.com/docs/authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://dev.frontapp.com/reference/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://dev.frontapp.com/docs/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "IBM/mcp-context-forge",
+    "wilwaldon/Claude-Code-Frontend-Design-Toolkit",
+    "mrwyndham/pocketbase-mcp"
+   ],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "self_serve",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://dev.frontapp.com/reference/introduction"
+   }
+  },
+  {
+   "id": "15",
+   "name": "Pylon",
+   "category": "Support and Helpdesk",
+   "hint": "usepylon.com",
+   "one_liner": "B2B support platform over Slack, Teams and email",
+   "auth": "bearer_token",
+   "access": "paid",
+   "access_note": "Sales-led product; API tokens for admins of paying workspaces",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "official",
+   "verdict": "ready_with_review",
+   "blocker": "Need a customer workspace to obtain a token",
+   "docs_url": "https://docs.usepylon.com/pylon-docs/developer/api",
+   "auth_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+   "blocker_bucket": "Enterprise contract / customer account",
+   "claims_supported": 6,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.usepylon.com/pylon-docs/developer/api",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "JustinBeckwith/pylon-mcp",
+    "toalba/Pylon",
+    "OpenAgentsInc/pylon-previous"
+   ],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "bearer_token",
+    "access": "paid",
+    "mcp": "none",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://docs.usepylon.com/pylon-docs/developer/api"
+   }
+  },
+  {
+   "id": "16",
+   "name": "LiveAgent",
+   "category": "Support and Helpdesk",
+   "hint": "liveagent.com",
+   "one_liner": "Helpdesk with live chat, call center and ticketing",
+   "auth": "api_key",
+   "access": "trial",
+   "access_note": "Free trial; API key from account settings",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://support.liveagent.com/802463-REST-API",
+   "auth_url": "https://support.liveagent.com/741982-API-key",
+   "blocker_bucket": "None",
+   "claims_supported": 6,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://support.liveagent.com/802463-REST-API",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://support.liveagent.com/741982-API-key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "QualityUnit/liveagent-mcp-server",
+    "shinnjr/liveagentdata-mcp",
+    "wiselingsnet-ops/liveagent-mcp"
+   ],
+   "corrected_fields": [
+    "auth_url",
+    "docs_url",
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "api_key",
+    "access": "trial",
+    "mcp": "none",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://support.liveagent.com/805161-API-v3"
+   }
+  },
+  {
+   "id": "17",
+   "name": "Plain",
+   "category": "Support and Helpdesk",
+   "hint": "plain.com",
+   "one_liner": "API-first B2B customer support tool",
+   "auth": "api_key+oauth2",
+   "access": "trial",
+   "access_note": "Free trial; machine-user API keys",
+   "api": "GraphQL",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://www.plain.com/docs/graphql/introduction",
+   "auth_url": "https://www.plain.com/docs/graphql/authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://www.plain.com/docs/graphql/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://www.plain.com/docs/graphql/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "aicodeking/leanrea",
+    "Mibayy/token-savior",
+    "alpacahq/alpaca-mcp-server"
+   ],
+   "corrected_fields": [
+    "auth",
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "api_key",
+    "access": "trial",
+    "mcp": "none",
+    "verdict": "ready",
+    "api": "GraphQL",
+    "docs_url": "https://www.plain.com/docs/graphql/introduction"
+   }
+  },
+  {
+   "id": "18",
+   "name": "Help Scout",
+   "category": "Support and Helpdesk",
+   "hint": "helpscout.com",
+   "one_liner": "Shared inbox and knowledge base for support teams",
+   "auth": "oauth2",
+   "access": "trial",
+   "access_note": "Free trial; OAuth app created in account",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "community",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developer.helpscout.com/mailbox-api/",
+   "auth_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+   "blocker_bucket": "None",
+   "claims_supported": 6,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.helpscout.com/mailbox-api/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "drewburchfield/help-scout-mcp-server",
+    "WayLit/help-scout-mcp-server",
+    "BryanMcKinney/HelpScoutMCP"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2",
+    "access": "trial",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developer.helpscout.com/mailbox-api/"
+   }
+  },
+  {
+   "id": "19",
+   "name": "Gorgias",
+   "category": "Support and Helpdesk",
+   "hint": "gorgias.com",
+   "one_liner": "Ecommerce helpdesk tightly integrated with Shopify",
+   "auth": "oauth2+api_key+basic",
+   "access": "trial",
+   "access_note": "Free trial; private API key; public OAuth apps reviewed by Gorgias",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "none",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developers.gorgias.com/reference/introduction",
+   "auth_url": "https://developers.gorgias.com/docs/authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 6,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.gorgias.com/reference/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.gorgias.com/docs/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "unsupported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "mattcoatsworth/Gorgias-MCP-Server",
+    "benpalmer1/Gorgias-MCP-Server",
+    "gorgias/mcp-cookbook"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+api_key+basic",
+    "access": "trial",
+    "mcp": "none",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developers.gorgias.com/reference/introduction"
+   }
+  },
+  {
+   "id": "20",
+   "name": "Gladly",
+   "category": "Support and Helpdesk",
+   "hint": "gladly.com",
+   "one_liner": "People-centered customer service platform",
+   "auth": "api_key+basic",
+   "access": "partner",
+   "access_note": "Enterprise sales only; API tokens for customer admins",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "none",
+   "verdict": "blocked",
+   "blocker": "No self-serve account; enterprise contract required",
+   "docs_url": "https://developer.gladly.com/rest/",
+   "auth_url": "https://developer.gladly.com/rest/#section/Getting-Started/Creating-API-Tokens",
+   "blocker_bucket": "Enterprise contract / customer account",
+   "claims_supported": 6,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.gladly.com/rest/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.gladly.com/rest/#section/Getting-Started/Creating-API-Tokens",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "partner",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "estebanruiz-beep/gladly-mcp-demo",
+    "gladly-hyphenated-21/flight-mcp"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "api_key+basic",
+    "access": "partner",
+    "mcp": "none",
+    "verdict": "blocked",
+    "api": "REST",
+    "docs_url": "https://developer.gladly.com/rest/"
+   }
+  },
+  {
+   "id": "21",
+   "name": "Slack",
+   "category": "Communications and Messaging",
+   "hint": "slack.com",
+   "one_liner": "Team chat and collaboration hub",
+   "auth": "oauth2+bearer_token",
+   "access": "self_serve",
+   "access_note": "Free workspace and app creation",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://api.slack.com/web",
+   "auth_url": "https://api.slack.com/authentication/oauth-v2",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://api.slack.com/web",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://api.slack.com/authentication/oauth-v2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "sansan0/TrendRadar",
+    "PostHog/posthog",
+    "sandbox-quantum/switch"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://api.slack.com/web"
+   }
+  },
+  {
+   "id": "22",
+   "name": "Twilio",
+   "category": "Communications and Messaging",
+   "hint": "twilio.com",
+   "one_liner": "Programmable SMS, voice and messaging APIs",
+   "auth": "api_key+basic+oauth2",
+   "access": "trial",
+   "access_note": "Free trial credit",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://www.twilio.com/docs/usage/api",
+   "auth_url": "https://www.twilio.com/docs/iam/api-keys",
+   "blocker_bucket": "None",
+   "claims_supported": 8,
+   "claims_total": 8,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://www.twilio.com/docs/usage/api",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://www.twilio.com/docs/iam/api-keys",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "sosoj92/jarvis-assistant-vocal",
+    "XiyaoWang0519/agent-call",
+    "lgesuellip/langgraph-whatsapp-agent"
+   ],
+   "corrected_fields": [
+    "auth"
+   ],
+   "pass1": {
+    "auth": "api_key+basic",
+    "access": "trial",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://www.twilio.com/docs/usage/api"
+   }
+  },
+  {
+   "id": "23",
+   "name": "Zoho Cliq",
+   "category": "Communications and Messaging",
+   "hint": "zoho.com/cliq",
+   "one_liner": "Zoho team chat",
+   "auth": "oauth2",
+   "access": "self_serve",
+   "access_note": "Free plan; Zoho API console",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://www.zoho.com/cliq/help/restapi/v2/",
+   "auth_url": "https://www.zoho.com/cliq/help/restapi/v2/",
+   "blocker_bucket": "None",
+   "claims_supported": 3,
+   "claims_total": 5,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://www.zoho.com/cliq/help/restapi/v2/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "unsupported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "The-Luminous-Group/cliq-api-integration"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://www.zoho.com/cliq/help/restapi/v2/"
+   }
+  },
+  {
+   "id": "24",
+   "name": "Lark (Larksuite)",
+   "category": "Communications and Messaging",
+   "hint": "open.larksuite.com",
+   "one_liner": "ByteDance collaboration suite: chat, docs, base",
+   "auth": "oauth2+bearer_token",
+   "access": "self_serve",
+   "access_note": "Free plan; custom app with app_id/app_secret",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://open.larksuite.com/document/home/index",
+   "auth_url": "https://open.larksuite.com/document/server-docs/authentication-management/access-token/tenant_access_token_internal",
+   "blocker_bucket": "None",
+   "claims_supported": 5,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://open.larksuite.com/document/home/index",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://open.larksuite.com/document/server-docs/authentication-management/access-token/tenant_access_token_internal",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "unsupported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "larksuite/lark-openapi-mcp",
+    "cso1z/Feishu-MCP",
+    "TGYD-helige/pi"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://open.larksuite.com/document/home/index"
+   }
+  },
+  {
+   "id": "25",
+   "name": "Pumble",
+   "category": "Communications and Messaging",
+   "hint": "pumble.com",
+   "one_liner": "Free Slack alternative team chat by CAKE.com",
+   "auth": "api_key",
+   "access": "self_serve",
+   "access_note": "Free plan; API key via Pumble API add-on",
+   "api": "REST",
+   "breadth": "narrow",
+   "mcp": "none",
+   "verdict": "ready_with_review",
+   "blocker": "Narrow API surface",
+   "docs_url": "https://pumble.com/help/integrations/add-pumble-apps/pumble-api-keys-integration/",
+   "auth_url": "https://pumble.com/help/integrations/add-pumble-apps/pumble-api-keys-integration/",
+   "blocker_bucket": "Paid plan required",
+   "claims_supported": 0,
+   "claims_total": 4,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://pumble.com/help/integrations/add-pumble-apps/pumble-api-keys-integration/",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "no_evidence"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "no_evidence"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "no_evidence"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "infralayers/pumble-mcp",
+    "nitindermohan/pumble-mcp",
+    "apet97/pumble-python-sdk"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "api_key",
+    "access": "self_serve",
+    "mcp": "none",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://pumble.com/help/integrations/add-pumble-apps/pumble-api-keys-integration/"
+   }
+  },
+  {
+   "id": "26",
+   "name": "Discord",
+   "category": "Communications and Messaging",
+   "hint": "discord.com",
+   "one_liner": "Community chat with voice and bots",
+   "auth": "oauth2+bearer_token",
+   "access": "self_serve",
+   "access_note": "Free; bot token from developer portal",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "community",
+   "verdict": "ready",
+   "blocker": "Privileged intents need verification at scale",
+   "docs_url": "https://discord.com/developers/docs/reference",
+   "auth_url": "https://discord.com/developers/docs/topics/oauth2",
+   "blocker_bucket": "None",
+   "claims_supported": 1,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://discord.com/developers/docs/reference",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://discord.com/developers/docs/topics/oauth2",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "no_evidence"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "no_evidence"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "no_evidence"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "sandbox-quantum/switch",
+    "moltis-org/moltis",
+    "heshengtao/comfyui_LLM_party"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "self_serve",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://discord.com/developers/docs/reference"
+   }
+  },
+  {
+   "id": "27",
+   "name": "Telegram",
+   "category": "Communications and Messaging",
+   "hint": "core.telegram.org",
+   "one_liner": "Messaging app with Bot API",
+   "auth": "bearer_token",
+   "access": "self_serve",
+   "access_note": "Free bot token from BotFather",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "community",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://core.telegram.org/bots/api",
+   "auth_url": "https://core.telegram.org/bots/api#authorizing-your-bot",
+   "blocker_bucket": "None",
+   "claims_supported": 1,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://core.telegram.org/bots/api",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://core.telegram.org/bots/api#authorizing-your-bot",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "no_evidence"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "no_evidence"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "no_evidence"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "sansan0/TrendRadar",
+    "sandbox-quantum/switch",
+    "moltis-org/moltis"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "bearer_token",
+    "access": "self_serve",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://core.telegram.org/bots/api"
+   }
+  },
+  {
+   "id": "28",
+   "name": "WhatsApp Business",
+   "category": "Communications and Messaging",
+   "hint": "developers.facebook.com/docs/whatsapp",
+   "one_liner": "WhatsApp Cloud API for business messaging",
+   "auth": "oauth2+bearer_token",
+   "access": "approval",
+   "access_note": "Free test number; business verification and App Review for production",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "community",
+   "verdict": "ready_with_review",
+   "blocker": "Meta business verification and app review",
+   "docs_url": "https://developers.facebook.com/docs/whatsapp/cloud-api",
+   "auth_url": "https://developers.facebook.com/docs/whatsapp/business-management-api/get-started",
+   "blocker_bucket": "Platform app review / approval",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.facebook.com/docs/whatsapp/cloud-api",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.facebook.com/docs/whatsapp/business-management-api/get-started",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "approval",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "Eyalm321/zernio-mcp",
+    "wassengerhq/whatsapp-mcp",
+    "victorgalletti/zappion"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "approval",
+    "mcp": "community",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://developers.facebook.com/docs/whatsapp/cloud-api"
+   }
+  },
+  {
+   "id": "29",
+   "name": "Aircall",
+   "category": "Communications and Messaging",
+   "hint": "aircall.io",
+   "one_liner": "Cloud phone system for sales and support",
+   "auth": "oauth2+api_key+basic",
+   "access": "paid",
+   "access_note": "Paid account for API keys; OAuth requires technology partner approval",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "none",
+   "verdict": "ready_with_review",
+   "blocker": "Paid plan; partner approval for public OAuth",
+   "docs_url": "https://developer.aircall.io/api-references/",
+   "auth_url": "https://developer.aircall.io/api-references/#authentication",
+   "blocker_bucket": "Platform app review / approval",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.aircall.io/api-references/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.aircall.io/api-references/#authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "themobilefirstco/aircall-mcp-server",
+    "TheAiShark/aircall-mcp-oauth",
+    "MaximeDeconinck/aircall-mcp"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+api_key+basic",
+    "access": "paid",
+    "mcp": "none",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://developer.aircall.io/api-references/"
+   }
+  },
+  {
+   "id": "30",
+   "name": "Vonage",
+   "category": "Communications and Messaging",
+   "hint": "developer.vonage.com",
+   "one_liner": "Communications APIs: SMS, voice, video",
+   "auth": "api_key+basic+jwt",
+   "access": "trial",
+   "access_note": "Free trial credit",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developer.vonage.com/en/api",
+   "auth_url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 8,
+   "claims_total": 8,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.vonage.com/en/api",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "jwt",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "khan2a/telephony-mcp-server",
+    "Vonage-Community/vonage-mcp-server-api-bindings",
+    "mobilebiz/vonage-cloudflare-mcp"
+   ],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "api_key+basic+jwt",
+    "access": "trial",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developer.vonage.com/en/api"
+   }
+  },
+  {
+   "id": "31",
+   "name": "Google Ads",
+   "category": "Marketing, Ads, Email and Social",
+   "hint": "developers.google.com/google-ads",
+   "one_liner": "Google search and display advertising",
+   "auth": "oauth2",
+   "access": "approval",
+   "access_note": "Developer token: test access immediately, Basic access needs Google review",
+   "api": "REST+gRPC",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready_with_review",
+   "blocker": "Developer token approval",
+   "docs_url": "https://developers.google.com/google-ads/api/docs/start",
+   "auth_url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+   "blocker_bucket": "Platform app review / approval",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.google.com/google-ads/api/docs/start",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "gRPC",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "approval",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "irinabuht12-oss/marketing-skills",
+    "irinabuht12-oss/google-ads-meta-ads-mcp",
+    "googleads/google-ads-mcp"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2",
+    "access": "approval",
+    "mcp": "official",
+    "verdict": "ready_with_review",
+    "api": "REST+gRPC",
+    "docs_url": "https://developers.google.com/google-ads/api/docs/start"
+   }
+  },
+  {
+   "id": "32",
+   "name": "Meta Ads",
+   "category": "Marketing, Ads, Email and Social",
+   "hint": "developers.facebook.com/docs/marketing-apis",
+   "one_liner": "Facebook and Instagram advertising via Marketing API",
+   "auth": "oauth2+bearer_token",
+   "access": "approval",
+   "access_note": "App Review for ads_management advanced access; business verification",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready_with_review",
+   "blocker": "Meta App Review",
+   "docs_url": "https://developers.facebook.com/docs/marketing-apis",
+   "auth_url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+   "blocker_bucket": "Platform app review / approval",
+   "claims_supported": 5,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.facebook.com/docs/marketing-apis",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "unsupported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "approval",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "irinabuht12-oss/marketing-skills",
+    "irinabuht12-oss/google-ads-meta-ads-mcp",
+    "pipeboard-co/meta-ads-mcp"
+   ],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "approval",
+    "mcp": "community",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://developers.facebook.com/docs/marketing-apis"
+   }
+  },
+  {
+   "id": "33",
+   "name": "LinkedIn Ads",
+   "category": "Marketing, Ads, Email and Social",
+   "hint": "learn.microsoft.com/linkedin/marketing",
+   "one_liner": "LinkedIn advertising and campaign management",
+   "auth": "oauth2",
+   "access": "approval",
+   "access_note": "Advertising API product access must be applied for and approved",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "none",
+   "verdict": "ready_with_review",
+   "blocker": "LinkedIn Marketing API access application",
+   "docs_url": "https://learn.microsoft.com/en-us/linkedin/marketing/",
+   "auth_url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access",
+   "blocker_bucket": "Platform app review / approval",
+   "claims_supported": 5,
+   "claims_total": 5,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://learn.microsoft.com/en-us/linkedin/marketing/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "approval",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "amekala/ads-mcp",
+    "markifact/markifact-mcp",
+    "danielpopamd/linkedin-ads-mcp"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2",
+    "access": "approval",
+    "mcp": "none",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://learn.microsoft.com/en-us/linkedin/marketing/"
+   }
+  },
+  {
+   "id": "34",
+   "name": "GoHighLevel",
+   "category": "Marketing, Ads, Email and Social",
+   "hint": "highlevel.stoplight.io",
+   "one_liner": "All-in-one CRM and marketing platform for agencies",
+   "auth": "oauth2+bearer_token",
+   "access": "trial",
+   "access_note": "Free marketplace developer account; sub-accounts need a paid or trial agency plan",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://highlevel.stoplight.io/docs/integrations/",
+   "auth_url": "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0",
+   "blocker_bucket": "None",
+   "claims_supported": 5,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://highlevel.stoplight.io/docs/integrations/",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "mastanley13/GoHighLevel-MCP",
+    "BusyBee3333/Go-High-Level-MCP-2026-Complete",
+    "basicmachines-co/open-ghl-mcp"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "trial",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://highlevel.stoplight.io/docs/integrations/"
+   }
+  },
+  {
+   "id": "35",
+   "name": "Mailchimp",
+   "category": "Marketing, Ads, Email and Social",
+   "hint": "mailchimp.com/developer",
+   "one_liner": "Email marketing and audience management",
+   "auth": "oauth2+api_key",
+   "access": "self_serve",
+   "access_note": "Free plan; API key in account",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://mailchimp.com/developer/marketing/api/",
+   "auth_url": "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+   "blocker_bucket": "None",
+   "claims_supported": 6,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://mailchimp.com/developer/marketing/api/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "damientilman/mailchimp-mcp-server",
+    "AgentX-ai/mailchimp-mcp",
+    "CosmoBlk/email-design"
+   ],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "oauth2+api_key",
+    "access": "self_serve",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://mailchimp.com/developer/marketing/api/"
+   }
+  },
+  {
+   "id": "36",
+   "name": "Klaviyo",
+   "category": "Marketing, Ads, Email and Social",
+   "hint": "developers.klaviyo.com",
+   "one_liner": "Email and SMS marketing for ecommerce",
+   "auth": "api_key+oauth2",
+   "access": "self_serve",
+   "access_note": "Free plan; private API keys",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developers.klaviyo.com/en/reference/api_overview",
+   "auth_url": "https://developers.klaviyo.com/en/docs/set_up_oauth",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.klaviyo.com/en/reference/api_overview",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.klaviyo.com/en/docs/set_up_oauth",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "CosmoBlk/email-design",
+    "mattcoatsworth/Klaviyo-MCP-Server",
+    "mattcoatsworth/Klaviyo-MCP-Server-4-15"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "api_key+oauth2",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developers.klaviyo.com/en/reference/api_overview"
+   }
+  },
+  {
+   "id": "37",
+   "name": "systeme.io",
+   "category": "Marketing, Ads, Email and Social",
+   "hint": "systeme.io (funnel builder)",
+   "one_liner": "All-in-one funnel, email and course builder",
+   "auth": "api_key",
+   "access": "self_serve",
+   "access_note": "Free plan; API key in settings",
+   "api": "REST",
+   "breadth": "narrow",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developer.systeme.io/reference/api",
+   "auth_url": "https://developer.systeme.io/reference/api",
+   "blocker_bucket": "None",
+   "claims_supported": 5,
+   "claims_total": 5,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.systeme.io/reference/api",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "snzeeee/mcp-server-systemeio",
+    "management3consulting69-ops/systeme-mcp",
+    "cotlet-connect/systeme-io-mcp"
+   ],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "api_key",
+    "access": "self_serve",
+    "mcp": "none",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developer.systeme.io/reference/api"
+   }
+  },
+  {
+   "id": "38",
+   "name": "Pinterest",
+   "category": "Marketing, Ads, Email and Social",
+   "hint": "developers.pinterest.com",
+   "one_liner": "Visual discovery and ads platform",
+   "auth": "oauth2",
+   "access": "approval",
+   "access_note": "Trial access first; Standard access after review",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "none",
+   "verdict": "ready_with_review",
+   "blocker": "App review for standard access",
+   "docs_url": "https://developers.pinterest.com/docs/api/v5/",
+   "auth_url": "https://developers.pinterest.com/docs/getting-started/authentication-and-scopes/",
+   "blocker_bucket": "Platform app review / approval",
+   "claims_supported": 5,
+   "claims_total": 5,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.pinterest.com/docs/api/v5/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.pinterest.com/docs/getting-started/authentication-and-scopes/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "approval",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "itallstartedwithaidea/advertising-hub",
+    "terryso/mcp-pinterest",
+    "collactivelabs/pinterest-mcp-server"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2",
+    "access": "approval",
+    "mcp": "none",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://developers.pinterest.com/docs/api/v5/"
+   }
+  },
+  {
+   "id": "39",
+   "name": "Threads (Meta)",
+   "category": "Marketing, Ads, Email and Social",
+   "hint": "developers.facebook.com/docs/threads",
+   "one_liner": "Meta's text-based social network",
+   "auth": "oauth2",
+   "access": "approval",
+   "access_note": "Testers allowed; App Review for public use",
+   "api": "REST",
+   "breadth": "narrow",
+   "mcp": "community",
+   "verdict": "ready_with_review",
+   "blocker": "Meta App Review",
+   "docs_url": "https://developers.facebook.com/docs/threads",
+   "auth_url": "https://developers.facebook.com/docs/threads/get-started",
+   "blocker_bucket": "Platform app review / approval",
+   "claims_supported": 6,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.facebook.com/docs/threads",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.facebook.com/docs/threads/get-started",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "approval",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "Dicklesworthstone/mcp_agent_mail",
+    "risa-labs-inc/BossConsole",
+    "irockel/tda"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2",
+    "access": "approval",
+    "mcp": "community",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://developers.facebook.com/docs/threads"
+   }
+  },
+  {
+   "id": "40",
+   "name": "SendGrid",
+   "category": "Marketing, Ads, Email and Social",
+   "hint": "sendgrid.com",
+   "one_liner": "Twilio transactional and marketing email",
+   "auth": "api_key+bearer_token",
+   "access": "trial",
+   "access_note": "Free trial; API keys in settings",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "community",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://www.twilio.com/docs/sendgrid/api-reference",
+   "auth_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://www.twilio.com/docs/sendgrid/api-reference",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "Garoth/sendgrid-mcp",
+    "KiKi-Builds/AI-Briefing-Skill",
+    "deyikong/sendgrid-mcp"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "api_key+bearer_token",
+    "access": "trial",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+   }
+  },
+  {
+   "id": "41",
+   "name": "Shopify",
+   "category": "Ecommerce",
+   "hint": "shopify.dev",
+   "one_liner": "Leading ecommerce store platform",
+   "auth": "oauth2+bearer_token",
+   "access": "self_serve",
+   "access_note": "Free Partner account and development stores",
+   "api": "GraphQL+REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "Protected customer data requires review",
+   "docs_url": "https://shopify.dev/docs/api/admin-graphql",
+   "auth_url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 8,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://shopify.dev/docs/api/admin-graphql",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://shopify.dev/docs/apps/build/authentication-authorization",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "GraphQL+REST",
+    "docs_url": "https://shopify.dev/docs/api/admin-graphql"
+   }
+  },
+  {
+   "id": "42",
+   "name": "WooCommerce",
+   "category": "Ecommerce",
+   "hint": "woocommerce.com/document/woocommerce-rest-api",
+   "one_liner": "Open-source ecommerce plugin for WordPress",
+   "auth": "api_key+basic+oauth1",
+   "access": "self_serve",
+   "access_note": "Open source; keys generated per store",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "community",
+   "verdict": "ready_with_review",
+   "blocker": "Per-store base URL; each store self-hosted",
+   "docs_url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+   "auth_url": "https://woocommerce.github.io/woocommerce-rest-api-docs/#authentication",
+   "blocker_bucket": "Self-hosted / per-instance URL",
+   "claims_supported": 8,
+   "claims_total": 8,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://woocommerce.github.io/woocommerce-rest-api-docs/#authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth1",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "techspawn/woocommerce-mcp-server",
+    "gobuildwp/wordpress-mcp-ai-gobuildwp",
+    "tropk-ai/mcp-for-wordpress"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "api_key+basic+oauth1",
+    "access": "self_serve",
+    "mcp": "community",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+   }
+  },
+  {
+   "id": "43",
+   "name": "BigCommerce",
+   "category": "Ecommerce",
+   "hint": "developer.bigcommerce.com",
+   "one_liner": "SaaS ecommerce platform for mid-market",
+   "auth": "oauth2+bearer_token",
+   "access": "self_serve",
+   "access_note": "Free sandbox store via developer portal",
+   "api": "REST+GraphQL",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developer.bigcommerce.com/docs/rest-management",
+   "auth_url": "https://developer.bigcommerce.com/docs/start/authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 8,
+   "claims_total": 8,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.bigcommerce.com/docs/rest-management",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.bigcommerce.com/docs/start/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "self_serve",
+    "mcp": "none",
+    "verdict": "ready",
+    "api": "REST+GraphQL",
+    "docs_url": "https://developer.bigcommerce.com/docs/rest-management"
+   }
+  },
+  {
+   "id": "44",
+   "name": "Salesforce Commerce Cloud",
+   "category": "Ecommerce",
+   "hint": "developer.salesforce.com/docs/commerce",
+   "one_liner": "Enterprise B2C/B2B ecommerce on Salesforce",
+   "auth": "oauth2",
+   "access": "partner",
+   "access_note": "Requires licensed Commerce Cloud instance and Account Manager credentials",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "blocked",
+   "blocker": "Enterprise license required",
+   "docs_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+   "auth_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+   "blocker_bucket": "Enterprise contract / customer account",
+   "claims_supported": 6,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "partner",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "oauth2",
+    "access": "partner",
+    "mcp": "none",
+    "verdict": "blocked",
+    "api": "REST",
+    "docs_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+   }
+  },
+  {
+   "id": "45",
+   "name": "Magento (Adobe Commerce)",
+   "category": "Ecommerce",
+   "hint": "developer.adobe.com/commerce",
+   "one_liner": "Open-source and Adobe-licensed ecommerce platform",
+   "auth": "oauth1+bearer_token",
+   "access": "self_serve",
+   "access_note": "Magento Open Source is free to self-host; Adobe Commerce is licensed",
+   "api": "REST+GraphQL",
+   "breadth": "broad",
+   "mcp": "none",
+   "verdict": "ready_with_review",
+   "blocker": "Per-instance base URL; self-hosting",
+   "docs_url": "https://developer.adobe.com/commerce/webapi/rest/",
+   "auth_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+   "blocker_bucket": "Enterprise contract / customer account",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.adobe.com/commerce/webapi/rest/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth1",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth1+bearer_token",
+    "access": "self_serve",
+    "mcp": "none",
+    "verdict": "ready_with_review",
+    "api": "REST+GraphQL",
+    "docs_url": "https://developer.adobe.com/commerce/webapi/rest/"
+   }
+  },
+  {
+   "id": "46",
+   "name": "Squarespace",
+   "category": "Ecommerce",
+   "hint": "developers.squarespace.com",
+   "one_liner": "Website builder with commerce",
+   "auth": "oauth2+api_key",
+   "access": "approval",
+   "access_note": "API keys need a Commerce plan; OAuth requires partner application",
+   "api": "REST",
+   "breadth": "narrow",
+   "mcp": "official",
+   "verdict": "ready_with_review",
+   "blocker": "Paid plan and OAuth partner approval",
+   "docs_url": "https://developers.squarespace.com/commerce-apis/overview",
+   "auth_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+   "blocker_bucket": "Platform app review / approval",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.squarespace.com/commerce-apis/overview",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "approval",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "oauth2+api_key",
+    "access": "approval",
+    "mcp": "none",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://developers.squarespace.com/commerce-apis/overview"
+   }
+  },
+  {
+   "id": "47",
+   "name": "Ecwid",
+   "category": "Ecommerce",
+   "hint": "api-docs.ecwid.com",
+   "one_liner": "Embeddable online store by Lightspeed",
+   "auth": "oauth2+bearer_token",
+   "access": "paid",
+   "access_note": "Custom apps require a paid plan",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "none",
+   "verdict": "ready_with_review",
+   "blocker": "Paid plan for custom apps",
+   "docs_url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+   "auth_url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+   "blocker_bucket": "Paid plan required",
+   "claims_supported": 5,
+   "claims_total": 5,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "auth_url",
+    "docs_url"
+   ],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "paid",
+    "mcp": "none",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://api-docs.ecwid.com/reference/overview"
+   }
+  },
+  {
+   "id": "48",
+   "name": "Gumroad",
+   "category": "Ecommerce",
+   "hint": "gumroad.com/api",
+   "one_liner": "Creator marketplace for digital products",
+   "auth": "oauth2+bearer_token",
+   "access": "self_serve",
+   "access_note": "Free account; OAuth app in settings",
+   "api": "REST",
+   "breadth": "narrow",
+   "mcp": "community",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://app.gumroad.com/api",
+   "auth_url": "https://app.gumroad.com/api",
+   "blocker_bucket": "None",
+   "claims_supported": 6,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://app.gumroad.com/api",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "self_serve",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://app.gumroad.com/api"
+   }
+  },
+  {
+   "id": "49",
+   "name": "Amazon Selling Partner",
+   "category": "Ecommerce",
+   "hint": "developer-docs.amazon.com/sp-api",
+   "one_liner": "Amazon marketplace seller and vendor API",
+   "auth": "oauth2",
+   "access": "approval",
+   "access_note": "Developer registration, Professional seller account, restricted roles reviewed",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "none",
+   "verdict": "ready_with_review",
+   "blocker": "Developer profile approval and Professional seller account",
+   "docs_url": "https://developer-docs.amazon.com/sp-api/docs/what-is-the-selling-partner-api",
+   "auth_url": "https://developer-docs.amazon.com/sp-api/docs/authorizing-selling-partner-api-applications",
+   "blocker_bucket": "Platform app review / approval",
+   "claims_supported": 5,
+   "claims_total": 5,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer-docs.amazon.com/sp-api/docs/what-is-the-selling-partner-api",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer-docs.amazon.com/sp-api/docs/authorizing-selling-partner-api-applications",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "approval",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2",
+    "access": "approval",
+    "mcp": "none",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://developer-docs.amazon.com/sp-api/docs/what-is-the-selling-partner-api"
+   }
+  },
+  {
+   "id": "50",
+   "name": "fanbasis",
+   "category": "Ecommerce",
+   "hint": "fanbasis.com",
+   "one_liner": "Creator checkout, subscriptions and payouts platform (rebranded as Commas)",
+   "auth": "api_key",
+   "access": "self_serve",
+   "access_note": "Sandbox and production API keys from the dashboard",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "official",
+   "verdict": "ready_with_review",
+   "blocker": "Rebrand in progress; docs hosted on a netlify subdomain, so confirm the canonical URL",
+   "docs_url": "https://fbnewapi.netlify.app/",
+   "auth_url": "https://fbnewapi.netlify.app/",
+   "blocker_bucket": "No (stable) public API",
+   "claims_supported": 5,
+   "claims_total": 5,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://fbnewapi.netlify.app/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "access",
+    "access_note",
+    "api",
+    "auth",
+    "auth_url",
+    "blocker",
+    "breadth",
+    "docs_url",
+    "mcp",
+    "one_liner",
+    "verdict"
+   ],
+   "pass1": {
+    "auth": "unknown",
+    "access": "unknown",
+    "mcp": "none",
+    "verdict": "blocked",
+    "api": "none",
+    "docs_url": "https://www.fanbasis.com/"
+   }
+  },
+  {
+   "id": "51",
+   "name": "DataForSEO",
+   "category": "Data, SEO and Scraping",
+   "hint": "docs.dataforseo.com",
+   "one_liner": "SEO data APIs: SERP, keywords, backlinks",
+   "auth": "basic",
+   "access": "self_serve",
+   "access_note": "Free trial credit, pay-as-you-go",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://docs.dataforseo.com/v3/",
+   "auth_url": "https://docs.dataforseo.com/v3/auth/",
+   "blocker_bucket": "None",
+   "claims_supported": 6,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.dataforseo.com/v3/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.dataforseo.com/v3/auth/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "dataforseo/mcp-server-typescript",
+    "houtini-ai/seo-audit",
+    "Skobyn/dataforseo-mcp-server"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "basic",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://docs.dataforseo.com/v3/"
+   }
+  },
+  {
+   "id": "52",
+   "name": "SE Ranking",
+   "category": "Data, SEO and Scraping",
+   "hint": "seranking.com/api",
+   "one_liner": "SEO platform for rank tracking and audits",
+   "auth": "api_key",
+   "access": "paid",
+   "access_note": "API access on paid plans / API add-on",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "official",
+   "verdict": "ready_with_review",
+   "blocker": "Paid plan for API",
+   "docs_url": "https://seranking.com/api.html",
+   "auth_url": "https://seranking.com/api.html",
+   "blocker_bucket": "Paid plan required",
+   "claims_supported": 5,
+   "claims_total": 5,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://seranking.com/api.html",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "api_key",
+    "access": "paid",
+    "mcp": "official",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://seranking.com/api.html"
+   }
+  },
+  {
+   "id": "53",
+   "name": "Ahrefs",
+   "category": "Data, SEO and Scraping",
+   "hint": "ahrefs.com/api",
+   "one_liner": "SEO toolset with backlink and keyword data",
+   "auth": "api_key+bearer_token+oauth2",
+   "access": "paid",
+   "access_note": "API v3 on Enterprise plan; free test queries only",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "official",
+   "verdict": "ready_with_review",
+   "blocker": "Enterprise plan required",
+   "docs_url": "https://docs.ahrefs.com/docs/api/reference/introduction",
+   "auth_url": "https://docs.ahrefs.com/docs/api/reference/introduction",
+   "blocker_bucket": "Enterprise contract / customer account",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.ahrefs.com/docs/api/reference/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "auth"
+   ],
+   "pass1": {
+    "auth": "api_key+bearer_token",
+    "access": "paid",
+    "mcp": "official",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://docs.ahrefs.com/docs/api/reference/introduction"
+   }
+  },
+  {
+   "id": "54",
+   "name": "MrScraper",
+   "category": "Data, SEO and Scraping",
+   "hint": "docs.mrscraper.com",
+   "one_liner": "AI web scraping service",
+   "auth": "api_key",
+   "access": "self_serve",
+   "access_note": "Free credits on signup",
+   "api": "REST",
+   "breadth": "narrow",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://docs.mrscraper.com/",
+   "auth_url": "https://docs.mrscraper.com/",
+   "blocker_bucket": "None",
+   "claims_supported": 5,
+   "claims_total": 5,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.mrscraper.com/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "api_key",
+    "access": "self_serve",
+    "mcp": "none",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://docs.mrscraper.com/"
+   }
+  },
+  {
+   "id": "55",
+   "name": "Apify",
+   "category": "Data, SEO and Scraping",
+   "hint": "docs.apify.com",
+   "one_liner": "Web scraping and automation platform with Actors",
+   "auth": "bearer_token+oauth2",
+   "access": "self_serve",
+   "access_note": "Free plan with monthly credit",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://docs.apify.com/api/v2",
+   "auth_url": "https://docs.apify.com/platform/integrations/api",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.apify.com/api/v2",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.apify.com/platform/integrations/api",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "bearer_token+oauth2",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://docs.apify.com/api/v2"
+   }
+  },
+  {
+   "id": "56",
+   "name": "Firecrawl",
+   "category": "Data, SEO and Scraping",
+   "hint": "firecrawl.dev",
+   "one_liner": "Web crawling and scraping to LLM-ready markdown",
+   "auth": "api_key+bearer_token+oauth2",
+   "access": "self_serve",
+   "access_note": "Free credits",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://docs.firecrawl.dev/api-reference/introduction",
+   "auth_url": "https://docs.firecrawl.dev/api-reference/introduction",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.firecrawl.dev/api-reference/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "auth"
+   ],
+   "pass1": {
+    "auth": "api_key+bearer_token",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://docs.firecrawl.dev/api-reference/introduction"
+   }
+  },
+  {
+   "id": "57",
+   "name": "Bright Data",
+   "category": "Data, SEO and Scraping",
+   "hint": "brightdata.com",
+   "one_liner": "Proxy networks, scraping and datasets",
+   "auth": "api_key+bearer_token",
+   "access": "trial",
+   "access_note": "Free trial credit; KYC for some products",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://docs.brightdata.com/api-reference/introduction",
+   "auth_url": "https://docs.brightdata.com/api-reference/authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.brightdata.com/api-reference/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.brightdata.com/api-reference/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "api_key+bearer_token",
+    "access": "trial",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://docs.brightdata.com/api-reference/introduction"
+   }
+  },
+  {
+   "id": "58",
+   "name": "Sherlock",
+   "category": "Data, SEO and Scraping",
+   "hint": "github.com/sherlock-project/sherlock",
+   "one_liner": "Open-source CLI to find usernames across social networks",
+   "auth": "none",
+   "access": "self_serve",
+   "access_note": "Open source, local CLI",
+   "api": "CLI",
+   "breadth": "narrow",
+   "mcp": "community",
+   "verdict": "ready_with_review",
+   "blocker": "No hosted API; must wrap CLI in sandbox",
+   "docs_url": "https://github.com/sherlock-project/sherlock",
+   "auth_url": "https://github.com/sherlock-project/sherlock",
+   "blocker_bucket": "No (stable) public API",
+   "claims_supported": 4,
+   "claims_total": 4,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://github.com/sherlock-project/sherlock",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "CLI",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "none",
+    "access": "self_serve",
+    "mcp": "community",
+    "verdict": "ready_with_review",
+    "api": "CLI",
+    "docs_url": "https://github.com/sherlock-project/sherlock"
+   }
+  },
+  {
+   "id": "59",
+   "name": "Waterfall.io",
+   "category": "Data, SEO and Scraping",
+   "hint": "waterfall.io (contact/company intel)",
+   "one_liner": "Contact and company data enrichment",
+   "auth": "api_key",
+   "access": "partner",
+   "access_note": "Contact sales / demo for access",
+   "api": "REST",
+   "breadth": "narrow",
+   "mcp": "none",
+   "verdict": "ready_with_review",
+   "blocker": "Account onboarding is demo-led (Book a Call)",
+   "docs_url": "https://docs.waterfall.io/v1/api-keys-overview",
+   "auth_url": "https://docs.waterfall.io/v1/api-keys-overview",
+   "blocker_bucket": "Enterprise contract / customer account",
+   "claims_supported": 3,
+   "claims_total": 4,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.waterfall.io/v1/api-keys-overview",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "partner",
+     "status": "unsupported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "auth_url",
+    "blocker",
+    "docs_url",
+    "verdict"
+   ],
+   "pass1": {
+    "auth": "api_key",
+    "access": "partner",
+    "mcp": "none",
+    "verdict": "blocked",
+    "api": "REST",
+    "docs_url": "https://waterfall.io/"
+   }
+  },
+  {
+   "id": "60",
+   "name": "Clay",
+   "category": "Data, SEO and Scraping",
+   "hint": "clay.com",
+   "one_liner": "Data enrichment and GTM workflow spreadsheets",
+   "auth": "api_key",
+   "access": "partner",
+   "access_note": "No general public API; webhooks and enterprise API only",
+   "api": "MCP",
+   "breadth": "narrow",
+   "mcp": "official",
+   "verdict": "ready_with_review",
+   "blocker": "No general REST API; MCP and webhooks only",
+   "docs_url": "https://www.clay.com/university/guide/webhook-integration-guide",
+   "auth_url": "https://www.clay.com/university/guide/webhook-integration-guide",
+   "blocker_bucket": "Enterprise contract / customer account",
+   "claims_supported": 5,
+   "claims_total": 5,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://www.clay.com/university/guide/webhook-integration-guide",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "MCP",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "partner",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "api",
+    "blocker",
+    "mcp",
+    "verdict"
+   ],
+   "pass1": {
+    "auth": "api_key",
+    "access": "partner",
+    "mcp": "none",
+    "verdict": "blocked",
+    "api": "none",
+    "docs_url": "https://www.clay.com/university/guide/webhook-integration-guide"
+   }
+  },
+  {
+   "id": "61",
+   "name": "GitHub",
+   "category": "Developer, Infra and Data platforms",
+   "hint": "docs.github.com/rest",
+   "one_liner": "Code hosting and collaboration",
+   "auth": "oauth2+bearer_token",
+   "access": "self_serve",
+   "access_note": "Free account; PATs and GitHub Apps",
+   "api": "REST+GraphQL",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://docs.github.com/en/rest",
+   "auth_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+   "blocker_bucket": "None",
+   "claims_supported": 8,
+   "claims_total": 8,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.github.com/en/rest",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "github/github-mcp-server",
+    "idosal/git-mcp",
+    "kucherenko/jscpd"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST+GraphQL",
+    "docs_url": "https://docs.github.com/en/rest"
+   }
+  },
+  {
+   "id": "62",
+   "name": "Vercel",
+   "category": "Developer, Infra and Data platforms",
+   "hint": "vercel.com/docs/rest-api",
+   "one_liner": "Frontend cloud and serverless hosting",
+   "auth": "bearer_token+oauth2",
+   "access": "self_serve",
+   "access_note": "Free Hobby plan",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://vercel.com/docs/rest-api",
+   "auth_url": "https://vercel.com/docs/rest-api/reference/welcome#authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://vercel.com/docs/rest-api",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://vercel.com/docs/rest-api/reference/welcome#authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "bearer_token+oauth2",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://vercel.com/docs/rest-api"
+   }
+  },
+  {
+   "id": "63",
+   "name": "Netlify",
+   "category": "Developer, Infra and Data platforms",
+   "hint": "docs.netlify.com/api",
+   "one_liner": "Web hosting and deployment platform",
+   "auth": "bearer_token+oauth2",
+   "access": "self_serve",
+   "access_note": "Free plan; personal access tokens",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://docs.netlify.com/api/get-started/",
+   "auth_url": "https://docs.netlify.com/api/get-started/#authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 6,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.netlify.com/api/get-started/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.netlify.com/api/get-started/#authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "netlify/netlify-mcp",
+    "bella-and-c/sleepy-dog-lock",
+    "jbulger82/LLAMA_Hub"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "bearer_token+oauth2",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://docs.netlify.com/api/get-started/"
+   }
+  },
+  {
+   "id": "64",
+   "name": "Cloudflare",
+   "category": "Developer, Infra and Data platforms",
+   "hint": "developers.cloudflare.com/api",
+   "one_liner": "CDN, security, DNS and edge compute",
+   "auth": "bearer_token+api_key+oauth2",
+   "access": "self_serve",
+   "access_note": "Free plan; scoped API tokens",
+   "api": "REST+GraphQL",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developers.cloudflare.com/api/",
+   "auth_url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+   "blocker_bucket": "None",
+   "claims_supported": 9,
+   "claims_total": 9,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.cloudflare.com/api/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "auth"
+   ],
+   "pass1": {
+    "auth": "bearer_token+api_key",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST+GraphQL",
+    "docs_url": "https://developers.cloudflare.com/api/"
+   }
+  },
+  {
+   "id": "65",
+   "name": "Supabase",
+   "category": "Developer, Infra and Data platforms",
+   "hint": "supabase.com/docs",
+   "one_liner": "Postgres backend-as-a-service",
+   "auth": "api_key+bearer_token+oauth2",
+   "access": "self_serve",
+   "access_note": "Free tier; Management API PATs",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://supabase.com/docs/reference/api/introduction",
+   "auth_url": "https://supabase.com/docs/reference/api/introduction",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://supabase.com/docs/reference/api/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "api_key+bearer_token+oauth2",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://supabase.com/docs/reference/api/introduction"
+   }
+  },
+  {
+   "id": "66",
+   "name": "Neo4j",
+   "category": "Developer, Infra and Data platforms",
+   "hint": "neo4j.com/docs/api",
+   "one_liner": "Graph database",
+   "auth": "basic+bearer_token+oauth2",
+   "access": "self_serve",
+   "access_note": "AuraDB Free and Community Edition",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://neo4j.com/docs/query-api/current/",
+   "auth_url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 8,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://neo4j.com/docs/query-api/current/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "unsupported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "basic+bearer_token+oauth2",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://neo4j.com/docs/query-api/current/"
+   }
+  },
+  {
+   "id": "67",
+   "name": "Snowflake",
+   "category": "Developer, Infra and Data platforms",
+   "hint": "docs.snowflake.com",
+   "one_liner": "Cloud data warehouse",
+   "auth": "oauth2+jwt+bearer_token",
+   "access": "trial",
+   "access_note": "30-day trial with credits",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+   "auth_url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+   "blocker_bucket": "None",
+   "claims_supported": 8,
+   "claims_total": 8,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "jwt",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "Snowflake-Labs/mcp",
+    "isaacwasserman/mcp-snowflake-server",
+    "ralforion/orionbelt-analytics"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+jwt+bearer_token",
+    "access": "trial",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index"
+   }
+  },
+  {
+   "id": "68",
+   "name": "MongoDB Atlas",
+   "category": "Developer, Infra and Data platforms",
+   "hint": "mongodb.com/docs/atlas/api",
+   "one_liner": "Managed MongoDB cloud",
+   "auth": "oauth2+api_key",
+   "access": "self_serve",
+   "access_note": "Free M0 cluster; service accounts and API keys",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "Atlas Data API deprecated",
+   "docs_url": "https://www.mongodb.com/docs/atlas/api/",
+   "auth_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://www.mongodb.com/docs/atlas/api/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+api_key",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://www.mongodb.com/docs/atlas/api/"
+   }
+  },
+  {
+   "id": "69",
+   "name": "Datadog",
+   "category": "Developer, Infra and Data platforms",
+   "hint": "docs.datadoghq.com/api",
+   "one_liner": "Observability and monitoring",
+   "auth": "api_key+oauth2",
+   "access": "trial",
+   "access_note": "14-day free trial",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://docs.datadoghq.com/api/latest/",
+   "auth_url": "https://docs.datadoghq.com/api/latest/authentication/",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.datadoghq.com/api/latest/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.datadoghq.com/api/latest/authentication/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "api_key+oauth2",
+    "access": "trial",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://docs.datadoghq.com/api/latest/"
+   }
+  },
+  {
+   "id": "70",
+   "name": "Sentry",
+   "category": "Developer, Infra and Data platforms",
+   "hint": "docs.sentry.io/api",
+   "one_liner": "Error tracking and performance monitoring",
+   "auth": "bearer_token+oauth2",
+   "access": "self_serve",
+   "access_note": "Free Developer plan",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://docs.sentry.io/api/",
+   "auth_url": "https://docs.sentry.io/api/auth/",
+   "blocker_bucket": "None",
+   "claims_supported": 6,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.sentry.io/api/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.sentry.io/api/auth/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "unsupported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "buggregator/server",
+    "TheHoltz/errex",
+    "theRubberDuckiee/mcp-server-configs"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "bearer_token+oauth2",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://docs.sentry.io/api/"
+   }
+  },
+  {
+   "id": "71",
+   "name": "Notion",
+   "category": "Productivity and Project Management",
+   "hint": "developers.notion.com",
+   "one_liner": "Connected workspace for docs and databases",
+   "auth": "oauth2+bearer_token",
+   "access": "self_serve",
+   "access_note": "Free plan; internal integration tokens",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developers.notion.com/reference/intro",
+   "auth_url": "https://developers.notion.com/docs/authorization",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.notion.com/reference/intro",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.notion.com/docs/authorization",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developers.notion.com/reference/intro"
+   }
+  },
+  {
+   "id": "72",
+   "name": "Airtable",
+   "category": "Productivity and Project Management",
+   "hint": "airtable.com/developers",
+   "one_liner": "Spreadsheet-database hybrid",
+   "auth": "oauth2+bearer_token",
+   "access": "self_serve",
+   "access_note": "Free plan; personal access tokens",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://airtable.com/developers/web/api/introduction",
+   "auth_url": "https://airtable.com/developers/web/api/authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://airtable.com/developers/web/api/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://airtable.com/developers/web/api/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "self_serve",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://airtable.com/developers/web/api/introduction"
+   }
+  },
+  {
+   "id": "73",
+   "name": "Linear",
+   "category": "Productivity and Project Management",
+   "hint": "developers.linear.app",
+   "one_liner": "Issue tracking for software teams",
+   "auth": "oauth2+api_key",
+   "access": "self_serve",
+   "access_note": "Free plan; personal API keys",
+   "api": "GraphQL",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://linear.app/developers/graphql",
+   "auth_url": "https://linear.app/developers/oauth-2-0-authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 5,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://linear.app/developers/graphql",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://linear.app/developers/oauth-2-0-authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "unsupported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "sandbox-quantum/switch",
+    "jerhadf/linear-mcp-server",
+    "khoj-ai/pipali"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+api_key",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "GraphQL",
+    "docs_url": "https://linear.app/developers/graphql"
+   }
+  },
+  {
+   "id": "74",
+   "name": "Jira",
+   "category": "Productivity and Project Management",
+   "hint": "developer.atlassian.com",
+   "one_liner": "Atlassian issue and project tracking",
+   "auth": "oauth2+api_key+basic",
+   "access": "self_serve",
+   "access_note": "Free plan; API tokens",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+   "auth_url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 8,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "basic",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "sooperset/mcp-atlassian",
+    "sandbox-quantum/switch",
+    "pipeshub-ai/pipeshub-ai"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+api_key+basic",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+   }
+  },
+  {
+   "id": "75",
+   "name": "Asana",
+   "category": "Productivity and Project Management",
+   "hint": "developers.asana.com",
+   "one_liner": "Work and project management",
+   "auth": "oauth2+bearer_token",
+   "access": "self_serve",
+   "access_note": "Free plan; personal access tokens",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developers.asana.com/reference/rest-api-reference",
+   "auth_url": "https://developers.asana.com/docs/authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.asana.com/reference/rest-api-reference",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.asana.com/docs/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developers.asana.com/reference/rest-api-reference"
+   }
+  },
+  {
+   "id": "76",
+   "name": "Monday.com",
+   "category": "Productivity and Project Management",
+   "hint": "developer.monday.com",
+   "one_liner": "Work OS for boards and workflows",
+   "auth": "oauth2+api_key",
+   "access": "self_serve",
+   "access_note": "Free developer account",
+   "api": "GraphQL",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developer.monday.com/api-reference/docs",
+   "auth_url": "https://developer.monday.com/api-reference/docs/authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.monday.com/api-reference/docs",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.monday.com/api-reference/docs/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "GraphQL",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+api_key",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "GraphQL",
+    "docs_url": "https://developer.monday.com/api-reference/docs"
+   }
+  },
+  {
+   "id": "77",
+   "name": "ClickUp",
+   "category": "Productivity and Project Management",
+   "hint": "clickup.com/api",
+   "one_liner": "All-in-one productivity and task management",
+   "auth": "oauth2+api_key",
+   "access": "self_serve",
+   "access_note": "Free plan; personal API token",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developer.clickup.com/reference",
+   "auth_url": "https://developer.clickup.com/docs/authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 6,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.clickup.com/reference",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.clickup.com/docs/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+api_key",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developer.clickup.com/reference"
+   }
+  },
+  {
+   "id": "78",
+   "name": "Coda",
+   "category": "Productivity and Project Management",
+   "hint": "coda.io/developers",
+   "one_liner": "Docs that work like apps (Coda, now rebranded as Superhuman Docs)",
+   "auth": "bearer_token",
+   "access": "self_serve",
+   "access_note": "Free plan; API token in account settings",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://coda.io/developers/apis/v1",
+   "auth_url": "https://coda.io/developers/apis/v1",
+   "blocker_bucket": "None",
+   "claims_supported": 5,
+   "claims_total": 5,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://coda.io/developers/apis/v1",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "mcp",
+    "one_liner"
+   ],
+   "pass1": {
+    "auth": "bearer_token",
+    "access": "self_serve",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://coda.io/developers/apis/v1"
+   }
+  },
+  {
+   "id": "79",
+   "name": "Smartsheet",
+   "category": "Productivity and Project Management",
+   "hint": "smartsheet.com/developers",
+   "one_liner": "Spreadsheet-based work management",
+   "auth": "oauth2+bearer_token",
+   "access": "trial",
+   "access_note": "Free trial; developer sandbox program",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+   "auth_url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.smartsheet.com/api/smartsheet/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "trial",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+   }
+  },
+  {
+   "id": "80",
+   "name": "Harvest",
+   "category": "Productivity and Project Management",
+   "hint": "harvestapp.com (help.getharvest.com/api-v2)",
+   "one_liner": "Time tracking and invoicing",
+   "auth": "oauth2+bearer_token",
+   "access": "trial",
+   "access_note": "30-day free trial; personal access tokens",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "community",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://help.getharvest.com/api-v2/",
+   "auth_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://help.getharvest.com/api-v2/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "trial",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "taiste/harvest-mcp-server",
+    "Dominic-DK/mac-shortcuts-mcp",
+    "nospicyplease/amazon-ppc-advanced-skills"
+   ],
+   "corrected_fields": [
+    "access",
+    "access_note"
+   ],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "self_serve",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://help.getharvest.com/api-v2/"
+   }
+  },
+  {
+   "id": "81",
+   "name": "Stripe",
+   "category": "Finance and Fintech",
+   "hint": "stripe.com/docs/api",
+   "one_liner": "Online payments infrastructure",
+   "auth": "api_key+bearer_token+oauth2",
+   "access": "self_serve",
+   "access_note": "Free test mode",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://docs.stripe.com/api",
+   "auth_url": "https://docs.stripe.com/api/authentication",
+   "blocker_bucket": "None",
+   "claims_supported": 6,
+   "claims_total": 8,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.stripe.com/api",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.stripe.com/api/authentication",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "unsupported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "unsupported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "iannuttall/mcp-boilerplate",
+    "Kronova-Intelligent-Systems/asset-intel-orchestration-engine",
+    "Justin0504/Sovereign-OS"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "api_key+bearer_token+oauth2",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://docs.stripe.com/api"
+   }
+  },
+  {
+   "id": "82",
+   "name": "Plaid",
+   "category": "Finance and Fintech",
+   "hint": "plaid.com/docs",
+   "one_liner": "Bank account linking and financial data",
+   "auth": "api_key",
+   "access": "self_serve",
+   "access_note": "Free Sandbox; Production requires approval",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready_with_review",
+   "blocker": "Production access review",
+   "docs_url": "https://plaid.com/docs/api/",
+   "auth_url": "https://plaid.com/docs/api/#api-access",
+   "blocker_bucket": "Platform app review / approval",
+   "claims_supported": 6,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://plaid.com/docs/api/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://plaid.com/docs/api/#api-access",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "api_key",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://plaid.com/docs/api/"
+   }
+  },
+  {
+   "id": "83",
+   "name": "Binance",
+   "category": "Finance and Fintech",
+   "hint": "binance-docs.github.io",
+   "one_liner": "Crypto exchange",
+   "auth": "api_key+hmac",
+   "access": "self_serve",
+   "access_note": "Account with KYC; testnet available",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready_with_review",
+   "blocker": "KYC and geo restrictions",
+   "docs_url": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api",
+   "auth_url": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api/request-security",
+   "blocker_bucket": "KYC / compliance",
+   "claims_supported": 6,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api/request-security",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "hmac",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "api_key+hmac",
+    "access": "self_serve",
+    "mcp": "community",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api"
+   }
+  },
+  {
+   "id": "84",
+   "name": "Paygent Connect",
+   "category": "Finance and Fintech",
+   "hint": "paygent (NMI-powered)",
+   "one_liner": "Payment gateway built on NMI",
+   "auth": "api_key",
+   "access": "partner",
+   "access_note": "Merchant account via reseller",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "official",
+   "verdict": "blocked",
+   "blocker": "Merchant account required",
+   "docs_url": "https://docs.nmi.com/",
+   "auth_url": "https://docs.nmi.com/",
+   "blocker_bucket": "Enterprise contract / customer account",
+   "claims_supported": 3,
+   "claims_total": 5,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.nmi.com/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "unsupported"
+    },
+    {
+     "field": "access",
+     "value": "partner",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "api_key",
+    "access": "partner",
+    "mcp": "none",
+    "verdict": "blocked",
+    "api": "REST",
+    "docs_url": "https://docs.nmi.com/"
+   }
+  },
+  {
+   "id": "85",
+   "name": "iPayX",
+   "category": "Finance and Fintech",
+   "hint": "ipayx.ai/docs",
+   "one_liner": "FX audit engine comparing bank-applied FX rates with the mid-market rate",
+   "auth": "bearer_token",
+   "access": "self_serve",
+   "access_note": "Free account with 3 free audits; credit packs and $299/mo plan",
+   "api": "REST+MCP",
+   "breadth": "narrow",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://ipayx.ai/developers",
+   "auth_url": "https://ipayx.ai/developers",
+   "blocker_bucket": "None",
+   "claims_supported": 6,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://ipayx.ai/developers",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "MCP",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "Ipayx-stellar/mcp-submit",
+    "Ipayx-stellar/mcp-fx-audit",
+    "iPAYX-Technologies/mcp-fx-audit"
+   ],
+   "corrected_fields": [
+    "access",
+    "access_note",
+    "api",
+    "auth",
+    "auth_url",
+    "blocker",
+    "docs_url",
+    "mcp",
+    "one_liner",
+    "verdict"
+   ],
+   "pass1": {
+    "auth": "api_key",
+    "access": "unknown",
+    "mcp": "none",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://ipayx.ai/docs"
+   }
+  },
+  {
+   "id": "86",
+   "name": "QuickBooks",
+   "category": "Finance and Fintech",
+   "hint": "developer.intuit.com",
+   "one_liner": "Intuit small-business accounting",
+   "auth": "oauth2",
+   "access": "self_serve",
+   "access_note": "Free developer sandbox; production requires app assessment",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developer.intuit.com/app/developer/qbo/docs/develop",
+   "auth_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+   "blocker_bucket": "None",
+   "claims_supported": 6,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.intuit.com/app/developer/qbo/docs/develop",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "intuit/quickbooks-online-mcp-server",
+    "Scottcjn/qb-auto",
+    "CDataSoftware/quickbooks-mcp-server-by-cdata"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developer.intuit.com/app/developer/qbo/docs/develop"
+   }
+  },
+  {
+   "id": "87",
+   "name": "Xero",
+   "category": "Finance and Fintech",
+   "hint": "developer.xero.com",
+   "one_liner": "Cloud accounting for small businesses",
+   "auth": "oauth2",
+   "access": "self_serve",
+   "access_note": "Free developer account with demo company",
+   "api": "REST",
+   "breadth": "broad",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "Uncertified apps capped at 25 connections",
+   "docs_url": "https://developer.xero.com/documentation/api/accounting/overview",
+   "auth_url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+   "blocker_bucket": "None",
+   "claims_supported": 3,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.xero.com/documentation/api/accounting/overview",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+     "status": "no_evidence"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "unsupported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2",
+    "access": "self_serve",
+    "mcp": "official",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developer.xero.com/documentation/api/accounting/overview"
+   }
+  },
+  {
+   "id": "88",
+   "name": "Brex",
+   "category": "Finance and Fintech",
+   "hint": "developer.brex.com",
+   "one_liner": "Corporate cards and spend management",
+   "auth": "oauth2+bearer_token",
+   "access": "paid",
+   "access_note": "Requires a Brex customer account; OAuth via partner approval",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "official",
+   "verdict": "ready_with_review",
+   "blocker": "Customer account or partnership",
+   "docs_url": "https://developer.brex.com/",
+   "auth_url": "https://developer.brex.com/docs/authentication/",
+   "blocker_bucket": "Enterprise contract / customer account",
+   "claims_supported": 6,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developer.brex.com/",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://developer.brex.com/docs/authentication/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "oauth2+bearer_token",
+    "access": "paid",
+    "mcp": "none",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://developer.brex.com/"
+   }
+  },
+  {
+   "id": "89",
+   "name": "Ramp",
+   "category": "Finance and Fintech",
+   "hint": "docs.ramp.com",
+   "one_liner": "Corporate cards and finance automation",
+   "auth": "oauth2",
+   "access": "paid",
+   "access_note": "Requires a Ramp business account; sandbox by request",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "official",
+   "verdict": "ready_with_review",
+   "blocker": "Customer account required",
+   "docs_url": "https://docs.ramp.com/developer-api/v1/overview/introduction",
+   "auth_url": "https://docs.ramp.com/developer-api/v1/authorization",
+   "blocker_bucket": "Enterprise contract / customer account",
+   "claims_supported": 4,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.ramp.com/developer-api/v1/overview/introduction",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://docs.ramp.com/developer-api/v1/authorization",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "unsupported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "official_repo",
+   "github_mcp_repos": [
+    "highflame-ai/ramparts",
+    "ramp-public/ramp_mcp",
+    "KevinRabun/FedRAMP20xMCP"
+   ],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2",
+    "access": "paid",
+    "mcp": "official",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://docs.ramp.com/developer-api/v1/overview/introduction"
+   }
+  },
+  {
+   "id": "90",
+   "name": "PitchBook",
+   "category": "Finance and Fintech",
+   "hint": "pitchbook.com (research API)",
+   "one_liner": "Private market and VC data",
+   "auth": "api_key",
+   "access": "partner",
+   "access_note": "Enterprise subscription plus API add-on",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "none",
+   "verdict": "blocked",
+   "blocker": "Enterprise contract",
+   "docs_url": "https://pitchbook.com/help/PitchBook-api",
+   "auth_url": "https://pitchbook.com/help/PitchBook-api",
+   "blocker_bucket": "Enterprise contract / customer account",
+   "claims_supported": 4,
+   "claims_total": 4,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://pitchbook.com/help/PitchBook-api",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "partner",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "auth_url",
+    "docs_url"
+   ],
+   "pass1": {
+    "auth": "api_key",
+    "access": "partner",
+    "mcp": "none",
+    "verdict": "blocked",
+    "api": "REST",
+    "docs_url": "https://pitchbook.com/data/api"
+   }
+  },
+  {
+   "id": "91",
+   "name": "NotebookLM",
+   "category": "AI, Research and Media-native",
+   "hint": "cloud.google.com/gemini (Enterprise API)",
+   "one_liner": "Google AI research notebook",
+   "auth": "oauth2",
+   "access": "paid",
+   "access_note": "NotebookLM Enterprise license via Google Cloud; no consumer API",
+   "api": "REST",
+   "breadth": "narrow",
+   "mcp": "community",
+   "verdict": "ready_with_review",
+   "blocker": "Enterprise license; consumer product has no API",
+   "docs_url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "auth_url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "blocker_bucket": "Enterprise contract / customer account",
+   "claims_supported": 5,
+   "claims_total": 5,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "oauth2",
+    "access": "paid",
+    "mcp": "community",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+   }
+  },
+  {
+   "id": "92",
+   "name": "Otter AI",
+   "category": "AI, Research and Media-native",
+   "hint": "help.otter.ai (MCP server)",
+   "one_liner": "AI meeting transcription and notes",
+   "auth": "oauth2+bearer_token",
+   "access": "self_serve",
+   "access_note": "REST API only for Enterprise workspaces; read-only MCP server for all plans (OAuth)",
+   "api": "REST+MCP",
+   "breadth": "narrow",
+   "mcp": "official",
+   "verdict": "ready_with_review",
+   "blocker": "REST API is Enterprise-only; MCP is read-only",
+   "docs_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+   "auth_url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+   "blocker_bucket": "Enterprise contract / customer account",
+   "claims_supported": 8,
+   "claims_total": 8,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+     "status": "supported"
+    },
+    {
+     "field": "auth_url",
+     "value": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "MCP",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "community_repo",
+   "github_mcp_repos": [
+    "DarrenZal/otter-mcp",
+    "StanAngeloff/otter-mcp",
+    "bcharleson/otter-cli"
+   ],
+   "corrected_fields": [
+    "access",
+    "access_note",
+    "api",
+    "auth",
+    "auth_url",
+    "blocker",
+    "docs_url"
+   ],
+   "pass1": {
+    "auth": "oauth2",
+    "access": "paid",
+    "mcp": "official",
+    "verdict": "ready_with_review",
+    "api": "MCP",
+    "docs_url": "https://help.otter.ai/"
+   }
+  },
+  {
+   "id": "93",
+   "name": "Fathom",
+   "category": "AI, Research and Media-native",
+   "hint": "fathom.video",
+   "one_liner": "AI meeting recorder and notetaker",
+   "auth": "api_key+oauth2",
+   "access": "self_serve",
+   "access_note": "Free plan; API key in settings",
+   "api": "REST",
+   "breadth": "narrow",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://developers.fathom.ai/",
+   "auth_url": "https://developers.fathom.ai/",
+   "blocker_bucket": "None",
+   "claims_supported": 6,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.fathom.ai/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "api_key+oauth2",
+    "access": "self_serve",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://developers.fathom.ai/"
+   }
+  },
+  {
+   "id": "94",
+   "name": "Consensus",
+   "category": "AI, Research and Media-native",
+   "hint": "consensus.app (OAuth requested)",
+   "one_liner": "AI search engine over scientific papers",
+   "auth": "api_key+oauth2",
+   "access": "partner",
+   "access_note": "API by application; MCP uses OAuth",
+   "api": "REST",
+   "breadth": "narrow",
+   "mcp": "official",
+   "verdict": "ready_with_review",
+   "blocker": "API access by application",
+   "docs_url": "https://docs.consensus.app/",
+   "auth_url": "https://docs.consensus.app/",
+   "blocker_bucket": "Platform app review / approval",
+   "claims_supported": 6,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.consensus.app/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "partner",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "api_key+oauth2",
+    "access": "partner",
+    "mcp": "official",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://docs.consensus.app/"
+   }
+  },
+  {
+   "id": "95",
+   "name": "Reducto",
+   "category": "AI, Research and Media-native",
+   "hint": "reducto.ai (document parsing)",
+   "one_liner": "Document parsing and extraction for LLMs",
+   "auth": "api_key+bearer_token",
+   "access": "self_serve",
+   "access_note": "Free credits on signup",
+   "api": "REST",
+   "breadth": "narrow",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://docs.reducto.ai/",
+   "auth_url": "https://docs.reducto.ai/",
+   "blocker_bucket": "None",
+   "claims_supported": 5,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.reducto.ai/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "unsupported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "api_key+bearer_token",
+    "access": "self_serve",
+    "mcp": "none",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://docs.reducto.ai/"
+   }
+  },
+  {
+   "id": "96",
+   "name": "Devin",
+   "category": "AI, Research and Media-native",
+   "hint": "docs.devin.ai (MCP)",
+   "one_liner": "Autonomous AI software engineer by Cognition",
+   "auth": "bearer_token",
+   "access": "paid",
+   "access_note": "Paid plan; API keys from settings",
+   "api": "REST",
+   "breadth": "medium",
+   "mcp": "official",
+   "verdict": "ready_with_review",
+   "blocker": "Paid plan",
+   "docs_url": "https://docs.devin.ai/api-reference/overview",
+   "auth_url": "https://docs.devin.ai/api-reference/overview",
+   "blocker_bucket": "Paid plan required",
+   "claims_supported": 5,
+   "claims_total": 5,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.devin.ai/api-reference/overview",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "bearer_token",
+    "access": "paid",
+    "mcp": "official",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://docs.devin.ai/api-reference/overview"
+   }
+  },
+  {
+   "id": "97",
+   "name": "higgsfield",
+   "category": "AI, Research and Media-native",
+   "hint": "higgsfield.ai/cli (content suite)",
+   "one_liner": "AI video and image generation suite",
+   "auth": "api_key",
+   "access": "paid",
+   "access_note": "Pay-as-you-go credits",
+   "api": "REST",
+   "breadth": "narrow",
+   "mcp": "official",
+   "verdict": "ready_with_review",
+   "blocker": "Paid credits",
+   "docs_url": "https://docs.higgsfield.ai/",
+   "auth_url": "https://docs.higgsfield.ai/",
+   "blocker_bucket": "Paid plan required",
+   "claims_supported": 5,
+   "claims_total": 5,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://docs.higgsfield.ai/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "api_key",
+    "access": "paid",
+    "mcp": "none",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://docs.higgsfield.ai/"
+   }
+  },
+  {
+   "id": "98",
+   "name": "Mermaid CLI",
+   "category": "AI, Research and Media-native",
+   "hint": "github.com/mermaid-js/mermaid-cli",
+   "one_liner": "CLI to render Mermaid diagrams to SVG/PNG/PDF",
+   "auth": "none",
+   "access": "self_serve",
+   "access_note": "Open source npm package",
+   "api": "CLI",
+   "breadth": "narrow",
+   "mcp": "community",
+   "verdict": "ready",
+   "blocker": "Local tool; needs headless browser sandbox",
+   "docs_url": "https://github.com/mermaid-js/mermaid-cli",
+   "auth_url": "https://github.com/mermaid-js/mermaid-cli",
+   "blocker_bucket": "None",
+   "claims_supported": 4,
+   "claims_total": 4,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://github.com/mermaid-js/mermaid-cli",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "CLI",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "community",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [],
+   "pass1": {
+    "auth": "none",
+    "access": "self_serve",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "CLI",
+    "docs_url": "https://github.com/mermaid-js/mermaid-cli"
+   }
+  },
+  {
+   "id": "99",
+   "name": "YouTube Transcript",
+   "category": "AI, Research and Media-native",
+   "hint": "transcriptapi.com",
+   "one_liner": "API for fetching YouTube video transcripts",
+   "auth": "api_key+bearer_token+oauth2",
+   "access": "self_serve",
+   "access_note": "Free credits",
+   "api": "REST",
+   "breadth": "narrow",
+   "mcp": "official",
+   "verdict": "ready",
+   "blocker": "",
+   "docs_url": "https://transcriptapi.com/docs",
+   "auth_url": "https://transcriptapi.com/docs",
+   "blocker_bucket": "None",
+   "claims_supported": 7,
+   "claims_total": 7,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://transcriptapi.com/docs",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "api_key",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "self_serve",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "auth",
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "api_key+bearer_token",
+    "access": "self_serve",
+    "mcp": "community",
+    "verdict": "ready",
+    "api": "REST",
+    "docs_url": "https://transcriptapi.com/docs"
+   }
+  },
+  {
+   "id": "100",
+   "name": "Grain",
+   "category": "AI, Research and Media-native",
+   "hint": "grain.com (meeting notes)",
+   "one_liner": "AI meeting recorder and notes for revenue teams",
+   "auth": "bearer_token+oauth2",
+   "access": "paid",
+   "access_note": "API on paid plans; personal access tokens",
+   "api": "REST",
+   "breadth": "narrow",
+   "mcp": "official",
+   "verdict": "ready_with_review",
+   "blocker": "Paid plan",
+   "docs_url": "https://developers.grain.com/",
+   "auth_url": "https://developers.grain.com/",
+   "blocker_bucket": "Paid plan required",
+   "claims_supported": 6,
+   "claims_total": 6,
+   "claim_status": [
+    {
+     "field": "docs_url",
+     "value": "https://developers.grain.com/",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "bearer_token",
+     "status": "supported"
+    },
+    {
+     "field": "auth",
+     "value": "oauth2",
+     "status": "supported"
+    },
+    {
+     "field": "api",
+     "value": "REST",
+     "status": "supported"
+    },
+    {
+     "field": "access",
+     "value": "paid",
+     "status": "supported"
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported"
+    }
+   ],
+   "github_mcp": "none_found",
+   "github_mcp_repos": [],
+   "corrected_fields": [
+    "auth",
+    "mcp"
+   ],
+   "pass1": {
+    "auth": "bearer_token",
+    "access": "paid",
+    "mcp": "none",
+    "verdict": "ready_with_review",
+    "api": "REST",
+    "docs_url": "https://developers.grain.com/"
+   }
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "id": "32",
+ "name": "Meta Ads",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "irinabuht12-oss/marketing-skills",
+   "stars": 8402,
+   "url": "https://github.com/irinabuht12-oss/marketing-skills",
+   "vendor_owned": false
+  },
+  {
+   "repo": "irinabuht12-oss/google-ads-meta-ads-mcp",
+   "stars": 8317,
+   "url": "https://github.com/irinabuht12-oss/google-ads-meta-ads-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "pipeboard-co/meta-ads-mcp",
+   "stars": 1386,
+   "url": "https://github.com/pipeboard-co/meta-ads-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "mathiaschu/meta-ads-analyzer",
+   "stars": 474,
+   "url": "https://github.com/mathiaschu/meta-ads-analyzer",
+   "vendor_owned": false
+  },
+  {
+   "repo": "amekala/ads-mcp",
+   "stars": 108,
+   "url": "https://github.com/amekala/ads-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "mikusnuz/meta-ads-mcp",
+   "stars": 95,
+   "url": "https://github.com/mikusnuz/meta-ads-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "jiangylin5-hue/meta-ads-agent",
+   "stars": 82,
+   "url": "https://github.com/jiangylin5-hue/meta-ads-agent",
+   "vendor_owned": false
+  },
+  {
+   "repo": "EfrainTorres/armavita-meta-ads-mcp",
+   "stars": 79,
+   "url": "https://github.com/EfrainTorres/armavita-meta-ads-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "markifact/markifact-mcp",
+   "stars": 58,
+   "url": "https://github.com/markifact/markifact-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "brandu-mos/konquest-meta-ads-mcp",
+   "stars": 44,
+   "url": "https://github.com/brandu-mos/konquest-meta-ads-mcp",
+   "vendor_owned": false
+  }
+ ]
+}

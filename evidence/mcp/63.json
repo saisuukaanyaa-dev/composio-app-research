@@ -1,0 +1,67 @@
+{
+ "id": "63",
+ "name": "Netlify",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "netlify/netlify-mcp",
+   "stars": 75,
+   "url": "https://github.com/netlify/netlify-mcp",
+   "vendor_owned": true
+  },
+  {
+   "repo": "bella-and-c/sleepy-dog-lock",
+   "stars": 32,
+   "url": "https://github.com/bella-and-c/sleepy-dog-lock",
+   "vendor_owned": false
+  },
+  {
+   "repo": "jbulger82/LLAMA_Hub",
+   "stars": 26,
+   "url": "https://github.com/jbulger82/LLAMA_Hub",
+   "vendor_owned": false
+  },
+  {
+   "repo": "areebahmeddd/superbox.ai",
+   "stars": 9,
+   "url": "https://github.com/areebahmeddd/superbox.ai",
+   "vendor_owned": false
+  },
+  {
+   "repo": "mathruffian-dot/clasp-netlify-mcp-guide",
+   "stars": 7,
+   "url": "https://github.com/mathruffian-dot/clasp-netlify-mcp-guide",
+   "vendor_owned": false
+  },
+  {
+   "repo": "ChatGPT3a01/Google-Antigravity-MCP",
+   "stars": 6,
+   "url": "https://github.com/ChatGPT3a01/Google-Antigravity-MCP",
+   "vendor_owned": false
+  },
+  {
+   "repo": "ozuijoy/personal-ai-netlify",
+   "stars": 4,
+   "url": "https://github.com/ozuijoy/personal-ai-netlify",
+   "vendor_owned": false
+  },
+  {
+   "repo": "PatLittle/ckan-mcp-netlify",
+   "stars": 2,
+   "url": "https://github.com/PatLittle/ckan-mcp-netlify",
+   "vendor_owned": false
+  },
+  {
+   "repo": "demircigoksu/jev-netlify-mcp",
+   "stars": 2,
+   "url": "https://github.com/demircigoksu/jev-netlify-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "britrik/zai-mcp-server",
+   "stars": 1,
+   "url": "https://github.com/britrik/zai-mcp-server",
+   "vendor_owned": false
+  }
+ ]
+}

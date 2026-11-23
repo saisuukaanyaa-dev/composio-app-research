@@ -1,0 +1,67 @@
+{
+ "id": "21",
+ "name": "Slack",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "sansan0/TrendRadar",
+   "stars": 63823,
+   "url": "https://github.com/sansan0/TrendRadar",
+   "vendor_owned": false
+  },
+  {
+   "repo": "PostHog/posthog",
+   "stars": 41041,
+   "url": "https://github.com/PostHog/posthog",
+   "vendor_owned": false
+  },
+  {
+   "repo": "sandbox-quantum/switch",
+   "stars": 4697,
+   "url": "https://github.com/sandbox-quantum/switch",
+   "vendor_owned": false
+  },
+  {
+   "repo": "pipeshub-ai/pipeshub-ai",
+   "stars": 4148,
+   "url": "https://github.com/pipeshub-ai/pipeshub-ai",
+   "vendor_owned": false
+  },
+  {
+   "repo": "OpenCoworkAI/open-cowork",
+   "stars": 2284,
+   "url": "https://github.com/OpenCoworkAI/open-cowork",
+   "vendor_owned": false
+  },
+  {
+   "repo": "agentes-chat/agentes-chat",
+   "stars": 1974,
+   "url": "https://github.com/agentes-chat/agentes-chat",
+   "vendor_owned": false
+  },
+  {
+   "repo": "korotovsky/slack-mcp-server",
+   "stars": 1900,
+   "url": "https://github.com/korotovsky/slack-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Anil-matcha/open-agent-connector",
+   "stars": 856,
+   "url": "https://github.com/Anil-matcha/open-agent-connector",
+   "vendor_owned": false
+  },
+  {
+   "repo": "khoj-ai/pipali",
+   "stars": 339,
+   "url": "https://github.com/khoj-ai/pipali",
+   "vendor_owned": false
+  },
+  {
+   "repo": "zhimaAi/ChatClaw",
+   "stars": 316,
+   "url": "https://github.com/zhimaAi/ChatClaw",
+   "vendor_owned": false
+  }
+ ]
+}

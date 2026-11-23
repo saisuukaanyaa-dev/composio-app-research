@@ -1,0 +1,67 @@
+{
+ "id": "61",
+ "name": "GitHub",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "github/github-mcp-server",
+   "stars": 34688,
+   "url": "https://github.com/github/github-mcp-server",
+   "vendor_owned": true
+  },
+  {
+   "repo": "idosal/git-mcp",
+   "stars": 8532,
+   "url": "https://github.com/idosal/git-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "kucherenko/jscpd",
+   "stars": 6601,
+   "url": "https://github.com/kucherenko/jscpd",
+   "vendor_owned": false
+  },
+  {
+   "repo": "fallow-rs/fallow",
+   "stars": 5394,
+   "url": "https://github.com/fallow-rs/fallow",
+   "vendor_owned": false
+  },
+  {
+   "repo": "sandbox-quantum/switch",
+   "stars": 4696,
+   "url": "https://github.com/sandbox-quantum/switch",
+   "vendor_owned": false
+  },
+  {
+   "repo": "pipeshub-ai/pipeshub-ai",
+   "stars": 4148,
+   "url": "https://github.com/pipeshub-ai/pipeshub-ai",
+   "vendor_owned": false
+  },
+  {
+   "repo": "julien040/anyquery",
+   "stars": 1794,
+   "url": "https://github.com/julien040/anyquery",
+   "vendor_owned": false
+  },
+  {
+   "repo": "affaan-m/agentshield",
+   "stars": 1439,
+   "url": "https://github.com/affaan-m/agentshield",
+   "vendor_owned": false
+  },
+  {
+   "repo": "justrach/codedb",
+   "stars": 1408,
+   "url": "https://github.com/justrach/codedb",
+   "vendor_owned": false
+  },
+  {
+   "repo": "codewithMUHILAN/Lightswind-UI-Library",
+   "stars": 1284,
+   "url": "https://github.com/codewithMUHILAN/Lightswind-UI-Library",
+   "vendor_owned": false
+  }
+ ]
+}

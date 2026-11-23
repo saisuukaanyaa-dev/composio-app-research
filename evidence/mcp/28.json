@@ -1,0 +1,61 @@
+{
+ "id": "28",
+ "name": "WhatsApp Business",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "Eyalm321/zernio-mcp",
+   "stars": 9,
+   "url": "https://github.com/Eyalm321/zernio-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "wassengerhq/whatsapp-mcp",
+   "stars": 6,
+   "url": "https://github.com/wassengerhq/whatsapp-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "victorgalletti/zappion",
+   "stars": 6,
+   "url": "https://github.com/victorgalletti/zappion",
+   "vendor_owned": false
+  },
+  {
+   "repo": "tkhattar14/whatsapp-business-mcp",
+   "stars": 5,
+   "url": "https://github.com/tkhattar14/whatsapp-business-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "spirit122/whatsapp-mcp-server",
+   "stars": 3,
+   "url": "https://github.com/spirit122/whatsapp-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "W3JDev/whatsapp-bridge-mcp",
+   "stars": 3,
+   "url": "https://github.com/W3JDev/whatsapp-bridge-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "NicolaiSchmid/pons",
+   "stars": 2,
+   "url": "https://github.com/NicolaiSchmid/pons",
+   "vendor_owned": false
+  },
+  {
+   "repo": "gambot-ai/gambot-mcp",
+   "stars": 2,
+   "url": "https://github.com/gambot-ai/gambot-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "saravanaspar/WBMCP",
+   "stars": 2,
+   "url": "https://github.com/saravanaspar/WBMCP",
+   "vendor_owned": false
+  }
+ ]
+}

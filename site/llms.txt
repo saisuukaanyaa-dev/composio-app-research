@@ -1,0 +1,113 @@
+# Composio toolkit research: 100 apps
+
+Machine-readable data: data.json (same folder).
+
+## Patterns
+- OAuth 2.0 dominates, but keys are the fast lane. 72/100 apps offer OAuth 2.0 and 23 are key/token-only. 55 of the 72 OAuth apps <i>also</i> issue a personal key or token, so a toolkit can ship on keys first and add OAuth for multi-tenant use. The OAuth-only ones include the app-review platforms (Google Ads, LinkedIn, Amazon, Pinterest, Threads) and accounting (QuickBooks, Xero).
+- 73/100 are self-serve (57 free, 16 via free trial). The gates are concentrated. 8 need platform app review (WhatsApp Business, Google Ads, Meta Ads, LinkedIn Ads, Pinterest, Threads (Meta), Squarespace, Amazon Selling Partner). 8 are partner / contact-sales (DealCloud, Gladly, Salesforce Commerce Cloud, Waterfall.io, Clay, Paygent Connect, PitchBook, Consensus), and 11 need a paid plan.
+- Openness tracks category. Fully open: Developer, Infra and Data platforms (10/10), Productivity and Project Management (10/10). Most gated: Marketing, Ads, Email and Social (5/10, mostly app review / approval), AI, Research and Media-native (5/10, mostly paid plan).
+- The #1 blocker is commercial, not technical. Enterprise contract / customer account (14), Platform app review / approval (11), Paid plan required (7). Only 5 apps are truly blocked today; 63 are ready and 32 are buildable with a caveat.
+- MCP is already mainstream. 73/100 apps ship an official MCP server and 14 more have community ones. Several gated or API-less products (Clay, Otter, DealCloud, iPayX) now expose MCP before, or instead of, a broad REST API.
+- 63 easy wins vs 16 need outreach. Easy wins are self-serve, documented and verdict ready; outreach means partnership, app review or a contract.
+
+## Apps (name | category | auth | access | api | mcp | verdict | docs)
+- Salesforce | CRM and Sales | oauth2 | self_serve | REST+SOAP+GraphQL | official | ready | https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest.htm
+- HubSpot | CRM and Sales | oauth2+bearer_token | self_serve | REST | official | ready | https://developers.hubspot.com/docs/api/overview
+- Pipedrive | CRM and Sales | oauth2+api_key | self_serve | REST | official | ready | https://developers.pipedrive.com/docs/api/v1
+- Attio | CRM and Sales | oauth2+bearer_token | self_serve | REST | official | ready | https://docs.attio.com/rest-api/overview
+- Twenty | CRM and Sales | api_key+oauth2 | self_serve | REST+GraphQL | official | ready | https://twenty.com/developers
+- Podio | CRM and Sales | oauth2 | self_serve | REST | none | ready_with_review | https://developers.podio.com/doc
+- Zoho CRM | CRM and Sales | oauth2 | self_serve | REST | official | ready | https://www.zoho.com/crm/developer/docs/api/v7/
+- Close | CRM and Sales | api_key+basic+oauth2 | trial | REST | official | ready | https://developer.close.com/
+- Copper | CRM and Sales | api_key+oauth2 | trial | REST | none | ready_with_review | https://developer.copper.com/
+- DealCloud | CRM and Sales | oauth2 | partner | REST | official | blocked | https://api.docs.dealcloud.com/
+- Zendesk | Support and Helpdesk | oauth2 | trial | REST | community | ready | https://developer.zendesk.com/api-reference/
+- Intercom | Support and Helpdesk | oauth2+bearer_token | self_serve | REST | official | ready | https://developers.intercom.com/docs/references/introduction
+- Freshdesk | Support and Helpdesk | api_key+basic+oauth2 | self_serve | REST | community | ready | https://developers.freshdesk.com/api/
+- Front | Support and Helpdesk | oauth2+bearer_token | self_serve | REST | official | ready | https://dev.frontapp.com/reference/introduction
+- Pylon | Support and Helpdesk | bearer_token | paid | REST | official | ready_with_review | https://docs.usepylon.com/pylon-docs/developer/api
+- LiveAgent | Support and Helpdesk | api_key | trial | REST | official | ready | https://support.liveagent.com/802463-REST-API
+- Plain | Support and Helpdesk | api_key+oauth2 | trial | GraphQL | official | ready | https://www.plain.com/docs/graphql/introduction
+- Help Scout | Support and Helpdesk | oauth2 | trial | REST | community | ready | https://developer.helpscout.com/mailbox-api/
+- Gorgias | Support and Helpdesk | oauth2+api_key+basic | trial | REST | none | ready | https://developers.gorgias.com/reference/introduction
+- Gladly | Support and Helpdesk | api_key+basic | partner | REST | none | blocked | https://developer.gladly.com/rest/
+- Slack | Communications and Messaging | oauth2+bearer_token | self_serve | REST | official | ready | https://api.slack.com/web
+- Twilio | Communications and Messaging | api_key+basic+oauth2 | trial | REST | official | ready | https://www.twilio.com/docs/usage/api
+- Zoho Cliq | Communications and Messaging | oauth2 | self_serve | REST | official | ready | https://www.zoho.com/cliq/help/restapi/v2/
+- Lark (Larksuite) | Communications and Messaging | oauth2+bearer_token | self_serve | REST | official | ready | https://open.larksuite.com/document/home/index
+- Pumble | Communications and Messaging | api_key | self_serve | REST | none | ready_with_review | https://pumble.com/help/integrations/add-pumble-apps/pumble-api-keys-integration/
+- Discord | Communications and Messaging | oauth2+bearer_token | self_serve | REST | community | ready | https://discord.com/developers/docs/reference
+- Telegram | Communications and Messaging | bearer_token | self_serve | REST | community | ready | https://core.telegram.org/bots/api
+- WhatsApp Business | Communications and Messaging | oauth2+bearer_token | approval | REST | community | ready_with_review | https://developers.facebook.com/docs/whatsapp/cloud-api
+- Aircall | Communications and Messaging | oauth2+api_key+basic | paid | REST | none | ready_with_review | https://developer.aircall.io/api-references/
+- Vonage | Communications and Messaging | api_key+basic+jwt | trial | REST | official | ready | https://developer.vonage.com/en/api
+- Google Ads | Marketing, Ads, Email and Social | oauth2 | approval | REST+gRPC | official | ready_with_review | https://developers.google.com/google-ads/api/docs/start
+- Meta Ads | Marketing, Ads, Email and Social | oauth2+bearer_token | approval | REST | official | ready_with_review | https://developers.facebook.com/docs/marketing-apis
+- LinkedIn Ads | Marketing, Ads, Email and Social | oauth2 | approval | REST | none | ready_with_review | https://learn.microsoft.com/en-us/linkedin/marketing/
+- GoHighLevel | Marketing, Ads, Email and Social | oauth2+bearer_token | trial | REST | official | ready | https://highlevel.stoplight.io/docs/integrations/
+- Mailchimp | Marketing, Ads, Email and Social | oauth2+api_key | self_serve | REST | official | ready | https://mailchimp.com/developer/marketing/api/
+- Klaviyo | Marketing, Ads, Email and Social | api_key+oauth2 | self_serve | REST | official | ready | https://developers.klaviyo.com/en/reference/api_overview
+- systeme.io | Marketing, Ads, Email and Social | api_key | self_serve | REST | official | ready | https://developer.systeme.io/reference/api
+- Pinterest | Marketing, Ads, Email and Social | oauth2 | approval | REST | none | ready_with_review | https://developers.pinterest.com/docs/api/v5/
+- Threads (Meta) | Marketing, Ads, Email and Social | oauth2 | approval | REST | community | ready_with_review | https://developers.facebook.com/docs/threads
+- SendGrid | Marketing, Ads, Email and Social | api_key+bearer_token | trial | REST | community | ready | https://www.twilio.com/docs/sendgrid/api-reference
+- Shopify | Ecommerce | oauth2+bearer_token | self_serve | GraphQL+REST | official | ready | https://shopify.dev/docs/api/admin-graphql
+- WooCommerce | Ecommerce | api_key+basic+oauth1 | self_serve | REST | community | ready_with_review | https://woocommerce.github.io/woocommerce-rest-api-docs/
+- BigCommerce | Ecommerce | oauth2+bearer_token | self_serve | REST+GraphQL | official | ready | https://developer.bigcommerce.com/docs/rest-management
+- Salesforce Commerce Cloud | Ecommerce | oauth2 | partner | REST | official | blocked | https://developer.salesforce.com/docs/commerce/commerce-api/overview
+- Magento (Adobe Commerce) | Ecommerce | oauth1+bearer_token | self_serve | REST+GraphQL | none | ready_with_review | https://developer.adobe.com/commerce/webapi/rest/
+- Squarespace | Ecommerce | oauth2+api_key | approval | REST | official | ready_with_review | https://developers.squarespace.com/commerce-apis/overview
+- Ecwid | Ecommerce | oauth2+bearer_token | paid | REST | none | ready_with_review | https://docs.ecwid.com/get-started/make-your-first-api-request
+- Gumroad | Ecommerce | oauth2+bearer_token | self_serve | REST | community | ready | https://app.gumroad.com/api
+- Amazon Selling Partner | Ecommerce | oauth2 | approval | REST | none | ready_with_review | https://developer-docs.amazon.com/sp-api/docs/what-is-the-selling-partner-api
+- fanbasis | Ecommerce | api_key | self_serve | REST | official | ready_with_review | https://fbnewapi.netlify.app/
+- DataForSEO | Data, SEO and Scraping | basic | self_serve | REST | official | ready | https://docs.dataforseo.com/v3/
+- SE Ranking | Data, SEO and Scraping | api_key | paid | REST | official | ready_with_review | https://seranking.com/api.html
+- Ahrefs | Data, SEO and Scraping | api_key+bearer_token+oauth2 | paid | REST | official | ready_with_review | https://docs.ahrefs.com/docs/api/reference/introduction
+- MrScraper | Data, SEO and Scraping | api_key | self_serve | REST | official | ready | https://docs.mrscraper.com/
+- Apify | Data, SEO and Scraping | bearer_token+oauth2 | self_serve | REST | official | ready | https://docs.apify.com/api/v2
+- Firecrawl | Data, SEO and Scraping | api_key+bearer_token+oauth2 | self_serve | REST | official | ready | https://docs.firecrawl.dev/api-reference/introduction
+- Bright Data | Data, SEO and Scraping | api_key+bearer_token | trial | REST | official | ready | https://docs.brightdata.com/api-reference/introduction
+- Sherlock | Data, SEO and Scraping | none | self_serve | CLI | community | ready_with_review | https://github.com/sherlock-project/sherlock
+- Waterfall.io | Data, SEO and Scraping | api_key | partner | REST | none | ready_with_review | https://docs.waterfall.io/v1/api-keys-overview
+- Clay | Data, SEO and Scraping | api_key | partner | MCP | official | ready_with_review | https://www.clay.com/university/guide/webhook-integration-guide
+- GitHub | Developer, Infra and Data platforms | oauth2+bearer_token | self_serve | REST+GraphQL | official | ready | https://docs.github.com/en/rest
+- Vercel | Developer, Infra and Data platforms | bearer_token+oauth2 | self_serve | REST | official | ready | https://vercel.com/docs/rest-api
+- Netlify | Developer, Infra and Data platforms | bearer_token+oauth2 | self_serve | REST | official | ready | https://docs.netlify.com/api/get-started/
+- Cloudflare | Developer, Infra and Data platforms | bearer_token+api_key+oauth2 | self_serve | REST+GraphQL | official | ready | https://developers.cloudflare.com/api/
+- Supabase | Developer, Infra and Data platforms | api_key+bearer_token+oauth2 | self_serve | REST | official | ready | https://supabase.com/docs/reference/api/introduction
+- Neo4j | Developer, Infra and Data platforms | basic+bearer_token+oauth2 | self_serve | REST | official | ready | https://neo4j.com/docs/query-api/current/
+- Snowflake | Developer, Infra and Data platforms | oauth2+jwt+bearer_token | trial | REST | official | ready | https://docs.snowflake.com/en/developer-guide/sql-api/index
+- MongoDB Atlas | Developer, Infra and Data platforms | oauth2+api_key | self_serve | REST | official | ready | https://www.mongodb.com/docs/atlas/api/
+- Datadog | Developer, Infra and Data platforms | api_key+oauth2 | trial | REST | official | ready | https://docs.datadoghq.com/api/latest/
+- Sentry | Developer, Infra and Data platforms | bearer_token+oauth2 | self_serve | REST | official | ready | https://docs.sentry.io/api/
+- Notion | Productivity and Project Management | oauth2+bearer_token | self_serve | REST | official | ready | https://developers.notion.com/reference/intro
+- Airtable | Productivity and Project Management | oauth2+bearer_token | self_serve | REST | official | ready | https://airtable.com/developers/web/api/introduction
+- Linear | Productivity and Project Management | oauth2+api_key | self_serve | GraphQL | official | ready | https://linear.app/developers/graphql
+- Jira | Productivity and Project Management | oauth2+api_key+basic | self_serve | REST | official | ready | https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/
+- Asana | Productivity and Project Management | oauth2+bearer_token | self_serve | REST | official | ready | https://developers.asana.com/reference/rest-api-reference
+- Monday.com | Productivity and Project Management | oauth2+api_key | self_serve | GraphQL | official | ready | https://developer.monday.com/api-reference/docs
+- ClickUp | Productivity and Project Management | oauth2+api_key | self_serve | REST | official | ready | https://developer.clickup.com/reference
+- Coda | Productivity and Project Management | bearer_token | self_serve | REST | official | ready | https://coda.io/developers/apis/v1
+- Smartsheet | Productivity and Project Management | oauth2+bearer_token | trial | REST | official | ready | https://developers.smartsheet.com/api/smartsheet/introduction
+- Harvest | Productivity and Project Management | oauth2+bearer_token | trial | REST | community | ready | https://help.getharvest.com/api-v2/
+- Stripe | Finance and Fintech | api_key+bearer_token+oauth2 | self_serve | REST | official | ready | https://docs.stripe.com/api
+- Plaid | Finance and Fintech | api_key | self_serve | REST | official | ready_with_review | https://plaid.com/docs/api/
+- Binance | Finance and Fintech | api_key+hmac | self_serve | REST | official | ready_with_review | https://developers.binance.com/docs/binance-spot-api-docs/rest-api
+- Paygent Connect | Finance and Fintech | api_key | partner | REST | official | blocked | https://docs.nmi.com/
+- iPayX | Finance and Fintech | bearer_token | self_serve | REST+MCP | official | ready | https://ipayx.ai/developers
+- QuickBooks | Finance and Fintech | oauth2 | self_serve | REST | official | ready | https://developer.intuit.com/app/developer/qbo/docs/develop
+- Xero | Finance and Fintech | oauth2 | self_serve | REST | official | ready | https://developer.xero.com/documentation/api/accounting/overview
+- Brex | Finance and Fintech | oauth2+bearer_token | paid | REST | official | ready_with_review | https://developer.brex.com/
+- Ramp | Finance and Fintech | oauth2 | paid | REST | official | ready_with_review | https://docs.ramp.com/developer-api/v1/overview/introduction
+- PitchBook | Finance and Fintech | api_key | partner | REST | none | blocked | https://pitchbook.com/help/PitchBook-api
+- NotebookLM | AI, Research and Media-native | oauth2 | paid | REST | community | ready_with_review | https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks
+- Otter AI | AI, Research and Media-native | oauth2+bearer_token | self_serve | REST+MCP | official | ready_with_review | https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API
+- Fathom | AI, Research and Media-native | api_key+oauth2 | self_serve | REST | official | ready | https://developers.fathom.ai/
+- Consensus | AI, Research and Media-native | api_key+oauth2 | partner | REST | official | ready_with_review | https://docs.consensus.app/
+- Reducto | AI, Research and Media-native | api_key+bearer_token | self_serve | REST | official | ready | https://docs.reducto.ai/
+- Devin | AI, Research and Media-native | bearer_token | paid | REST | official | ready_with_review | https://docs.devin.ai/api-reference/overview
+- higgsfield | AI, Research and Media-native | api_key | paid | REST | official | ready_with_review | https://docs.higgsfield.ai/
+- Mermaid CLI | AI, Research and Media-native | none | self_serve | CLI | community | ready | https://github.com/mermaid-js/mermaid-cli
+- YouTube Transcript | AI, Research and Media-native | api_key+bearer_token+oauth2 | self_serve | REST | official | ready | https://transcriptapi.com/docs
+- Grain | AI, Research and Media-native | bearer_token+oauth2 | paid | REST | official | ready_with_review | https://developers.grain.com/

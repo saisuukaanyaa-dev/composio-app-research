@@ -1,0 +1,67 @@
+{
+ "id": "9",
+ "name": "Copper",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "claynicholson/copper-kicad-mcp",
+   "stars": 122,
+   "url": "https://github.com/claynicholson/copper-kicad-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Copperpour/Copperpour",
+   "stars": 43,
+   "url": "https://github.com/Copperpour/Copperpour",
+   "vendor_owned": true
+  },
+  {
+   "repo": "seunghyukchoe/copper-mcp",
+   "stars": 5,
+   "url": "https://github.com/seunghyukchoe/copper-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "noelschwarz/copper",
+   "stars": 1,
+   "url": "https://github.com/noelschwarz/copper",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Lotulune/Copperbench",
+   "stars": 1,
+   "url": "https://github.com/Lotulune/Copperbench",
+   "vendor_owned": false
+  },
+  {
+   "repo": "charlesmmorais/coppermind",
+   "stars": 1,
+   "url": "https://github.com/charlesmmorais/coppermind",
+   "vendor_owned": false
+  },
+  {
+   "repo": "mutual-solutions/zap-mcp",
+   "stars": 1,
+   "url": "https://github.com/mutual-solutions/zap-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "dazanza/copper-mcp",
+   "stars": 0,
+   "url": "https://github.com/dazanza/copper-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "OfirOhan/copper-mcp",
+   "stars": 0,
+   "url": "https://github.com/OfirOhan/copper-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "mgalbo-fortify/Copper-MCP",
+   "stars": 0,
+   "url": "https://github.com/mgalbo-fortify/Copper-MCP",
+   "vendor_owned": false
+  }
+ ]
+}

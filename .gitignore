@@ -1,0 +1,6 @@
+__pycache__/
+verification/_sample_snippets.txt
+.env
+*.key
+*.pyc
+.venv/

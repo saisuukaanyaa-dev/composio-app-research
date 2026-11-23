@@ -1,0 +1,67 @@
+{
+ "id": "7",
+ "name": "Zoho CRM",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "Officehub-Tech-LLC/MCP-Server",
+   "stars": 14,
+   "url": "https://github.com/Officehub-Tech-LLC/MCP-Server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Mgabr90/zoho-mcp-server",
+   "stars": 4,
+   "url": "https://github.com/Mgabr90/zoho-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "LokiMCPUniverse/zoho-crm-mcp-server",
+   "stars": 3,
+   "url": "https://github.com/LokiMCPUniverse/zoho-crm-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "sprintberlin/openclaw-zoho-crm-mcp-skill",
+   "stars": 3,
+   "url": "https://github.com/sprintberlin/openclaw-zoho-crm-mcp-skill",
+   "vendor_owned": false
+  },
+  {
+   "repo": "JunnServices/Zoho-CRM-MCP",
+   "stars": 3,
+   "url": "https://github.com/JunnServices/Zoho-CRM-MCP",
+   "vendor_owned": false
+  },
+  {
+   "repo": "CDataSoftware/zoho-crm-mcp-server-by-cdata",
+   "stars": 3,
+   "url": "https://github.com/CDataSoftware/zoho-crm-mcp-server-by-cdata",
+   "vendor_owned": false
+  },
+  {
+   "repo": "zavora-ai/mcp-crm",
+   "stars": 3,
+   "url": "https://github.com/zavora-ai/mcp-crm",
+   "vendor_owned": false
+  },
+  {
+   "repo": "whiteside-daniel/zohocrm-mcpserver",
+   "stars": 2,
+   "url": "https://github.com/whiteside-daniel/zohocrm-mcpserver",
+   "vendor_owned": false
+  },
+  {
+   "repo": "zavora-ai/skill-crm-customer-management",
+   "stars": 2,
+   "url": "https://github.com/zavora-ai/skill-crm-customer-management",
+   "vendor_owned": false
+  },
+  {
+   "repo": "primrose-mcp/primrose-mcp-zoho",
+   "stars": 1,
+   "url": "https://github.com/primrose-mcp/primrose-mcp-zoho",
+   "vendor_owned": false
+  }
+ ]
+}

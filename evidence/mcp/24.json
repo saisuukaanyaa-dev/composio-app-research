@@ -1,0 +1,67 @@
+{
+ "id": "24",
+ "name": "Lark (Larksuite)",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "larksuite/lark-openapi-mcp",
+   "stars": 874,
+   "url": "https://github.com/larksuite/lark-openapi-mcp",
+   "vendor_owned": true
+  },
+  {
+   "repo": "cso1z/Feishu-MCP",
+   "stars": 751,
+   "url": "https://github.com/cso1z/Feishu-MCP",
+   "vendor_owned": false
+  },
+  {
+   "repo": "TGYD-helige/pi",
+   "stars": 94,
+   "url": "https://github.com/TGYD-helige/pi",
+   "vendor_owned": false
+  },
+  {
+   "repo": "VienLi/lark-tools-mcp",
+   "stars": 37,
+   "url": "https://github.com/VienLi/lark-tools-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "AlexAnys/feishu-mcp",
+   "stars": 35,
+   "url": "https://github.com/AlexAnys/feishu-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "aahl/mcp-notify",
+   "stars": 29,
+   "url": "https://github.com/aahl/mcp-notify",
+   "vendor_owned": false
+  },
+  {
+   "repo": "pluginmd/lark-mcp-cli",
+   "stars": 15,
+   "url": "https://github.com/pluginmd/lark-mcp-cli",
+   "vendor_owned": false
+  },
+  {
+   "repo": "luotwo/amazon-product-search",
+   "stars": 14,
+   "url": "https://github.com/luotwo/amazon-product-search",
+   "vendor_owned": false
+  },
+  {
+   "repo": "dsphere/dsphere-internal",
+   "stars": 12,
+   "url": "https://github.com/dsphere/dsphere-internal",
+   "vendor_owned": false
+  },
+  {
+   "repo": "aws-samples/sample-lark-mcp-on-agentcore",
+   "stars": 11,
+   "url": "https://github.com/aws-samples/sample-lark-mcp-on-agentcore",
+   "vendor_owned": false
+  }
+ ]
+}

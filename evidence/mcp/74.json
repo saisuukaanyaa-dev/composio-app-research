@@ -1,0 +1,67 @@
+{
+ "id": "74",
+ "name": "Jira",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "sooperset/mcp-atlassian",
+   "stars": 6146,
+   "url": "https://github.com/sooperset/mcp-atlassian",
+   "vendor_owned": false
+  },
+  {
+   "repo": "sandbox-quantum/switch",
+   "stars": 4696,
+   "url": "https://github.com/sandbox-quantum/switch",
+   "vendor_owned": false
+  },
+  {
+   "repo": "pipeshub-ai/pipeshub-ai",
+   "stars": 4148,
+   "url": "https://github.com/pipeshub-ai/pipeshub-ai",
+   "vendor_owned": false
+  },
+  {
+   "repo": "atlassian/atlassian-mcp-server",
+   "stars": 1186,
+   "url": "https://github.com/atlassian/atlassian-mcp-server",
+   "vendor_owned": true
+  },
+  {
+   "repo": "secfoo-com/secfoo",
+   "stars": 422,
+   "url": "https://github.com/secfoo-com/secfoo",
+   "vendor_owned": false
+  },
+  {
+   "repo": "khoj-ai/pipali",
+   "stars": 339,
+   "url": "https://github.com/khoj-ai/pipali",
+   "vendor_owned": false
+  },
+  {
+   "repo": "b1ff/atlassian-dc-mcp",
+   "stars": 110,
+   "url": "https://github.com/b1ff/atlassian-dc-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "nguyenvanduocit/all-in-one-model-context-protocol",
+   "stars": 107,
+   "url": "https://github.com/nguyenvanduocit/all-in-one-model-context-protocol",
+   "vendor_owned": false
+  },
+  {
+   "repo": "nguyenvanduocit/jira-mcp",
+   "stars": 96,
+   "url": "https://github.com/nguyenvanduocit/jira-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "aashari/mcp-server-atlassian-jira",
+   "stars": 79,
+   "url": "https://github.com/aashari/mcp-server-atlassian-jira",
+   "vendor_owned": false
+  }
+ ]
+}

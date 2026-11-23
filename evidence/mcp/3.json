@@ -1,0 +1,67 @@
+{
+ "id": "3",
+ "name": "Pipedrive",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "WillDent/pipedrive-mcp-server",
+   "stars": 60,
+   "url": "https://github.com/WillDent/pipedrive-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Wirasm/pipedrive-mcp",
+   "stars": 14,
+   "url": "https://github.com/Wirasm/pipedrive-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "nubiia-dev/mcp-pipedrive",
+   "stars": 12,
+   "url": "https://github.com/nubiia-dev/mcp-pipedrive",
+   "vendor_owned": false
+  },
+  {
+   "repo": "ckalima/pipedrive-mcp-server",
+   "stars": 10,
+   "url": "https://github.com/ckalima/pipedrive-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "comma-compliance/pipedrive-mcp",
+   "stars": 8,
+   "url": "https://github.com/comma-compliance/pipedrive-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "GarethWright/PipeDrive-MCP-Server",
+   "stars": 8,
+   "url": "https://github.com/GarethWright/PipeDrive-MCP-Server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Teapot-Agency/mcp_pipedrive",
+   "stars": 6,
+   "url": "https://github.com/Teapot-Agency/mcp_pipedrive",
+   "vendor_owned": false
+  },
+  {
+   "repo": "rahulsinghnegiii/Founder-OS",
+   "stars": 4,
+   "url": "https://github.com/rahulsinghnegiii/Founder-OS",
+   "vendor_owned": false
+  },
+  {
+   "repo": "zavora-ai/mcp-crm",
+   "stars": 3,
+   "url": "https://github.com/zavora-ai/mcp-crm",
+   "vendor_owned": false
+  },
+  {
+   "repo": "vaibhavpandeyvpz/pipedriver",
+   "stars": 2,
+   "url": "https://github.com/vaibhavpandeyvpz/pipedriver",
+   "vendor_owned": false
+  }
+ ]
+}

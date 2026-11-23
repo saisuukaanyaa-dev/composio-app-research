@@ -1,0 +1,67 @@
+{
+ "id": "22",
+ "name": "Twilio",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "sosoj92/jarvis-assistant-vocal",
+   "stars": 573,
+   "url": "https://github.com/sosoj92/jarvis-assistant-vocal",
+   "vendor_owned": false
+  },
+  {
+   "repo": "XiyaoWang0519/agent-call",
+   "stars": 269,
+   "url": "https://github.com/XiyaoWang0519/agent-call",
+   "vendor_owned": false
+  },
+  {
+   "repo": "lgesuellip/langgraph-whatsapp-agent",
+   "stars": 243,
+   "url": "https://github.com/lgesuellip/langgraph-whatsapp-agent",
+   "vendor_owned": false
+  },
+  {
+   "repo": "mr-tbot/mesh-api",
+   "stars": 188,
+   "url": "https://github.com/mr-tbot/mesh-api",
+   "vendor_owned": false
+  },
+  {
+   "repo": "twilio-labs/mcp",
+   "stars": 114,
+   "url": "https://github.com/twilio-labs/mcp",
+   "vendor_owned": true
+  },
+  {
+   "repo": "AgentLineHQ/AgentLine",
+   "stars": 63,
+   "url": "https://github.com/AgentLineHQ/AgentLine",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Garoth/sendgrid-mcp",
+   "stars": 32,
+   "url": "https://github.com/Garoth/sendgrid-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "YiyangLi/sms-mcp-server",
+   "stars": 15,
+   "url": "https://github.com/YiyangLi/sms-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "adstastic/claude-code-whatsapp-approval",
+   "stars": 14,
+   "url": "https://github.com/adstastic/claude-code-whatsapp-approval",
+   "vendor_owned": false
+  },
+  {
+   "repo": "twilio-labs/mcp-te-benchmark",
+   "stars": 12,
+   "url": "https://github.com/twilio-labs/mcp-te-benchmark",
+   "vendor_owned": true
+  }
+ ]
+}

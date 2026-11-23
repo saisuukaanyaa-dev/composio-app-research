@@ -1,0 +1,19 @@
+{
+ "id": "20",
+ "name": "Gladly",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "estebanruiz-beep/gladly-mcp-demo",
+   "stars": 0,
+   "url": "https://github.com/estebanruiz-beep/gladly-mcp-demo",
+   "vendor_owned": false
+  },
+  {
+   "repo": "gladly-hyphenated-21/flight-mcp",
+   "stars": 0,
+   "url": "https://github.com/gladly-hyphenated-21/flight-mcp",
+   "vendor_owned": true
+  }
+ ]
+}

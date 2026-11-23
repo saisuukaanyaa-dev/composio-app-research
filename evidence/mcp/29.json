@@ -1,0 +1,55 @@
+{
+ "id": "29",
+ "name": "Aircall",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "themobilefirstco/aircall-mcp-server",
+   "stars": 2,
+   "url": "https://github.com/themobilefirstco/aircall-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "TheAiShark/aircall-mcp-oauth",
+   "stars": 0,
+   "url": "https://github.com/TheAiShark/aircall-mcp-oauth",
+   "vendor_owned": false
+  },
+  {
+   "repo": "MaximeDeconinck/aircall-mcp",
+   "stars": 0,
+   "url": "https://github.com/MaximeDeconinck/aircall-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "CassiaResearch/aircall-mcp-server",
+   "stars": 0,
+   "url": "https://github.com/CassiaResearch/aircall-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "growth-box/aircall-mcp",
+   "stars": 0,
+   "url": "https://github.com/growth-box/aircall-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "RosenAdvertising/aircall-mcp",
+   "stars": 0,
+   "url": "https://github.com/RosenAdvertising/aircall-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "vitormiguel99/aircall-mcp-server",
+   "stars": 0,
+   "url": "https://github.com/vitormiguel99/aircall-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "nastya-nealova/aircall-crm-bridge",
+   "stars": 0,
+   "url": "https://github.com/nastya-nealova/aircall-crm-bridge",
+   "vendor_owned": false
+  }
+ ]
+}

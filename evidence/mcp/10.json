@@ -1,0 +1,13 @@
+{
+ "id": "10",
+ "name": "DealCloud",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "jstewartrr/infra-20251230-mcp-dealcloud",
+   "stars": 0,
+   "url": "https://github.com/jstewartrr/infra-20251230-mcp-dealcloud",
+   "vendor_owned": false
+  }
+ ]
+}

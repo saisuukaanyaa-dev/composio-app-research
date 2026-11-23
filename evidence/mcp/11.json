@@ -1,0 +1,67 @@
+{
+ "id": "11",
+ "name": "Zendesk",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "chattermate/chattermate.chat",
+   "stars": 178,
+   "url": "https://github.com/chattermate/chattermate.chat",
+   "vendor_owned": false
+  },
+  {
+   "repo": "reminia/zendesk-mcp-server",
+   "stars": 126,
+   "url": "https://github.com/reminia/zendesk-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "mattcoatsworth/zendesk-mcp-server",
+   "stars": 30,
+   "url": "https://github.com/mattcoatsworth/zendesk-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "PersonaliAI/chatty",
+   "stars": 24,
+   "url": "https://github.com/PersonaliAI/chatty",
+   "vendor_owned": false
+  },
+  {
+   "repo": "koundinya/zd-mcp-server",
+   "stars": 16,
+   "url": "https://github.com/koundinya/zd-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "fruggr/zendesk-mcp-server",
+   "stars": 16,
+   "url": "https://github.com/fruggr/zendesk-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "cookfood/zendesk-mcp",
+   "stars": 11,
+   "url": "https://github.com/cookfood/zendesk-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "michaelrice/zendesk-mcp",
+   "stars": 9,
+   "url": "https://github.com/michaelrice/zendesk-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "andmarios/zendesk-skill",
+   "stars": 8,
+   "url": "https://github.com/andmarios/zendesk-skill",
+   "vendor_owned": false
+  },
+  {
+   "repo": "pejmanjohn/chickpea",
+   "stars": 8,
+   "url": "https://github.com/pejmanjohn/chickpea",
+   "vendor_owned": false
+  }
+ ]
+}

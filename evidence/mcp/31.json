@@ -1,0 +1,67 @@
+{
+ "id": "31",
+ "name": "Google Ads",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "irinabuht12-oss/marketing-skills",
+   "stars": 8402,
+   "url": "https://github.com/irinabuht12-oss/marketing-skills",
+   "vendor_owned": false
+  },
+  {
+   "repo": "irinabuht12-oss/google-ads-meta-ads-mcp",
+   "stars": 8317,
+   "url": "https://github.com/irinabuht12-oss/google-ads-meta-ads-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "googleads/google-ads-mcp",
+   "stars": 1212,
+   "url": "https://github.com/googleads/google-ads-mcp",
+   "vendor_owned": true
+  },
+  {
+   "repo": "cohnen/mcp-google-ads",
+   "stars": 726,
+   "url": "https://github.com/cohnen/mcp-google-ads",
+   "vendor_owned": false
+  },
+  {
+   "repo": "kLOsk/adloop",
+   "stars": 304,
+   "url": "https://github.com/kLOsk/adloop",
+   "vendor_owned": false
+  },
+  {
+   "repo": "TheMattBerman/google-ads-copilot",
+   "stars": 242,
+   "url": "https://github.com/TheMattBerman/google-ads-copilot",
+   "vendor_owned": false
+  },
+  {
+   "repo": "gomarble-ai/google-ads-mcp-server",
+   "stars": 147,
+   "url": "https://github.com/gomarble-ai/google-ads-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "amekala/ads-mcp",
+   "stars": 108,
+   "url": "https://github.com/amekala/ads-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "mathiaschu/google-ads-analyzer",
+   "stars": 75,
+   "url": "https://github.com/mathiaschu/google-ads-analyzer",
+   "vendor_owned": false
+  },
+  {
+   "repo": "FGRibreau/mcp-google-ads",
+   "stars": 72,
+   "url": "https://github.com/FGRibreau/mcp-google-ads",
+   "vendor_owned": false
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "id": "23",
+ "name": "Zoho Cliq",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "The-Luminous-Group/cliq-api-integration",
+   "stars": 0,
+   "url": "https://github.com/The-Luminous-Group/cliq-api-integration",
+   "vendor_owned": false
+  }
+ ]
+}

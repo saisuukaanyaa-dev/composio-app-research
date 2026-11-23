@@ -1,0 +1,67 @@
+{
+ "id": "18",
+ "name": "Help Scout",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "drewburchfield/help-scout-mcp-server",
+   "stars": 46,
+   "url": "https://github.com/drewburchfield/help-scout-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "WayLit/help-scout-mcp-server",
+   "stars": 1,
+   "url": "https://github.com/WayLit/help-scout-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "BryanMcKinney/HelpScoutMCP",
+   "stars": 0,
+   "url": "https://github.com/BryanMcKinney/HelpScoutMCP",
+   "vendor_owned": false
+  },
+  {
+   "repo": "jannikco/help-scout-mcp",
+   "stars": 0,
+   "url": "https://github.com/jannikco/help-scout-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "pipeworx-io/mcp-help-scout",
+   "stars": 0,
+   "url": "https://github.com/pipeworx-io/mcp-help-scout",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Simulation-Theory/help-scout-mcp-server",
+   "stars": 0,
+   "url": "https://github.com/Simulation-Theory/help-scout-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "BusyBee3333/help-scout-mcp-2026-complete",
+   "stars": 0,
+   "url": "https://github.com/BusyBee3333/help-scout-mcp-2026-complete",
+   "vendor_owned": false
+  },
+  {
+   "repo": "samiabid/helpscout-mcp-server",
+   "stars": 0,
+   "url": "https://github.com/samiabid/helpscout-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "headlessherm-creator/helpdesk-mender-mcp",
+   "stars": 0,
+   "url": "https://github.com/headlessherm-creator/helpdesk-mender-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "mobilelocker/helpscout-cli",
+   "stars": 0,
+   "url": "https://github.com/mobilelocker/helpscout-cli",
+   "vendor_owned": false
+  }
+ ]
+}

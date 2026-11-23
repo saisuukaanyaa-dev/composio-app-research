@@ -1,0 +1,49 @@
+{
+ "id": "84",
+ "name": "Paygent Connect",
+ "fetched_at": "2026-11-23T18:13:41",
+ "pages": [
+  {
+   "url": "https://docs.nmi.com/",
+   "final_url": "https://docs.nmi.com/",
+   "status": 200,
+   "via": "http",
+   "title": "NMI Developer Documentation",
+   "text": "NMI Developer Documentation For AI agents: the docs index is at https://docs.nmi.com/llms.txt. Append .md to any documentation page URL to get its markdown version. Jump to Content Home Guides Recipes API Reference Explore Sandbox Partner Portal Merchant Portal Home Explore Sandbox Partner Portal Merchant Portal Home Guides Recipes API Reference Build powerful payment experiences. Access everything you need to create, test, and deploy payment solutions from sandbox to production. NMI\u2019s developer tools help you build payment experiences that drive revenue and deliver results faster. Getting Started Set up your first integration in minutes with our quick start guide Start building \u2192 API Reference Complete API documentation with example requests and responses View API docs \u2192 SDKs & Libraries Ready-to-use card present libraries designed to reduce complexity Browse SDKs \u2192 Sandbox Test your integration with our full-featured sandbox environment Launch sandbox Privacy Policy Terms and Conditions",
+   "chars": 1003,
+   "signals": {
+    "access:self_serve": 6
+   }
+  },
+  {
+   "url": "https://paygent",
+   "final_url": "https://paygent/",
+   "status": 451,
+   "via": "http",
+   "title": "(blocked by network proxy)",
+   "text": "",
+   "chars": 0,
+   "signals": {},
+   "error": "network proxy block page"
+  },
+  {
+   "url": "https://docs.nmi.com/reference/getting-started",
+   "final_url": "https://docs.nmi.com/reference/getting-started",
+   "status": 200,
+   "via": "http",
+   "title": "Getting Started with Our APIs",
+   "text": "Getting Started with Our APIs For AI agents: the docs index is at https://docs.nmi.com/llms.txt. Append .md to any documentation page URL to get its markdown version. Jump to Content Home Guides Recipes API Reference Explore Sandbox Partner Portal Merchant Portal API Reference Explore Sandbox Partner Portal Merchant Portal Home Guides Recipes API Reference Getting Started with Our APIs Overview Getting Started with Our APIs MCP Server Authentication Embedded Component Authentication Create a Session post Testing Methods Rate Limiting Pagination Response Codes Merchant Sign-Up Overview Authentication Request an Access Token post Packages List all Packages get Get Package get Applications List all Applications get Create a new application post Get Application Information get Update an Application patch Get Legal Consent get Download Signed Agreement get Upload Document post Submit Application post Update Application Information post Webhook Subscriptions List all Subscriptions get Create a Subscription post Get Subscription Information get Update a Subscription patch Delete a Subscription del Webhook Events Underwriter Requested Information webhook Application is approved webhook Application is declined webhook Application is cancelled webhook Merchant is ready to process webhook Merchant account is closed webhook Merchant: New Chargeback webhook Merchant: New Deposit webhook Merchant: First Batch webhook Merchant: Started Processing webhook Merchant: Stopped Processing webhook Merchant: Residual Report Published webhook Merchant: New Retrieval webhook Merchant: New Statement webhook Legal Consent Helper Online Payments Payments Sale post Authorization post Credit post Validate post Capture post Void post Refund post Get get Invoicing Create Invoice post List Invoices get Get Invoice get Update Invoice put Close Invoice del Send Invoice post Subscriptions Create Subscription post List Subscriptions get Get Subscription get Update Subscription put Delete Subscription del Plans Create Plan post List Plans get Get Plan get Update Plan put Delete Plan del Customers Create Customer post List Customers get Get Customer get Update Customer patch Delete Customer del Add Billing Address post Get Billing Address get Update Billing Address patch Delete Billing Address del Add Shipping Address post Get Shipping Address get Update Shipping Address patch Delete Shipping Address del Products Create Product post List Products get Get Product get Update Product put Delete Product del TXT2PAY (Powered by Authvia) Create a new conversation post List and filter conversations get Get a conversation get Close a conversation del IN-PERSON PAYMENTS Devices List Cloud Devices get Register Cloud Device post Get Cloud Device get Update Cloud Device patch Deregister Cloud Device del Prompt Device for Signature post Get Signature Prompt Status get Prompt Device for Yes/No Response post Get Yes/No Prompt Status get Prompt Device for Menu Selection post Get Menu Prompt Status get Display QR Code on Device post Cancel Display on Device del Create Sale Payment Request on Device post Create Authorization Payment Request on Device post Create Credit Payment Request on Device post Create Validation Payment Request on Device post Get Payment Request Status get Cancel Payment Request on Device del In-Person Payments Overview Customer Present Cloud API Download SDK for iOS/Android Download SDK for Windows/Linux ACCOUNT MANAGEMENT Overview Affiliates Get Sub-Affiliate List post Merchants Create Merchant post Assign Fee Schedule to Merchant / Complete and Send Welcome Email / Agree to TOS and Fees for a Merchant patch Get a Specific Merchant's Information get Get Merchant List post Settlement Time Get Settlement Time get Updating Settlement Time patch Fee Schedule Pull All Fee Schedules post Get Fees Inside a Fee Schedule get Processors and Services Add Processor / Value-Added Service post Get Merchant Processors and Value Added Services Details post Card Type Lookup post Get Processor Config get Apple Pay Adding Apple Pay to a Merchant post Querying A Merchant's Apple Pay Status get Get Available Services post Customer Token Vault Add Token Vault to a Gateway Account post REPORTING General Query API (Classic) post Transactions Get Transaction Data post Billing & Commission See Merchants' Billing post See Your Commission post ADMINISTRATION Users Get Merchant or Partner User Info post Username Availability post API Keys Create Merchant API Keys post Webhooks Overview Retry Logic Transaction Events Check Status Recurring Events Settlement Events Chargeback Events Automatic Card Updater Events Other Resources Postman Collection Gateway Emulator Classic APIs Transactions Transaction Processing post Invoices Invoice Management post Subscriptions Subscription Management post Plans Plan Management post Customers Customer Management post Billing Information Management post Products Product Management post Copy Page Getting Started with Our APIs Merchant Sign-Up Onboard merchants through a complete application workflow. Submit applications for automated risk review, monitor approval status in real-time, and retrieve provisioned Gateway and Merchant IDs. The API supports full lifecycle management including authentication, package configuration, and webhook notifications for application events. If you already have a merchant account and just need to board it directly to the gateway use the Account Management section below. Payment Processing Process transactions seamlessly across a wide range of payment methods, including card-present, e-commerce, and alternative payment options like Apple Pay and Google Pay. Beyond transaction processing, manage the complete payment experience including invoicing, recurring billing, and secure payment storage. Build flexible payment solutions that support both online and in-person transactions. Account Management Onboard merchants to the gateway, configure processors and services, manage fee schedules and settlement timing, and enable secure payment features like Customer Token Vault and Apple Pay. Build fully white-label payment experiences with full control over merchant accounts and gateway settings tailored to your needs. Reporting Robust reporting capabilities, allowing merchants to access detailed transaction, customer, invoice, and account data. Generate custom reports tailored to your business needs and gain actionable insights into payment activity, merchant performance, and account metrics. Administration Manage API authentication, user access, and event-driven integrations. Configure webhooks for real-time notifications and build automated workflows with retry logic and event monitoring. Updated 3 months ago MCP Server Did this page help you? Yes No Updated 3 months ago MCP Server Did this page help you? Yes No Merchant Sign-Up Payment Processing Account Management Reporting Administration Privacy Policy Terms and Conditions",
+   "chars": 6949,
+   "signals": {
+    "auth:api_key": 2,
+    "auth:bearer_token": 1,
+    "auth:hmac": 2,
+    "api:MCP": 3,
+    "mcp": 3,
+    "access:self_serve": 2,
+    "access:paid": 14,
+    "access:approval": 15
+   }
+  }
+ ]
+}

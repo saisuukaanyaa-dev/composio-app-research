@@ -1,0 +1,67 @@
+{
+ "id": "67",
+ "name": "Snowflake",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "Snowflake-Labs/mcp",
+   "stars": 303,
+   "url": "https://github.com/Snowflake-Labs/mcp",
+   "vendor_owned": true
+  },
+  {
+   "repo": "isaacwasserman/mcp-snowflake-server",
+   "stars": 184,
+   "url": "https://github.com/isaacwasserman/mcp-snowflake-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "ralforion/orionbelt-analytics",
+   "stars": 59,
+   "url": "https://github.com/ralforion/orionbelt-analytics",
+   "vendor_owned": false
+  },
+  {
+   "repo": "datawiz168/mcp-snowflake-service",
+   "stars": 45,
+   "url": "https://github.com/datawiz168/mcp-snowflake-service",
+   "vendor_owned": false
+  },
+  {
+   "repo": "thorstenfoltz/octa",
+   "stars": 36,
+   "url": "https://github.com/thorstenfoltz/octa",
+   "vendor_owned": false
+  },
+  {
+   "repo": "giancarloerra/JanuScope",
+   "stars": 33,
+   "url": "https://github.com/giancarloerra/JanuScope",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Snowflake-Labs/MCP-HOL-BUILD-2025",
+   "stars": 24,
+   "url": "https://github.com/Snowflake-Labs/MCP-HOL-BUILD-2025",
+   "vendor_owned": true
+  },
+  {
+   "repo": "iblai/ontology",
+   "stars": 16,
+   "url": "https://github.com/iblai/ontology",
+   "vendor_owned": false
+  },
+  {
+   "repo": "dynamike/snowflake-mcp-server",
+   "stars": 14,
+   "url": "https://github.com/dynamike/snowflake-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Snowflake-Labs/sfguide-mcp-cortex-agents",
+   "stars": 13,
+   "url": "https://github.com/Snowflake-Labs/sfguide-mcp-cortex-agents",
+   "vendor_owned": true
+  }
+ ]
+}

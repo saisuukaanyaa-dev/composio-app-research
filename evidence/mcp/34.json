@@ -1,0 +1,67 @@
+{
+ "id": "34",
+ "name": "GoHighLevel",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "mastanley13/GoHighLevel-MCP",
+   "stars": 197,
+   "url": "https://github.com/mastanley13/GoHighLevel-MCP",
+   "vendor_owned": false
+  },
+  {
+   "repo": "BusyBee3333/Go-High-Level-MCP-2026-Complete",
+   "stars": 128,
+   "url": "https://github.com/BusyBee3333/Go-High-Level-MCP-2026-Complete",
+   "vendor_owned": false
+  },
+  {
+   "repo": "basicmachines-co/open-ghl-mcp",
+   "stars": 53,
+   "url": "https://github.com/basicmachines-co/open-ghl-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "tenfoldmarc/ghl-mcp",
+   "stars": 19,
+   "url": "https://github.com/tenfoldmarc/ghl-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "drausal/gohighlevel-mcp",
+   "stars": 10,
+   "url": "https://github.com/drausal/gohighlevel-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "hridayshah7/gohighlevel-mcp",
+   "stars": 8,
+   "url": "https://github.com/hridayshah7/gohighlevel-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "robbyDAninja/7fa-ghl-mcp",
+   "stars": 6,
+   "url": "https://github.com/robbyDAninja/7fa-ghl-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "uxieee/uxie-ghl-mcp-server",
+   "stars": 6,
+   "url": "https://github.com/uxieee/uxie-ghl-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "NerdSnipe-Inc/ghl-mcp-server",
+   "stars": 6,
+   "url": "https://github.com/NerdSnipe-Inc/ghl-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "CryptoJym/gohighlevel-mcp",
+   "stars": 4,
+   "url": "https://github.com/CryptoJym/gohighlevel-mcp",
+   "vendor_owned": false
+  }
+ ]
+}

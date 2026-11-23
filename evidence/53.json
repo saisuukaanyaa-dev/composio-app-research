@@ -1,0 +1,125 @@
+{
+ "id": "53",
+ "name": "Ahrefs",
+ "fetched_at": "2026-11-23T18:11:27",
+ "pages": [
+  {
+   "url": "https://docs.ahrefs.com/docs/api/reference/introduction",
+   "final_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+   "status": 200,
+   "via": "http",
+   "title": "Introduction | Ahrefs for Developers",
+   "text": "Introduction | Ahrefs for Developers Docs Home REST API MCP Data Studio Bot Analytics Ahrefs Connect Search docs... \u2318K \u2715 Products Home REST API MCP Data Studio Bot Analytics Ahrefs Connect Reference Introduction Limits consumption Free test queries API keys creation and management Parameters Filter syntax Page type and category classifications Changelog API Site Explorer Competitive Analysis Keywords Explorer Site Audit Rank Tracker SERP Overview Batch Analysis Subscription Information Management Brand Radar Content Helper Web Analytics GSC Insights Social Media Public Reference Introduction Limits consumption Free test queries API keys creation and management Parameters Filter syntax Page type and category classifications Changelog API Site Explorer Competitive Analysis Keywords Explorer Site Audit Rank Tracker SERP Overview Batch Analysis Subscription Information Management Brand Radar Content Helper Web Analytics GSC Insights Social Media Public Reference / Introduction Introduction With Ahrefs API, you can use data from your Ahrefs workspace to create custom integrations and automations. Currently, API v3 allows you to pull data from the Site Explorer, Keywords Explorer, SERP Overview, Rank Tracker, Site Audit, Brand Radar, Social Media Management and Content Helper endpoints, as well as manage your Rank Tracker projects and Keywords Explorer lists: Site Explorer : Overview stats and historical charts, Backlinks, Organic and paid traffic reports Keywords Explorer : Metrics for a single keyword or a list of keywords, Search volume history and volume by country, Keyword ideas reports Site Audit : Projects' Health Scores, full issue reports and content of crawled pages SERP Overview : Top 100 SERP results Rank Tracker : Project overview, Competitor reports and Rank Tracker SERPs Batch Analysis : Metrics for up to 100 targets per request Brand Radar : Brand overview stats, historical performance charts, and real prompts with citations across multiple AI agents Social Media Management : Channels, posts, activity history and metrics for connected social media accounts Content Helper : The core topics covered by the pages ranking for a keyword, with per-page coverage scores Management : Endpoints to manage your Rank Tracker projects and Keywords Explorer lists Subscription information : Your API limits and usage Public endpoints : Our crawler's IP addresses and ranges Eligibility Ahrefs API is available on eligible paid plans . On all other plans, you'll still have access to a limited set of free test queries . Plan limits All requests besides free test queries and the Rank Tracker , Management , Public and some other endpoints consume API units . The cost depends on the number of rows in a response and the fields requested. The minimum cost for any request is 50 units . If an endpoint is free, you'll see a note about that on its documentation page; otherwise, it consumes units. Related guide: Limits consumption info Please be advised that API units once consumed are non-refundable. We strongly encourage the use of our complimentary test queries for all development and testing purposes to mitigate any unintended usage of API units. We also recommend putting limits on your API keys, especially when you are in the testing and development stage. Eligible paid plans include a monthly API unit allowance. On plans that support pay-as-you-go usage, additional units are automatically charged once the included limit is exceeded. See also: Pricing page and Account settings / Limits & usage . API keys To send requests to Ahrefs API, you'll need an API key. Only workspace owners and admins can create and manage API keys. This can be done in Account settings / API keys . Related guide: API keys creation and management Basic usage Get a quick start with these API buttons in Ahrefs reports . Click on them to display the request as a cURL command. These buttons can be used as a query builder since the cURL command will be updated dynamically with any filters you apply to the report. Note that cURL contains all the fields and metrics shown in the current report. You can remove the fields you don't need to reduce the cost of a request. For full usage details, view our API reference in these docs. The reference contains an OpenAPI-compatible specification of each endpoint's request and response format. Rate limiting Ahrefs API is limited to 60 requests per minute by default. If this limit is exceeded, the API will respond with an HTTP 429 status code ( Too Many Requests ). Additionally, to maintain optimal performance and system stability, API requests may occasionally be rejected with the same HTTP 429 status code due to throttling. Throttling occurs dynamically based on real-time system load, resource availability, and the computational demands of your requests. Links Full OpenAPI spec Privacy policy Terms of use Next \u2192 Limits consumption On this page Eligibility Plan limits API keys Basic usage Rate limiting Links",
+   "chars": 4988,
+   "signals": {
+    "auth:api_key": 9,
+    "api:REST": 8,
+    "api:MCP": 2,
+    "mcp": 2,
+    "access:paid": 4
+   }
+  },
+  {
+   "url": "https://ahrefs.com/api",
+   "final_url": "https://docs.ahrefs.com",
+   "status": 200,
+   "via": "http",
+   "title": "Ahrefs for Developers",
+   "text": "Ahrefs for Developers Docs Home REST API MCP Data Studio Bot Analytics Ahrefs Connect Search docs... \u2318K \u2715 Products Home REST API MCP Data Studio Bot Analytics Ahrefs Connect Build with Ahrefs data Access Ahrefs marketing and search data through our APIs and developer tools to build custom integrations and workflows. Search documentation... \u2318K API Request Response 200 OK Domain / DR Ref. Domains 1 wikipedia.org 98 2 github.com 96 3 medium.com 94 4 stackoverflow.com 93 5 producthunt.com 91 Output for illustration purposes. REST API Research keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms. Introduction Overview, authentication, and rate limits Free test queries Try API endpoints without an Enterprise plan Explore endpoints Browse all available API endpoints API keys Create and manage your API keys Changelog Latest API updates and changes OpenAPI spec Full machine-readable spec for every endpoint Introduction Overview, authentication, and rate limits Free test queries Try API endpoints without an Enterprise plan Explore endpoints Browse all available API endpoints API keys Create and manage your API keys Changelog Latest API updates and changes OpenAPI spec Full machine-readable spec for every endpoint MCP Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights. Introduction What is MCP and how to get started Claude Desktop / Web Connect Ahrefs to Claude on desktop or web ChatGPT setup Use Ahrefs data in ChatGPT conversations Claude Code Integrate Ahrefs into your coding workflow Introduction What is MCP and how to get started Claude Desktop / Web Connect Ahrefs to Claude on desktop or web ChatGPT setup Use Ahrefs data in ChatGPT conversations Claude Code Integrate Ahrefs into your coding workflow Data Studio Build custom dashboards with Ahrefs data in Google Data Studio. Introduction Get started with Ahrefs connectors for Data Studio Site Explorer connector Backlinks, organic traffic, and domain metrics Rank Tracker connector Track keyword rankings over time Site Audit connector Monitor site health and technical SEO issues Brand Radar connector Track your brand presence in AI search Introduction Get started with Ahrefs connectors for Data Studio Site Explorer connector Backlinks, organic traffic, and domain metrics Rank Tracker connector Track keyword rankings over time Site Audit connector Monitor site health and technical SEO issues Brand Radar connector Track your brand presence in AI search Bot Analytics Understand how bots interact with your website. Track crawl activity, identify bot types, and monitor their impact. Introduction Overview of Bot Analytics Cloudflare Logpush Recommended Cloudflare Enterprise setup Cloudflare Worker Worker-based setup for any Cloudflare plan Introduction Overview of Bot Analytics Cloudflare Logpush Recommended Cloudflare Enterprise setup Cloudflare Worker Worker-based setup for any Cloudflare plan Ahrefs Connect Bring Ahrefs data into third-party apps through our integration program. Built on API v3. Introduction Overview of the integration program How it works Architecture and data flow OAuth guide Implement OAuth 2.0 authorization How to apply Steps to join the program Introduction Overview of the integration program How it works Architecture and data flow OAuth guide Implement OAuth 2.0 authorization How to apply Steps to join the program \u00a9 2026 Ahrefs Pte. Ltd. llms.txt Legal Privacy Policy GitHub",
+   "chars": 3516,
+   "signals": {
+    "auth:oauth2": 4,
+    "auth:api_key": 4,
+    "api:REST": 11,
+    "api:MCP": 5,
+    "mcp": 5,
+    "access:paid": 2
+   }
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+   "final_url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+   "status": 200,
+   "via": "http",
+   "title": "What is Ahrefs MCP | Ahrefs for Developers",
+   "text": "What is Ahrefs MCP | Ahrefs for Developers Docs Home REST API MCP Data Studio Bot Analytics Ahrefs Connect Search docs... \u2318K \u2715 Products Home REST API MCP Data Studio Bot Analytics Ahrefs Connect What is Ahrefs MCP Tool Categories Setup Guides Claude Desktop/Web Claude Mobile Claude Code Copilot Studio ChatGPT Web Lovable n8n Manus Mistral's Le Chat OpenClaw What is Ahrefs MCP Tool Categories Setup Guides Claude Desktop/Web Claude Mobile Claude Code Copilot Studio ChatGPT Web Lovable n8n Manus Mistral's Le Chat OpenClaw What is Ahrefs MCP Ahrefs MCP lets AI agents securely access the Ahrefs API and enrich their answers with real Ahrefs data. MCP (Model Context Protocol) is a standard that allows AI tools to connect with third-party APIs in a secure, consistent way. In our case, it connects AI tools with Ahrefs, enabling things like this: Connect to Ahrefs MCP Ahrefs provides a hosted MCP server that allows users with a Lite plan or higher to connect their Ahrefs account to supported AI tools. Once connected, your setup is synced and available across all devices linked to your personal or company account. info See our Ahrefs MCP use cases and prompt ideas for real examples and prompting tips to help you get the most from your MCP connection. Connection URL Streamable HTTP : https://api.ahrefs.com/mcp/mcp Most popular AI tools support connecting to the remote MCP directly. If you run into issues, check out our step-by-step setup guides: Claude Web / Desktop Claude Mobile Claude Code Copilot Studio ChatGPT Web Lovable n8n Manus Mistral's Le Chat OpenClaw API limits and usage The remote MCP server is available on paid plans starting from Lite. Each plan has a maximum number of rows per request that an AI agent can access. Each plan also comes with a limited amount of monthly API units. The higher your plan tier, the more units are included. Enterprise customers can purchase additional unit add-ons if needed. When a third-party app makes an API call on your behalf, it consumes API units from your monthly allowance \u2014 the same way as direct API usage . You can track your current usage in Account settings \u2192 Limits and usage . See the Ahrefs pricing page for details on plan limits. Keys and authorization When you connect Ahrefs MCP to an AI agent: You\u2019ll see an authorization consent screen. Once approved, the connection will appear in your account with a dedicated API key (tagged with MCP scope). New keys created through OAuth for MCP or Ahrefs Connect default to a monthly limit of 200,000 API units per key. Workspace admins can change or remove this limit in the API keys report . Manually created keys have no per-key limit by default. Workspace plan limits still apply to all keys. You can also: Manually generate an MCP key in your account and use it in your AI agent\u2019s configuration. Enterprise customers may also connect with their API keys. For details on how API units are calculated per call, see API pricing and unit consumption guide . Terms of use Ahrefs MCP is supported by Third Party Services (as defined in our Terms of Service ) such as Claude and Microsoft Copilot. The customer agrees that the customer\u2019s use of Third Party Services is governed solely by the terms and conditions, usage guidelines and/or other policies or agreements of Third Party Services, and the customer agrees to use Third Party Services in compliance with said terms and conditions. Ahrefs does not endorse, is not liable for, and makes no representations or warranties in relation to any and all aspects of Third Party Services. For the full terms of use, please refer to our Terms of Service . Using the external MCP endpoint via custom scripts, bridges, or standalone HTTP/JSON-RPC clients is unsupported and not permitted. The external MCP server is not a general-purpose programmatic API. For supported programmatic access to Ahrefs data, please use the Ahrefs public API . Next \u2192 Tool Categories On this page Connect to Ahrefs MCP API limits and usage Keys and authorization Terms of use",
+   "chars": 4022,
+   "signals": {
+    "auth:oauth2": 1,
+    "auth:api_key": 3,
+    "api:REST": 4,
+    "api:MCP": 25,
+    "mcp": 25,
+    "access:paid": 3,
+    "access:approval": 1,
+    "access:partner": 2
+   }
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+   "final_url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+   "status": 200,
+   "via": "http",
+   "title": "API keys creation and management | Ahrefs for Developers",
+   "text": "API keys creation and management | Ahrefs for Developers Docs Home REST API MCP Data Studio Bot Analytics Ahrefs Connect Search docs... \u2318K \u2715 Products Home REST API MCP Data Studio Bot Analytics Ahrefs Connect Reference Introduction Limits consumption Free test queries API keys creation and management Parameters Filter syntax Page type and category classifications Changelog API Site Explorer Competitive Analysis Keywords Explorer Site Audit Rank Tracker SERP Overview Batch Analysis Subscription Information Management Brand Radar Content Helper Web Analytics GSC Insights Social Media Public Reference Introduction Limits consumption Free test queries API keys creation and management Parameters Filter syntax Page type and category classifications Changelog API Site Explorer Competitive Analysis Keywords Explorer Site Audit Rank Tracker SERP Overview Batch Analysis Subscription Information Management Brand Radar Content Helper Web Analytics GSC Insights Social Media Public Reference / API keys creation and management API keys creation and management You'll need an API key to send requests via Ahrefs API v3. Provide it in the Authorization header when making requests: Authorization: Bearer YOUR_API_KEY . Creating API keys Create and manage existing API keys in Account settings / API keys . Note that only workspace owners and admins have access to this section. You can create up to 1,000 API keys. When creating or editing a key, choose an expiration date between today and 10 years from today. After that date, the key becomes inactive. You can see the expiration date for each key and who created it on this page. A key will also be invalidated if the user who created it is removed from the workspace. Controlling usage To control the monthly usage of API units in your workspace, limit the usage of particular API keys in Account settings / API keys . If your subscription plan allows pay-as-you-go charges, you can also limit the maximum number of API units that can be added on a pay-as-you-go basis or disable pay-as-you-go API units altogether in Account settings / Limits & usage . \u2190 Previous Free test queries Next \u2192 Parameters On this page Creating API keys Controlling usage",
+   "chars": 2202,
+   "signals": {
+    "auth:api_key": 14,
+    "auth:bearer_token": 1,
+    "api:REST": 2,
+    "api:MCP": 2,
+    "mcp": 2,
+    "access:paid": 3
+   }
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/mcp/docs/claude-desktop-web",
+   "final_url": "https://docs.ahrefs.com/en/mcp/docs/claude-desktop-web",
+   "status": 200,
+   "via": "http",
+   "title": "Claude Desktop/Web | Ahrefs for Developers",
+   "text": "Claude Desktop/Web | Ahrefs for Developers Docs Home REST API MCP Data Studio Bot Analytics Ahrefs Connect Search docs... \u2318K \u2715 Products Home REST API MCP Data Studio Bot Analytics Ahrefs Connect What is Ahrefs MCP Tool Categories Setup Guides Claude Desktop/Web Claude Mobile Claude Code Copilot Studio ChatGPT Web Lovable n8n Manus Mistral's Le Chat OpenClaw What is Ahrefs MCP Tool Categories Setup Guides Claude Desktop/Web Claude Mobile Claude Code Copilot Studio ChatGPT Web Lovable n8n Manus Mistral's Le Chat OpenClaw Setup Guides / Claude Desktop/Web Claude Desktop/Web Installation There are two methods to proceed with setup: Method 1: Using OAuth Authorization Open the Customize section , select \"Connectors\" and click on the \"+\" (Add) button. Search for \"Ahrefs\" in the list of approved Claude connectors and click on the card. Click \"Connect\". Choose your Ahrefs workspace and select your account. In the consent popup, click Allow. Once connected, you will see a confirmation message, and \"Ahrefs\" will appear in the list of your connectors. Method 2: Using MCP token via Claude developer configuration Click on your profile icon (often your initials) in the lower-left corner and choose \"Settings\" from the menu. In the Settings, select \"Developer\" under Desktop app and click \"Edit config\". This will open or locate the claude_desktop_config.json file. Add or update your configuration in the following format: { \"mcpServers\": { \"Ahrefs\": { \"command\": \"npx\", \"args\": [ \"mcp-remote\", \"https://api.ahrefs.com/mcp/mcp\", \"--header\", \"Authorization:${AUTH_HEADER}\" ], \"env\": { \"AUTH_HEADER\": \"Bearer $MCP Key\" } } } } Go to Ahrefs workspace \u2192 Account Settings \u2192 API Keys and click \"Generate MCP key\" to create a new key. Copy the generated MCP Key, replace the $MCP Key in JSON file and save it. Restart the Claude desktop app. Using connectors Enable the connector in the chat settings dropdown. Add a query, for example: \"In table form, Using site-explorer-refdomains, display the top 10 referring domains for ahrefs.com from the past 7 days.\" Make sure all the tools mentioned are enabled before running queries. Note that in Claude Connectors Settings , if the connector is set to \u201cAlways ask permission\u201d, you will be prompted to grant permission before any query can return an answer. You can choose \u201cAllow unsupervised\u201d to grant the connector access automatically. This ensures smooth and uninterrupted use of the Ahrefs tools without repeated permission prompts. \u2190 Previous Tool Categories Next \u2192 Claude Mobile On this page Installation Using connectors",
+   "chars": 2572,
+   "signals": {
+    "auth:oauth2": 1,
+    "auth:api_key": 1,
+    "auth:bearer_token": 1,
+    "api:REST": 3,
+    "api:MCP": 12,
+    "mcp": 12,
+    "access:trial": 1,
+    "access:approval": 1
+   }
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/mcp/docs/chatgpt-web",
+   "final_url": "https://docs.ahrefs.com/en/mcp/docs/chatgpt-web",
+   "status": 200,
+   "via": "http",
+   "title": "ChatGPT Web | Ahrefs for Developers",
+   "text": "ChatGPT Web | Ahrefs for Developers Docs Home REST API MCP Data Studio Bot Analytics Ahrefs Connect Search docs... \u2318K \u2715 Products Home REST API MCP Data Studio Bot Analytics Ahrefs Connect What is Ahrefs MCP Tool Categories Setup Guides Claude Desktop/Web Claude Mobile Claude Code Copilot Studio ChatGPT Web Lovable n8n Manus Mistral's Le Chat OpenClaw What is Ahrefs MCP Tool Categories Setup Guides Claude Desktop/Web Claude Mobile Claude Code Copilot Studio ChatGPT Web Lovable n8n Manus Mistral's Le Chat OpenClaw Setup Guides / ChatGPT Web ChatGPT Web Note on ChatGPT support info Full support for MCP client access is currently in beta in ChatGPT. At the moment, it's only available in Developer mode for Pro and Plus accounts on the web. While it's in beta, we recommend being as explicit and precise as possible in your prompts. For example: Mention the Ahrefs MCP directly. Specify the tool or endpoint to use. Indicate which fields to pull and how to sort the results. Excplicitly ask ChatGPT not to use the web search. Better results often come from structured prompts like this: \"Using the Ahrefs MCP connector and the keywords-explorer-matching-terms action, pull the top 10 keywords related to \"marketing\" in Brazil, sorted by search volume.\" instead of a vague prompt like: \"What are the top keywords related to marketing in Brazil?\" For the latest details, see the official ChatGPT Developer Mode docs Setup guide Follow these steps to add Ahrefs MCP server to ChatGPT Web: Go to Settings > Apps > Advanced settings Enable the \"Developer mode\". Click the \"Create app\" button. Fill in the new Connector details: MCP Server URL: https://api.ahrefs.com/mcp/mcp Authentication: OAuth Keep OAuth Client ID and Client Secret blnk Select the option \u201cI trust this application\u201d and click the \"Create\" button. Select your workspace and allow access to it by clicking \"Allow\". Check that the app in ChatGPT is successfully connected. Activate the Ahrefs connector in the chat before starting the query: Click on the \"+\" sign \u2192 \"More\" Enable the connector you created earlier. \u2190 Previous Copilot Studio Next \u2192 Lovable",
+   "chars": 2121,
+   "signals": {
+    "auth:oauth2": 2,
+    "api:REST": 4,
+    "api:MCP": 11,
+    "mcp": 11,
+    "access:approval": 1
+   }
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/mcp/docs/claude-code",
+   "final_url": "https://docs.ahrefs.com/en/mcp/docs/claude-code",
+   "status": 200,
+   "via": "http",
+   "title": "Claude Code | Ahrefs for Developers",
+   "text": "Claude Code | Ahrefs for Developers Docs Home REST API MCP Data Studio Bot Analytics Ahrefs Connect Search docs... \u2318K \u2715 Products Home REST API MCP Data Studio Bot Analytics Ahrefs Connect What is Ahrefs MCP Tool Categories Setup Guides Claude Desktop/Web Claude Mobile Claude Code Copilot Studio ChatGPT Web Lovable n8n Manus Mistral's Le Chat OpenClaw What is Ahrefs MCP Tool Categories Setup Guides Claude Desktop/Web Claude Mobile Claude Code Copilot Studio ChatGPT Web Lovable n8n Manus Mistral's Le Chat OpenClaw Setup Guides / Claude Code Claude Code Follow these steps to add Ahrefs MCP server to Claude Code: Run from terminal claude mcp add ahrefs https://api.ahrefs.com/mcp/mcp -t http Launch Claude and run /mcp Authenticate the MCP Server Login to Ahrefs account, select workspace and click \"Allow\" A success message will be displayed. Recheck MCP server and now is connected and authenticated. Verify that the query returns results. \u2190 Previous Claude Mobile Next \u2192 Copilot Studio",
+   "chars": 992,
+   "signals": {
+    "api:REST": 3,
+    "api:MCP": 11,
+    "mcp": 11
+   }
+  }
+ ]
+}

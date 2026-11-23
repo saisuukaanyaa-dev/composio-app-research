@@ -1,0 +1,61 @@
+{
+ "id": "36",
+ "name": "Klaviyo",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "CosmoBlk/email-design",
+   "stars": 8,
+   "url": "https://github.com/CosmoBlk/email-design",
+   "vendor_owned": false
+  },
+  {
+   "repo": "mattcoatsworth/Klaviyo-MCP-Server",
+   "stars": 6,
+   "url": "https://github.com/mattcoatsworth/Klaviyo-MCP-Server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "mattcoatsworth/Klaviyo-MCP-Server-4-15",
+   "stars": 3,
+   "url": "https://github.com/mattcoatsworth/Klaviyo-MCP-Server-4-15",
+   "vendor_owned": false
+  },
+  {
+   "repo": "ivan-rivera-projects/Klaviyo-MCP-Server-Enhanced",
+   "stars": 3,
+   "url": "https://github.com/ivan-rivera-projects/Klaviyo-MCP-Server-Enhanced",
+   "vendor_owned": false
+  },
+  {
+   "repo": "doinglean/klaviyo-mcp",
+   "stars": 1,
+   "url": "https://github.com/doinglean/klaviyo-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "rakib78/Klaviyo-MCP-Server",
+   "stars": 1,
+   "url": "https://github.com/rakib78/Klaviyo-MCP-Server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "olivalcf/klaviyo-audit-agent-skill",
+   "stars": 1,
+   "url": "https://github.com/olivalcf/klaviyo-audit-agent-skill",
+   "vendor_owned": false
+  },
+  {
+   "repo": "temerariimedia/mcp-analytics-setup",
+   "stars": 1,
+   "url": "https://github.com/temerariimedia/mcp-analytics-setup",
+   "vendor_owned": false
+  },
+  {
+   "repo": "rst-confident/KlaviyoMCP",
+   "stars": 0,
+   "url": "https://github.com/rst-confident/KlaviyoMCP",
+   "vendor_owned": false
+  }
+ ]
+}

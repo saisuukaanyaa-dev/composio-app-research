@@ -1,0 +1,67 @@
+{
+ "id": "81",
+ "name": "Stripe",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "iannuttall/mcp-boilerplate",
+   "stars": 1017,
+   "url": "https://github.com/iannuttall/mcp-boilerplate",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Kronova-Intelligent-Systems/asset-intel-orchestration-engine",
+   "stars": 257,
+   "url": "https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Justin0504/Sovereign-OS",
+   "stars": 105,
+   "url": "https://github.com/Justin0504/Sovereign-OS",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Humblytics/humblytics-marketing-skills",
+   "stars": 86,
+   "url": "https://github.com/Humblytics/humblytics-marketing-skills",
+   "vendor_owned": false
+  },
+  {
+   "repo": "guillermoscript/lms-front",
+   "stars": 49,
+   "url": "https://github.com/guillermoscript/lms-front",
+   "vendor_owned": false
+  },
+  {
+   "repo": "atharvagupta2003/mcp-stripe",
+   "stars": 44,
+   "url": "https://github.com/atharvagupta2003/mcp-stripe",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Snyder-Technology-LLC/authflow-guides-resources-docs",
+   "stars": 37,
+   "url": "https://github.com/Snyder-Technology-LLC/authflow-guides-resources-docs",
+   "vendor_owned": false
+  },
+  {
+   "repo": "giancarloerra/JanuScope",
+   "stars": 33,
+   "url": "https://github.com/giancarloerra/JanuScope",
+   "vendor_owned": false
+  },
+  {
+   "repo": "ethanplusai/billr",
+   "stars": 22,
+   "url": "https://github.com/ethanplusai/billr",
+   "vendor_owned": false
+  },
+  {
+   "repo": "huzaifa1-0/eMCP-Nexus",
+   "stars": 12,
+   "url": "https://github.com/huzaifa1-0/eMCP-Nexus",
+   "vendor_owned": false
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "id": "38",
+ "name": "Pinterest",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "itallstartedwithaidea/advertising-hub",
+   "stars": 60,
+   "url": "https://github.com/itallstartedwithaidea/advertising-hub",
+   "vendor_owned": false
+  },
+  {
+   "repo": "terryso/mcp-pinterest",
+   "stars": 52,
+   "url": "https://github.com/terryso/mcp-pinterest",
+   "vendor_owned": false
+  },
+  {
+   "repo": "collactivelabs/pinterest-mcp-server",
+   "stars": 41,
+   "url": "https://github.com/collactivelabs/pinterest-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "xyonium/reach-mcp",
+   "stars": 13,
+   "url": "https://github.com/xyonium/reach-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "clugtu/pinterest-mcp",
+   "stars": 8,
+   "url": "https://github.com/clugtu/pinterest-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "posteverywhere/mcp",
+   "stars": 7,
+   "url": "https://github.com/posteverywhere/mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "what-name/pinterest-mcp",
+   "stars": 7,
+   "url": "https://github.com/what-name/pinterest-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "sunkimk/pinterest-mcp",
+   "stars": 7,
+   "url": "https://github.com/sunkimk/pinterest-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Nuu-maan/pinterest-mcp",
+   "stars": 6,
+   "url": "https://github.com/Nuu-maan/pinterest-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "CDataSoftware/pinterest-mcp-server-by-cdata",
+   "stars": 5,
+   "url": "https://github.com/CDataSoftware/pinterest-mcp-server-by-cdata",
+   "vendor_owned": false
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "id": "12",
+ "name": "Intercom",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "melgarafael/DeskcommCRM",
+   "stars": 5525,
+   "url": "https://github.com/melgarafael/DeskcommCRM",
+   "vendor_owned": false
+  },
+  {
+   "repo": "chattermate/chattermate.chat",
+   "stars": 178,
+   "url": "https://github.com/chattermate/chattermate.chat",
+   "vendor_owned": false
+  },
+  {
+   "repo": "PersonaliAI/chatty",
+   "stars": 24,
+   "url": "https://github.com/PersonaliAI/chatty",
+   "vendor_owned": false
+  },
+  {
+   "repo": "intercom/intercom-mcp-server",
+   "stars": 8,
+   "url": "https://github.com/intercom/intercom-mcp-server",
+   "vendor_owned": true
+  },
+  {
+   "repo": "fabian1710/mcp-intercom",
+   "stars": 8,
+   "url": "https://github.com/fabian1710/mcp-intercom",
+   "vendor_owned": false
+  },
+  {
+   "repo": "kaosensei/intercom-mcp",
+   "stars": 8,
+   "url": "https://github.com/kaosensei/intercom-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "raoulbia-ai/mcp-server-for-intercom",
+   "stars": 8,
+   "url": "https://github.com/raoulbia-ai/mcp-server-for-intercom",
+   "vendor_owned": false
+  },
+  {
+   "repo": "sanztheo/claude-intercom",
+   "stars": 4,
+   "url": "https://github.com/sanztheo/claude-intercom",
+   "vendor_owned": false
+  },
+  {
+   "repo": "dataforxyz/agent-intercom-claude",
+   "stars": 3,
+   "url": "https://github.com/dataforxyz/agent-intercom-claude",
+   "vendor_owned": false
+  },
+  {
+   "repo": "dataforxyz/agent-intercom-codex",
+   "stars": 3,
+   "url": "https://github.com/dataforxyz/agent-intercom-codex",
+   "vendor_owned": false
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "id": "37",
+ "name": "systeme.io",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "snzeeee/mcp-server-systemeio",
+   "stars": 3,
+   "url": "https://github.com/snzeeee/mcp-server-systemeio",
+   "vendor_owned": false
+  },
+  {
+   "repo": "management3consulting69-ops/systeme-mcp",
+   "stars": 0,
+   "url": "https://github.com/management3consulting69-ops/systeme-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "cotlet-connect/systeme-io-mcp",
+   "stars": 0,
+   "url": "https://github.com/cotlet-connect/systeme-io-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "softreviewed/systeme-extra-mcp",
+   "stars": 0,
+   "url": "https://github.com/softreviewed/systeme-extra-mcp",
+   "vendor_owned": false
+  }
+ ]
+}

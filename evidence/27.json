@@ -1,0 +1,43 @@
+{
+ "id": "27",
+ "name": "Telegram",
+ "fetched_at": "2026-11-23T18:09:16",
+ "pages": [
+  {
+   "url": "https://core.telegram.org/bots/api",
+   "final_url": "https://core.telegram.org/bots/api",
+   "status": 451,
+   "via": "browser",
+   "title": "(blocked by network proxy)",
+   "text": "",
+   "chars": 0,
+   "http_status": 403,
+   "signals": {},
+   "error": "network proxy block page"
+  },
+  {
+   "url": "https://core.telegram.org/bots/api#authorizing-your-bot",
+   "final_url": "https://core.telegram.org/bots/api#authorizing-your-bot",
+   "status": 451,
+   "via": "browser",
+   "title": "(blocked by network proxy)",
+   "text": "",
+   "chars": 0,
+   "http_status": 403,
+   "signals": {},
+   "error": "network proxy block page"
+  },
+  {
+   "url": "https://core.telegram.org",
+   "final_url": "https://core.telegram.org",
+   "status": 451,
+   "via": "browser",
+   "title": "(blocked by network proxy)",
+   "text": "",
+   "chars": 0,
+   "http_status": 403,
+   "signals": {},
+   "error": "network proxy block page"
+  }
+ ]
+}

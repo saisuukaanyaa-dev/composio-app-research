@@ -1,0 +1,67 @@
+{
+ "id": "30",
+ "name": "Vonage",
+ "status": "official_repo",
+ "repos": [
+  {
+   "repo": "khan2a/telephony-mcp-server",
+   "stars": 14,
+   "url": "https://github.com/khan2a/telephony-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Vonage-Community/vonage-mcp-server-api-bindings",
+   "stars": 3,
+   "url": "https://github.com/Vonage-Community/vonage-mcp-server-api-bindings",
+   "vendor_owned": true
+  },
+  {
+   "repo": "mobilebiz/vonage-cloudflare-mcp",
+   "stars": 1,
+   "url": "https://github.com/mobilebiz/vonage-cloudflare-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Vonage-Community/telephony-mcp-server",
+   "stars": 1,
+   "url": "https://github.com/Vonage-Community/telephony-mcp-server",
+   "vendor_owned": true
+  },
+  {
+   "repo": "zavora-ai/skill-voice-communications",
+   "stars": 1,
+   "url": "https://github.com/zavora-ai/skill-voice-communications",
+   "vendor_owned": false
+  },
+  {
+   "repo": "ag2-mcp-servers/vonage-integration-suite",
+   "stars": 0,
+   "url": "https://github.com/ag2-mcp-servers/vonage-integration-suite",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Feli87/vonage-mcp",
+   "stars": 0,
+   "url": "https://github.com/Feli87/vonage-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "mobilebiz/vonage-mcp-server",
+   "stars": 0,
+   "url": "https://github.com/mobilebiz/vonage-mcp-server",
+   "vendor_owned": false
+  },
+  {
+   "repo": "micahman33/VonageAICodeAssist",
+   "stars": 0,
+   "url": "https://github.com/micahman33/VonageAICodeAssist",
+   "vendor_owned": false
+  },
+  {
+   "repo": "Vonage/vonage-mcp-server-documentation",
+   "stars": 0,
+   "url": "https://github.com/Vonage/vonage-mcp-server-documentation",
+   "vendor_owned": true
+  }
+ ]
+}

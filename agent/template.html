@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Can these 100 apps become agent toolkits? | Composio research case study</title>
+<meta name="description" content="Agent-researched and verified audit of auth, access gating, API surface and MCP availability for 100 apps.">
+<link rel="alternate" type="application/json" href="data.json" title="Machine-readable dataset">
+<style>
+:root{--bg:#0b0d12;--panel:#12151d;--line:#232837;--fg:#e7e9ee;--mut:#9aa3b5;--acc:#7c5cff;--ok:#22c55e;--warn:#f59e0b;--bad:#ef4444;--blue:#38bdf8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 -apple-system,Segoe UI,Inter,Roboto,sans-serif}
+a{color:var(--blue)}main{max-width:1240px;margin:auto;padding:24px}
+nav{position:sticky;top:0;background:#0b0d12ee;backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:5}
+nav div{max-width:1240px;margin:auto;padding:10px 24px;display:flex;gap:18px;flex-wrap:wrap;font-size:14px}nav a{color:var(--mut);text-decoration:none}nav a:hover{color:var(--fg)}
+h1{font-size:34px;line-height:1.15;margin:18px 0 6px}h2{font-size:24px;margin:44px 0 12px;padding-top:8px;border-top:1px solid var(--line)}h3{margin:18px 0 8px;font-size:17px}
+.sub{color:var(--mut);max-width:880px}.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:22px 0}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}.kpi b{font-size:28px;display:block}.kpi span{color:var(--mut);font-size:13px}
+.headline{background:linear-gradient(135deg,#1a1440,#12151d);border:1px solid #3b2f87;border-radius:14px;padding:6px 22px}.headline li{margin:12px 0}
+.card{overflow-x:auto;min-width:0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.bar{display:grid;grid-template-columns:minmax(90px,190px) 1fr 34px;gap:8px;align-items:center;margin:5px 0;font-size:13px}.bl{color:var(--mut)}.bt{background:#1b2030;border-radius:4px;height:14px;overflow:hidden}
+.bf{display:block;height:100%;background:var(--acc)}.bf.acc{background:var(--blue)}.bf.ver{background:var(--ok)}.bf.blk{background:var(--warn)}.bf.mcp{background:#a78bfa}.bv{text-align:right}
+table{border-collapse:collapse;width:100%;font-size:13px}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+.matrix td{text-align:center}.h1{background:#1d2540}.h2{background:#263468}.h3{background:#30438f}.h4{background:#3a52b5}.h5{background:#4562d8}
+.pill{display:inline-block;border-radius:999px;padding:1px 8px;font-size:12px;border:1px solid var(--line);white-space:nowrap;margin:1px}
+.v-ready{color:#bbf7d0;background:#14532d55;border-color:#166534}.v-ready_with_review{color:#fde68a;background:#78350f55;border-color:#92400e}.v-blocked{color:#fecaca;background:#7f1d1d55;border-color:#991b1b}
+.a-self_serve,.a-trial{color:#bae6fd}.a-approval,.a-paid{color:#fde68a}.a-partner,.a-unknown{color:#fecaca}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.filters input,.filters select{background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-size:14px}
+#tbl tr.main{cursor:pointer}#tbl tr.main:hover{background:#161a25}#tbl tr.detail td{background:#0f1219;color:var(--mut)}.fix{color:var(--warn);font-size:11px}
+.ok{color:var(--ok)}.bad{color:var(--bad)}.mut{color:var(--mut)}.old{color:#fca5a5;text-decoration:line-through}.new{color:#86efac}
+.flow{display:flex;min-width:0;flex-wrap:wrap;gap:8px;align-items:stretch;margin:12px 0}.step{flex:1 1 170px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:13px}
+.step b{display:block;color:var(--fg);margin-bottom:3px}.step.h{border-color:var(--warn)}.arrow{align-self:center;color:var(--mut)}
+details{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 14px;margin:10px 0}summary{cursor:pointer;font-weight:600}
+code,pre{background:#0f1219;border:1px solid var(--line);border-radius:6px;padding:1px 5px;font-size:13px}pre{padding:10px;overflow:auto;max-width:100%}
+.big{font-size:40px;font-weight:700}.tag{font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:4px;padding:0 4px}
+footer{color:var(--mut);font-size:13px;margin:40px 0 20px}
+@media (max-width:640px){main{padding:14px}h1{font-size:26px}.arrow{display:none}}
+</style>
+</head>
+<body>
+<nav><div><b>100-app toolkit research</b><a href="#patterns">Patterns</a><a href="#findings">Findings</a><a href="#agent">The agent</a><a href="#verification">Verification</a><a href="#honesty">Limits</a><a href="data.json">data.json</a><a href="llms.txt">llms.txt</a><a href="{{REPO}}">Repo</a></div></nav>
+<main>
+<h1>Can these {{N}} apps become AI-agent toolkits today?</h1>
+<p class="sub">An agent pipeline researched auth, access gating, API surface and MCP availability for 100 apps across 10 categories. It then checked its own answers against live docs, fixed what failed, and re-checked. Every row links to its evidence. On a hand-checked sample, field accuracy moved from <b>{{S1}}</b> (LLM first pass) to <b>{{S2}}</b> (after the verification loops).</p>
+
+<div class="kpis">
+<div class="kpi"><b id="k-ready"></b><span>ready to build now (self-serve + documented)</span></div>
+<div class="kpi"><b id="k-open"></b><span>apps a developer can get credentials for alone</span></div>
+<div class="kpi"><b id="k-mcp"></b><span>apps already ship an official MCP server</span></div>
+<div class="kpi"><b>{{OM1}} &rarr; {{OM2}}</b><span>verifier flags for things the research missed (pass 1 &rarr; pass 2)</span></div>
+<div class="kpi"><b>{{S1}} &rarr; {{S2}}</b><span>field accuracy on a {{SAMPLE_N}}-app hand-checked sample</span></div>
+</div>
+
+<h2 id="patterns">1. The patterns (headline)</h2>
+<ol class="headline">{{HEADLINE}}</ol>
+
+<div class="grid" style="margin-top:14px">
+<div class="card"><h3>Auth methods offered <span class="tag">apps can have several</span></h3>{{AUTH_BARS}}</div>
+<div class="card"><h3>How a developer gets credentials</h3>{{ACCESS_BARS}}</div>
+<div class="card"><h3>Buildability verdict</h3>{{VERDICT_BARS}}<h3>MCP availability</h3>{{MCP_BARS}}</div>
+<div class="card"><h3>Main blocker for the {{N_NOT_EASY}} apps that aren't easy wins</h3>{{BLOCK_BARS}}</div>
+</div>
+<h3>Category &times; access matrix</h3>
+<div class="card" style="overflow:auto">{{MATRIX}}</div>
+<div class="grid" style="margin-top:14px">
+<div class="card"><h3 class="ok">Easy wins ({{N_EASY}})</h3><p class="mut">Self-serve or free-trial credentials, documented API, verdict ready.</p><p>{{EASY}}</p></div>
+<div class="card"><h3 class="bad">Needs outreach ({{N_OUT}})</h3><p class="mut">Partnership, app review, or an enterprise contract before a toolkit can be tested.</p><ul>{{OUTREACH}}</ul></div>
+</div>
+
+<h2 id="findings">2. Findings: all 100 apps</h2>
+<p class="mut">Click a row for evidence links, per-claim verification status, and what changed between pass 1 and pass 2. <span class="fix">&#9998; corrected</span> marks rows fixed by the verification loop.</p>
+<div class="filters">
+<input id="q" placeholder="Search app, auth, note..." size="28">
+<select id="fc"><option value="">All categories</option></select>
+<select id="fa"><option value="">All access</option><option>self_serve</option><option>trial</option><option>paid</option><option>approval</option><option>partner</option><option>unknown</option></select>
+<select id="fv"><option value="">All verdicts</option><option>ready</option><option>ready_with_review</option><option>blocked</option></select>
+<select id="fm"><option value="">Any MCP</option><option>official</option><option>community</option><option>none</option></select>
+<span id="count" class="mut" style="align-self:center"></span>
+</div>
+<div style="overflow:auto"><table id="tbl"><thead><tr><th>#</th><th>App</th><th>Category</th><th>What it does</th><th>Auth</th><th>Access</th><th>API</th><th>MCP</th><th>Verdict</th><th>Blocker</th><th>Evidence</th><th>Verified</th></tr></thead><tbody></tbody></table></div>
+
+<h2 id="agent">3. The agent: what I built and where a human was needed</h2>
+<div class="flow">
+<div class="step"><b>1. Draft (LLM)</b>An LLM fills the schema for each app from its name and hint. Output is pass 1: fast, but unverified.</div><div class="arrow">&rarr;</div>
+<div class="step"><b>2. Crawl (agent)</b><code>research.py</code> fetches the docs, auth and homepage URLs and follows auth, pricing and MCP links. If HTTP fails or returns a JS shell, it falls back to headless Edge/Chrome, and every page is cached as evidence.</div><div class="arrow">&rarr;</div>
+<div class="step"><b>3. Cross-source</b><code>mcp_check.py</code> searches GitHub for MCP servers and marks vendor-owned repos as official.</div><div class="arrow">&rarr;</div>
+<div class="step"><b>4. Verify (agent)</b><code>verify.py</code> scores every claim as supported, unsupported, broken link or no evidence. It flags unclaimed auth methods, MCP mentions that pass 1 missed, and dead URLs.</div><div class="arrow">&rarr;</div>
+<div class="step h"><b>5. Review (human-in-loop)</b><code>inspect_evidence.py</code> shows the snippet behind each flag. A reviewer accepts or rejects it, and accepted fixes go to <code>corrections.json</code> with before/after values and evidence. A stratified hand-checked sample measures true accuracy, and its misses become new verifier rules (loop 3).</div><div class="arrow">&rarr;</div>
+<div class="step"><b>6. Re-verify + build</b>Corrections are applied (pass 2), the verifier is re-run, and <code>build_site.py</code> computes every number on this page.</div>
+</div>
+<div class="grid">
+<div class="card"><h3>Where a human was needed</h3><ul>
+<li><b>Judging flags.</b> Keyword evidence is noisy. "OAuth" on Plaid's docs means bank-side OAuth, and Magento's "OAuth-based" means OAuth 1.0a. A reviewer rejected these and accepted real misses.</li>
+<li><b>Dead and moved docs.</b> LiveAgent, PitchBook, DealCloud and Ecwid needed a search for the new canonical URL.</li>
+<li><b>Identity changes.</b> fanbasis.com now redirects to <i>Commas</i>, and iPayX turned out to be an FX-audit engine, not a payment router. These were only caught by reading the rendered pages.</li>
+<li><b>Access-model judgement.</b> "Contact sales" on a marketing site doesn't mean the API is gated. Deciding self-serve vs partner needs reading, not regex.</li>
+<li><b>Network realities.</b> Corporate TLS inspection and bot walls (Meta 400, Salesforce 403) first looked like "broken links". The first verifier run penalised them wrongly, which is the reason for loop 2.</li>
+</ul></div>
+<div class="card"><h3>Run it</h3>
+<pre>pip install -r requirements.txt
+python agent/research.py            # crawl + evidence (browser fallback)
+python agent/mcp_check.py           # GitHub MCP cross-check
+python agent/verify.py data/pass1_llm.psv --label pass1
+python agent/inspect_evidence.py 95 mcp   # review a flag
+python agent/apply_corrections.py data/pass1_llm.psv data/pass2_verified.psv
+python agent/verify.py data/pass2_verified.psv --label pass2
+python agent/build_site.py          # -> site/index.html</pre>
+<p class="mut">Optional: <code>python agent/research.py --llm</code> re-derives every record from the cached evidence with any OpenAI-compatible model. This is the hook for swapping in Composio tools (web search, browser) as the agent's research actions.</p>
+<p><a href="{{REPO}}">Source repo &rarr;</a> &middot; <a href="data.json">data.json</a> &middot; <a href="llms.txt">llms.txt</a></p></div>
+</div>
+
+<h2 id="verification">4. Verification: how we know it's trustworthy</h2>
+<div class="grid">
+<div class="card"><h3>Automated loop (all 100 apps, every claim)</h3>
+<table><tr><th>Run</th><th>Claims</th><th>Evidence-backed</th><th>Precision on checkable</th><th>Unsupported</th><th>Broken links</th><th>No evidence</th><th>Omission flags</th><th>Apps flagged</th></tr>{{LOOP_ROWS}}</table>
+<p class="mut"><b>Evidence-backed</b> is the share of all claims where a fetched page contains a matching signal. <b>Precision</b> leaves out claims with no fetchable evidence. Both only score claims that were <i>made</i>, so they can't see omissions. A missed MCP server or OAuth flow makes no claim and can't fail. <b>Omission flags</b> count the cases where the docs show something the pass didn't claim. That's where pass 1 was weakest, and why the hand sample (right) is the headline accuracy number.<br>The first row is the very first run. Bot walls and corporate TLS made most failures crawler problems, not data problems (loop 1 fixed the crawler). Rows 2-3 judge both passes against the same final evidence. Loop 2 applied reviewed flag fixes, and loop 3 generalized the sample's misses into new rules. Together that's {{N_CORR}} corrections across {{N_CORR_APPS}} apps, by field: {{CORR_KIND}}.</p>
+<table><tr><th>Field</th><th>Pass 1 supported</th><th>Pass 2 supported</th></tr>{{FIELD_ROWS}}</table></div>
+<div class="card"><h3>Hand-checked sample ({{SAMPLE_N}} apps, 2 per category)</h3>
+<p class="mut">A stratified random sample (seed 7, 2 apps per category). Each field was graded against the live docs: 1 = correct, 0 = wrong, blank = can't be confirmed without an account. Pass 1 got <b>{{S1_RAW}}</b> fields right. Pass 2 got <b>{{S2_RAW}}</b>, graded <i>before</i> the sample's own misses were fixed, so the sample is not graded on its own answer key. Those misses became loop-3 rules and were fixed in the final data. Grading was AI-assisted, and {{HUMAN_DONE}} of {{SAMPLE_N}} rows carry a human sign-off in <code>verification/sample_review.csv</code>.</p>
+<table><tr><th>Field</th><th>Pass 1</th><th>Pass 2</th></tr>{{SAMPLE_ROWS}}</table>
+<h3>Reviewer notes: hits and misses</h3><table>{{MISS_ROWS}}</table></div>
+</div>
+<details><summary>All {{N_CORR}} corrections (before &rarr; after, with evidence)</summary><div style="overflow:auto"><table><tr><th>App</th><th>Field</th><th>Pass 1</th><th>Pass 2</th><th>Why</th><th>Source</th><th>Found by</th></tr>{{CORR_ROWS}}</table></div></details>
+<details><summary>Residual flags still open after pass 2 ({{N_RESIDUAL}} apps), shown honestly</summary><p class="mut">Mostly verifier false positives: keyword matches like "api token" counting as "api_key", and MCP servers that live outside the crawled docs. Some are genuine unknowns.</p><ul>{{RESIDUAL}}</ul></details>
+
+<h2 id="honesty">5. Where the agent was wrong, and what defeated it</h2>
+<div class="card"><ul>
+<li><b>Pass 1 was confidently stale.</b> It got 28 MCP labels wrong (17 vendor servers missed entirely, 11 official ones labelled community) and 14 auth fields, missed Zendesk's deprecation of API tokens, and cited 5 moved URLs. An LLM's prior is a draft, not a finding.</li>
+<li><b>Two apps were mis-identified</b> (fanbasis is now Commas; iPayX is an FX audit engine), and Coda has rebranded as Superhuman Docs. Only rendering the live sites caught this.</li>
+<li><b>The automated loop missed things the hand sample caught</b>: Pipedrive and Meta Ads MCP, Harvest's trial, Zendesk auth and Otter access. 5 of the 20 sampled apps still had an error after loop 2. Generalizing those misses (loop 3) caught 7 more MCP misses across the other 80 apps, which suggests a similar residual rate outside the sample.</li>
+<li><b>Keyword verification has a ceiling.</b> It proves a word is on the page, not that the claim is right. For example, "OAuth" may refer to a different flow. That's why flags go to a reviewer, and why there is a separate hand-graded sample.</li>
+<li><b>Access tier is the least certain field.</b> Pricing pages are marketing-driven and change often. Treat <i>paid</i> vs <i>trial</i> as a lead to confirm before outreach.</li>
+<li><b>Not fully verifiable without accounts.</b> Ecwid's plan requirement for custom apps and Pylon/Grain API tiers are stated from docs, without signing up.</li>
+<li><b>Some docs were unreachable from the network this ran on.</b> A corporate web filter blocks some categories (messaging, "phishing"-classified hosts). These apps have no readable evidence and their rows are <i>unverified</i>, not confirmed: {{NO_EVID}}. Re-running <code>research.py</code> on an open network fills them in. The crawler detects proxy block pages and discards them, so no proxy or user details end up in the evidence.</li>
+<li>No paid accounts were used. Where an app is gated, the gate itself, with evidence, is the finding.</li>
+</ul></div>
+<footer>Built with an evidence-first research pipeline &middot; data: <a href="data.json">data.json</a> &middot; agents: <a href="llms.txt">llms.txt</a> &middot; <a href="{{REPO}}">source</a></footer>
+</main>
+<script id="appdata" type="application/json">{{DATA}}</script>
+<script>
+const D=JSON.parse(document.getElementById('appdata').textContent);
+const $=s=>document.querySelector(s);
+const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const AL={oauth2:'OAuth2',api_key:'API key',bearer_token:'Bearer/PAT',basic:'Basic',jwt:'JWT',hmac:'HMAC',oauth1:'OAuth1',none:'none',unknown:'?'};
+$('#k-ready').textContent=D.filter(r=>r.verdict==='ready').length+'/'+D.length;
+$('#k-open').textContent=D.filter(r=>r.access==='self_serve'||r.access==='trial').length+'/'+D.length;
+$('#k-mcp').textContent=D.filter(r=>r.mcp==='official').length+'/'+D.length;
+[...new Set(D.map(r=>r.category))].forEach(c=>{const o=document.createElement('option');o.textContent=c;$('#fc').appendChild(o)});
+function row(r){
+  const auth=r.auth.split('+').map(a=>`<span class="pill">${AL[a]||a}</span>`).join('');
+  const fixed=r.corrected_fields.length?` <span class="fix" title="corrected: ${r.corrected_fields.join(', ')}">&#9998;</span>`:'';
+  const ratio=r.claims_supported/r.claims_total;
+  return `<tr class="main" data-id="${r.id}"><td>${r.id}</td><td><b>${esc(r.name)}</b>${fixed}</td><td class="mut">${esc(r.category)}</td><td>${esc(r.one_liner)}</td><td>${auth}</td>
+  <td class="a-${r.access}">${r.access.replace('_',' ')}</td><td>${esc(r.api)} <span class="mut">${r.breadth}</span></td><td>${r.mcp}</td>
+  <td><span class="pill v-${r.verdict}">${r.verdict.replaceAll('_',' ')}</span></td><td class="mut">${esc(r.blocker)}</td>
+  <td><a href="${esc(r.docs_url)}" target=_blank>docs</a>${r.auth_url&&r.auth_url!==r.docs_url?` · <a href="${esc(r.auth_url)}" target=_blank>auth</a>`:''}</td>
+  <td class="${ratio>=.8?'ok':ratio>=.5?'':'bad'}">${r.claims_supported}/${r.claims_total}</td></tr>`;
+}
+function detail(r){
+  const cl=r.claim_status.map(c=>`<span class="pill ${c.status==='supported'?'ok':c.status==='no_evidence'?'mut':'bad'}">${c.field}=${esc(c.value).slice(0,40)}: ${c.status}</span>`).join(' ');
+  const p=r.pass1, diffs=['auth','access','api','mcp','verdict','docs_url'].filter(k=>p[k]!==r[k]).map(k=>`${k}: <span class="old">${esc(p[k])}</span> &rarr; <span class="new">${esc(r[k])}</span>`).join('<br>');
+  return `<tr class="detail"><td></td><td colspan="11"><b>Access note:</b> ${esc(r.access_note)}<br><b>Claims vs evidence:</b> ${cl}<br>
+  <b>GitHub MCP search:</b> ${r.github_mcp}${r.github_mcp_repos.length?' ('+r.github_mcp_repos.map(esc).join(', ')+')':''}<br>${diffs?'<b>Changed in verification:</b><br>'+diffs:'<b>Unchanged from pass 1</b>'}</td></tr>`;
+}
+function render(){
+  const q=$('#q').value.toLowerCase(),c=$('#fc').value,a=$('#fa').value,v=$('#fv').value,m=$('#fm').value;
+  const rows=D.filter(r=>(!c||r.category===c)&&(!a||r.access===a)&&(!v||r.verdict===v)&&(!m||r.mcp===m)&&(!q||JSON.stringify([r.name,r.one_liner,r.auth,r.access_note,r.blocker,r.api]).toLowerCase().includes(q)));
+  $('#tbl tbody').innerHTML=rows.map(row).join('');$('#count').textContent=rows.length+' apps';
+}
+document.querySelectorAll('.filters input,.filters select').forEach(e=>e.addEventListener('input',render));
+$('#tbl tbody').addEventListener('click',e=>{const tr=e.target.closest('tr.main');if(!tr||e.target.tagName==='A')return;
+  if(tr.nextElementSibling&&tr.nextElementSibling.classList.contains('detail')){tr.nextElementSibling.remove();return}
+  tr.insertAdjacentHTML('afterend',detail(D.find(r=>r.id===tr.dataset.id)))});
+render();
+</script>
+</body>
+</html>

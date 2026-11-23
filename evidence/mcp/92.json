@@ -1,0 +1,67 @@
+{
+ "id": "92",
+ "name": "Otter AI",
+ "status": "community_repo",
+ "repos": [
+  {
+   "repo": "DarrenZal/otter-mcp",
+   "stars": 5,
+   "url": "https://github.com/DarrenZal/otter-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "StanAngeloff/otter-mcp",
+   "stars": 1,
+   "url": "https://github.com/StanAngeloff/otter-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "bcharleson/otter-cli",
+   "stars": 1,
+   "url": "https://github.com/bcharleson/otter-cli",
+   "vendor_owned": false
+  },
+  {
+   "repo": "JarvusInnovations/otter-axi",
+   "stars": 1,
+   "url": "https://github.com/JarvusInnovations/otter-axi",
+   "vendor_owned": false
+  },
+  {
+   "repo": "ephraimm/otter-ai-mcp",
+   "stars": 0,
+   "url": "https://github.com/ephraimm/otter-ai-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "dmvt/otter-mcp",
+   "stars": 0,
+   "url": "https://github.com/dmvt/otter-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "ChocoTonic/otterai-mcp",
+   "stars": 0,
+   "url": "https://github.com/ChocoTonic/otterai-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "nsaranya-sb/otter-notion-mcp",
+   "stars": 0,
+   "url": "https://github.com/nsaranya-sb/otter-notion-mcp",
+   "vendor_owned": false
+  },
+  {
+   "repo": "smcdonnell7/meeting-chief-lite",
+   "stars": 0,
+   "url": "https://github.com/smcdonnell7/meeting-chief-lite",
+   "vendor_owned": false
+  },
+  {
+   "repo": "onemira-space/transcript-to-okf",
+   "stars": 0,
+   "url": "https://github.com/onemira-space/transcript-to-okf",
+   "vendor_owned": false
+  }
+ ]
+}
